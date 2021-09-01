@@ -1,0 +1,79 @@
+/* Declaring CSS Variables */
+
+:root {
+    --ui-brand: #E79166;
+    --ui-blue: #1877F2;
+    --ui-blue-hover: #1D6ACE;
+    --ui-light-blue: #D2E6FF;
+    --ui-light-blue-hover: #BAD4F6;
+    --ui-base-text: #365969;
+    --ui-base-p: #666666;
+    --ui-success: #2DBD7D;
+    --ui-error: #E06666;
+    --ui-gradient: linear-gradient(225.7deg, rgba(107, 65, 227, 0.7) 33.6%, rgba(255, 255, 255, 0) 74.69%), #E79166;
+    --ui-bg: #F8F8FB;
+    --ui-light-grey1: #F1F1F3;
+    --ui-light-grey2: #F6F6F6;
+    --ui-light-grey3: #C4C4C4;
+    --ui-dark-grey1: #8C8C8C;
+    --ui-dark-grey2: #899AA1;
+    --ui-dark-grey4: #666666;
+    --white: #fff;
+    --ui-disabled: #E6E6E6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* reset Generic Style */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--ui-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a,
+button {
+    text-decoration: none;
+    transition: .3s all ease;
+}
+
+a:hover,
+a:active,
+a:focus,
+button:hover,
+button:focus {
+    text-decoration: none;
+    transition: .3s all ease;
+}
+
+
+/* Customizing Bootstrap Container */
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1271px;
+    }
+}

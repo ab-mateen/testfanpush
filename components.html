@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Components - FanPush</title>
+</head>
+
+<body>
+    <section class="site-components">
+        <div class="container">
+            <h1 class="text-center">UI Components</h1>
+            <div class="content">
+                <!-- Buttons -->
+                <div class="buttons">
+                    <!--=========================== Big Buttons ===========================-->
+                    <h2 class="my-3">Big Buttons with hover</h2>
+                    <!-- blue Btn -->
+                    <a href="#" class="blue-btn big-btn">Continuar</a>
+                    <!-- Light Blue Btn -->
+                    <a href="#" class="light-blue-btn big-btn">Continuar</a>
+                    <!-- transparent Btn -->
+                    <a href="#" class="transparent-btn big-btn">Continuar</a>
+                    <!-- disabled Btn -->
+                    <a href="#" class="blue-btn big-btn btn-disable">Continuar</a>
+                    <!--=========================== Medium Buttons ===========================-->
+                    <h2 class="my-3">Medium Buttons with hover</h2>
+                    <!-- blue Btn -->
+                    <a href="#" class="blue-btn medium-btn">Continuar</a>
+                    <!-- Light Blue Btn -->
+                    <a href="#" class="light-blue-btn medium-btn">Continuar</a>
+                    <!-- transparent Btn -->
+                    <a href="#" class="transparent-btn medium-btn">Continuar</a>
+                    <!-- disabled Btn -->
+                    <a href="#" class="blue-btn medium-btn btn-disable">Continuar</a>
+                    <!--=========================== Small Buttons =========================== -->
+                    <h2 class="my-3">Small Buttons with hover</h2>
+                    <!-- blue Btn -->
+                    <a href="#" class="blue-btn small-btn">Continuar</a>
+                    <!-- Light Blue Btn -->
+                    <a href="#" class="light-blue-btn small-btn">Continuar</a>
+                    <!-- transparent Btn -->
+                    <a href="#" class="transparent-btn small-btn">Continuar</a>
+                    <!-- disabled Btn -->
+                    <a href="#" class="blue-btn small-btn btn-disable">Continuar</a>
+                </div>
+                <!--=========================== Feed Boxes =========================== -->
+                <div class="feed-boxes mt-5">
+                    <h2 class="text-center mb-4">Blue Feed Box</h2>
+                    <!--=========================== blue feed box =========================== -->
+                    <div class="blue-feed-box">
+                        <div class="blue-feed-content small-border">
+                            <p>Para poder empezar a publicar contenido pago o poner precio de suscripción tenés que validar tu identidad. Hacelo haciendo click en el botón de abajo.</p>
+                            <a href="#" class="blue-btn medium-btn mt-3">Validarme</a>
+                        </div>
+                    </div>
+                    <div class="mt-4"></div>
+                    <h2 class="text-center mb-4">white Feed Box</h2>
+                    <!-- White feed box -->
+                    <div class="white-feed-box">
+                        <div class="white-feed-content small-border">
+                            <p>No hay feed para mostrar, empezá a seguir gente para ver sus publicaciones.</p>
+                            <a href="#" class="blue-btn medium-btn mt-3"><span class="d-inline-block mr-2"><i class="fal fa-globe"></i></span> Explorar Perfiles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Input Types -->
+                <div class="input-fields mt-4">
+                    <h2 class="text-center mb-4">Grey Input</h2>
+                    <!-- This is Input Field -->
+                    <input type="text" class="form-control small-border grey-input" placeholder="Email">
+                    <h2 class="text-center my-4">white Input</h2>
+                    <input type="text" class="form-control small-border white-input" placeholder="@manuelvega1">
+                    <h2 class="text-center my-4">White Input with Checked</h2>
+                    <div class="input-checkemark position-relative">
+                        <input type="text" class="form-control small-border white-input" placeholder="@manuelvega1">
+                    </div>
+                </div>
+                <!-- Alert -->
+                <div class="alerts">
+                    <h2 class="text-center my-4">Success Alert</h2>
+                    <!-- Success Alert -->
+                    <div class="alert alert-info alert-dismissible fade show small-border">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <p><span><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span> Las transacciones pueden tardar entre 3 y 5 dias hábiles.</p>
+                    </div>
+                    <h2 class="text-center mb-4">Warning Alert</h2>
+                    <!-- warning Alert -->
+                    <div class="alert alert-warning small-border">
+                        <p><span><img src="assets/images/alert-warning-icon.svg" alt="Info Icon"></span> Esto va a eliminar tu cuenta de forma permanente.</p>
+                    </div>
+                </div>
+                <div class="mt-5"></div>
+                <!-- Ui Tabbing -->
+                <div class="ui-tabbing">
+                    <h2 class="text-center mb-4">UI Big Tabbing</h2>
+                    <!-- Ui Big Tabbing -->
+                    <div class="ui-nav-tabs ui-big-tabbing">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#seguidorestab">Seguidores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#seguidostab">Seguidos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#favoritostab">Favoritos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#suscriptorestab">Suscriptores</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="seguidorestab">Seguidores</div>
+                            <div class="tab-pane container fade" id="seguidostab">Seguidos</div>
+                            <div class="tab-pane container fade" id="favoritostab">Favoritos</div>
+                            <div class="tab-pane container fade" id="suscriptorestab">Suscriptores</div>
+                        </div>
+                    </div>
+                    <h2 class="text-center my-4">UI Profile Tabbing</h2>
+                    <!-- Ui Big Tabbing -->
+                    <div class="ui-nav-tabs ui-profile-tabbing">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#fotostab"><img src="assets/images/gallery-icon.svg" alt="Gallery icon"> 0 FOTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#videostab"><img src="assets/images/video-player-icon.svg" alt="Videos icon"> 0 VIDEOS</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="fotostab">Fotos</div>
+                            <div class="tab-pane container fade" id="videostab">Videos</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gradient Boxes -->
+                <div class="gradient-boxes mt-4">
+                    <!-- Small Gradient -->
+                    <h2 class="text-center">Small Gradient Box</h2>
+                    <div class="ui-img-boxes small-img-box border-20 position-relative">
+                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                        <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                    </div>
+                    <!-- Grey Box -->
+                    <h2 class="text-center my-4">Small Grey Box</h2>
+                    <div class="ui-img-boxes small-img-box border-20 position-relative">
+                        <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                        <img src="assets/images/plus-icon.svg" alt="Lock plus" class="lock">
+                    </div>
+                    <!-- Large Box -->
+                    <h2 class="text-center my-4">Large Gradient Box</h2>
+                    <div class="ui-img-boxes large-img-box position-relative">
+                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                        <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Profile Dropdown Without Button</h2>
+                <!-- Dropdown Components -->
+                <!-- Profile Dropdown -->
+                <div class="dropdown-component">
+                    <div class="drop-header p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="person-name">
+                                <h2>Ayelen Elias</h2>
+                                <p>ayelen.elias</p>
+                            </div>
+                            <div class="fans-count">
+                                125 Fans
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drop-options user">
+                        <p>Opciones de Usuario</p>
+                        <a class="dropdown-item" href="#"><img src="assets/images/profile-icon.svg" alt=""> Perfil</a>
+                        <a class="dropdown-item" href="#"><img src="assets/images/settings-icon.svg" alt=""> Configuración</a>
+                        <a class="dropdown-item" href="#"><img src="assets/images/cart-icon.svg" alt=""> Compras y suscripciones</a>
+                        <a class="dropdown-item" href="#"><img src="assets/images/star.svg" alt=""> Favoritos</a>
+                    </div>
+                    <div class="drop-options author">
+                        <p>Opciones de Autor</p>
+                        <a class="dropdown-item" href="#"><img src="assets/images/wallet-icon.svg" alt=""> Ganancias y pagos</a>
+                    </div>
+                    <a class="dropdown-item support" href="#"><img src="assets/images/support-icon.svg" alt=""> Soporte</a>
+                    <a class="dropdown-item pt-3" href="#"><img src="assets/images/logout-icon.svg" alt=""> Salir</a>
+                </div>
+                <h2 class="text-center my-4">Profile Dropdown With Button</h2>
+                <!-- Profile Dropdown With Button -->
+                <div class="dropdown-component">
+                    <div class="drop-header p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="person-name">
+                                <h2>Ayelen Elias</h2>
+                                <p>ayelen.elias</p>
+                            </div>
+                            <div class="fans-count">
+                                125 Fans
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drop-options user">
+                        <p>Opciones de Usuario</p>
+                        <a class="dropdown-item" href="#"><img src="assets/images/profile-icon.svg" alt=""> Perfil</a>
+                        <a class="dropdown-item" href="#"><img src="assets/images/settings-icon.svg" alt=""> Configuración</a>
+                        <a class="dropdown-item" href="#"><img src="assets/images/cart-icon.svg" alt=""> Compras y suscripciones</a>
+                        <a class="dropdown-item" href="#"><img src="assets/images/star.svg" alt=""> Favoritos</a>
+                    </div>
+                    <div class="drop-options author">
+                        <p>Opciones de Autor</p>
+                        <a class="dropdown-item btn blue-btn small-btn" href="#">Convertirme en Autor</a>
+                    </div>
+                    <a class="dropdown-item support" href="#"><img src="assets/images/support-icon.svg" alt=""> Soporte</a>
+                    <a class="dropdown-item pt-3" href="#"><img src="assets/images/logout-icon.svg" alt=""> Salir</a>
+                </div>
+                <h2 class="text-center my-4">Global Dropdown</h2>
+                <!-- Global Dropdown -->
+                <div class="global-dropdown bg-white py-3">
+                    <div class="dropdown-item d-flex justify-content-between align-items-center">
+                        <div class="profile-info">
+                            <a href="#" class="d-flex align-items-center">
+                                <div class="profile-img d-inline-block rounded-circle">
+                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="Profile Img">
+                                </div>
+                                <div class="profile-name d-inline-block">
+                                    <h5>Micaela Suarez</h5>
+                                    <p>mikaelasuarez8</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <button class="btn close-btn" type="button" data-dismiss="dropdown-item">&times;</button>
+                        </div>
+                    </div>
+                    <div class="dropdown-item d-flex justify-content-between align-items-center">
+                        <div class="profile-info">
+                            <a href="#" class="d-flex align-items-center">
+                                <div class="profile-img d-inline-block rounded-circle">
+                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="Profile Img">
+                                </div>
+                                <div class="profile-name d-inline-block">
+                                    <h5>Micaela Suarez</h5>
+                                    <p>mikaelasuarez8</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <button class="btn close-btn" type="button" data-dismiss="dropdown-item">&times;</button>
+                        </div>
+                    </div>
+                    <div class="dropdown-item d-flex justify-content-between align-items-center">
+                        <div class="profile-info">
+                            <a href="#" class="d-flex align-items-center">
+                                <div class="profile-img d-inline-block rounded-circle">
+                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="Profile Img">
+                                </div>
+                                <div class="profile-name d-inline-block">
+                                    <h5>Micaela Suarez</h5>
+                                    <p>mikaelasuarez8</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <button class="btn close-btn" type="button" data-dismiss="dropdown-item">&times;</button>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Notifications Dropdown</h2>
+                <!-- Notifications Dropdown -->
+                <div class="notification-drop">
+                    <span class="noti-header">Notificaciones</span>
+                    <!-- Admin Notificacions -->
+                    <a href="#" class="dropdown-item">
+                        <div class="notification-wrapper admin">
+                            <div class="d-flex justify-content-between">
+                                <div class="notification-img">
+                                    <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-admin-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                    <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                </div>
+                                <div class="notifictaion-content">
+                                    <p class="text-base-grey">
+                                        <span class="name text-base d-inline-block">El ADMIN Leito</span> te envió un mensaje [“Tu verificacion fue <br> <span class="text-error d-inline-block">rechazada</span>, por favor volve a subir fotos de tu por
+                                        favor volve a subir fotos de tu subir fotos de tu
+                                    </p>
+                                    <span class="noti-time">5 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Follow Notificacions -->
+                    <a href="#" class="dropdown-item">
+                        <div class="notification-wrapper follow">
+                            <div class="d-flex justify-content-between">
+                                <div class="notification-img">
+                                    <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-person-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                    <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                </div>
+                                <div class="notifictaion-content">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="noti-text">
+                                            <p class="text-base-grey">
+                                                <span class="name text-base">Milagros623</span> comenzó a seguirte
+                                            </p>
+                                            <span class="noti-time">10 hrs</span>
+                                        </div>
+                                        <div class="noti-btn">
+                                            <button type="button" class="transparent-btn small-btn">Siguiendo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Like Notificacions -->
+                    <a href="#" class="dropdown-item">
+                        <div class="notification-wrapper like">
+                            <div class="d-flex justify-content-between">
+                                <div class="notification-img">
+                                    <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-like-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                    <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                </div>
+                                <div class="notifictaion-content">
+                                    <p class="text-base-grey">
+                                        <span class="name text-base">CarlaNob.85</span> le gustó tu <span class="pic text-blue">foto</span>
+                                    </p>
+                                    <span class="noti-time">2 dias</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Buy Notificacions -->
+                    <a href="#" class="dropdown-item">
+                        <div class="notification-wrapper buy">
+                            <div class="d-flex justify-content-between">
+                                <div class="notification-img">
+                                    <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-buy-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                    <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                </div>
+                                <div class="notifictaion-content">
+                                    <p class="text-base-grey">
+                                        <span class="name text-base">Carlos15</span> compró tu <span class="pic text-blue">foto</span> por <span class="money text-base">$250</span>
+                                    </p>
+                                    <span class="noti-time">2 dias</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Follow Notificacions -->
+                    <a href="#" class="dropdown-item">
+                        <div class="notification-wrapper follow">
+                            <div class="d-flex justify-content-between">
+                                <div class="notification-img">
+                                    <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-person-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                    <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                </div>
+                                <div class="notifictaion-content">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="noti-text">
+                                            <p class="text-base-grey">
+                                                <span class="name text-base">Willy</span> comzenzó a seguirte
+                                            </p>
+                                            <span class="noti-time">10 hrs</span>
+                                        </div>
+                                        <div class="noti-btn">
+                                            <button type="button" class="blue-btn small-btn">Seguir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item blue-btn text-center small-border">
+                        Ver todas las notificaciones
+                    </a>
+                </div>
+                <h2 class="text-center my-4">Suggestion Box</h2>
+                <!-- Suggestion Box -->
+                <div class="suggest-box">
+                    <div class="cover-img">
+                        <img src="assets/images/grey-box.jpg" alt="">
+                    </div>
+                    <div class="profile-info bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="profile-img rounded-circle">
+                                <img src="assets/images/grey-box.jpg" class="rounded-circle" alt="">
+                            </div>
+                            <div class="profile-name">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="name">
+                                        <p>Orne Caruzo</p>
+                                        <span>@ornecaruzo</span>
+                                    </div>
+                                    <a href="#" class="btn bg-blue white-text">Seguir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Request Payement</h2>
+                <!-- Request Payment -->
+                <div class="withdraw-request border-10 bg-white">
+                    <div class="withdraw-content">
+                        <h2>Solicitar Retiro</h2>
+                        <p>Elegí el monto que quieras retirar, acordate que cuando lo cargues se va a procesar y lo vas a recibir el 15 del próximo mes.</p>
+                        <form>
+                            <!-- Withdraw Ammount -->
+                            <div class="withdraw-field mb-4">
+                                <label for="withdrawAmount" class="d-flex justify-content-between align-items-center">
+                                <h2>Tu balance</h2>
+                                <span><b>$</b> 5,321<span>.00</span></span>
+                            </label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-0" placeholder="1,500" id="withdrawAmount" name="withdrawAmount">
+                                    <div class="input-group-append bg-transparent">
+                                        <span class="input-group-text bg-transparent border-0">$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Choose Method -->
+                            <div class="choose-method">
+                                <!-- Mercado Mehtod -->
+                                <div class="form-check mb-3 pl-0">
+                                    <label class="form-check-label d-flex justify-content-between align-items-center">
+                                        <div class="method-logo">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <img src="assets/images/mercado-pago.png" alt="Mercado Pago">
+                                        </div>
+                                        <div class="method-account-info">
+                                            <span class="d-block small-border bg-base">CBU : 000154085751987297</span>
+                                            <p>jmanueldlavega@gmail.com <br> Alias : bebudlv</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <!-- Santander Mehtod -->
+                                <div class="form-check mb-3 pl-0">
+                                    <label class="form-check-label d-flex justify-content-between align-items-center">
+                                        <div class="method-logo pl-3">
+                                            <input type="radio" class="form-check-input" name="optradio">
+                                            <img src="assets/images/santander.png" alt="Santander Pago">
+                                        </div>
+                                        <div class="method-account-info">
+                                            <span class="d-block small-border bg-base">CBU : 000154085751987297</span>
+                                            <p>jmanueldlavega@gmail.com <br> Alias : bebudlv</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <!-- Submit and cancel Button -->
+                                <div class="submit-cancel">
+                                    <input type="submit" value="Solicitar Retiro" class="medium-btn blue-btn">
+                                    <button type="button" class="btn">Cancelar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Crear Publicación</h2>
+                <!-- Create Post First -->
+                <div class="create-post">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#createPost">
+                        Crear Publicación
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="createPost" tabindex="-1" aria-labelledby="createPost" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="createPostLabel">Crear Publicación</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- profile Info -->
+                                    <div class="profile-info">
+                                        <div class="d-flex align-items-center">
+                                            <div class="profile-img rounded-circle">
+                                                <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                            </div>
+                                            <div class="profile-name">
+                                                <h4>Ayelen Elias</h4>
+                                                <p>ayelen.elias</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Post content -->
+                                    <div class="create-post-content">
+                                        <form>
+                                            <div class="post-uploader d-flex justify-content-between align-items-center">
+                                                <h5>Agregar a tu publicacíon</h5>
+                                                <label for="postContentUpload" class="post-content-upload">
+                                                    <img src="assets/images/media-icon.png" alt=""> <span>Fotos y Videos</span>
+                                                    <input type="file" class="form-control-file" id="postContentUpload">
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn blue-btn big-btn btn-disable" disabled style="max-width: 100%;">Publicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Crear Publicación with Price and image</h2>
+                <!-- Create Post with Price and image -->
+                <div class="create-post">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#createPost2">
+                        Crear Publicación
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="createPost2" tabindex="-1" aria-labelledby="createPost2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="createPostLabel">Crear Publicación</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Profile Info and Post Price -->
+                                    <div class="d-flex justify-content-between">
+                                        <!-- profile Info -->
+                                        <div class="profile-info">
+                                            <div class="d-flex align-items-center">
+                                                <div class="profile-img rounded-circle">
+                                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                </div>
+                                                <div class="profile-name">
+                                                    <h4>Ayelen Elias</h4>
+                                                    <p>ayelen.elias</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-price empty">
+                                            <h2>$0.00</h2>
+                                            <p>Minimo $100 Pesos</p>
+                                        </div>
+                                    </div>
+                                    <!-- Post content -->
+                                    <div class="create-post-content">
+                                        <form>
+                                            <input type="text" class="post-description form-control" value="¿Qué estás pensando?" id="postDescription" name="postDescription">
+                                            <div class="post-upload-output position-relative">
+                                                <img src="assets/images/grey-box.jpg" alt="">
+                                                <button class="btn discard-btn">
+                                                    &times;
+                                                </button>
+                                            </div>
+                                            <div class="post-uploader d-flex justify-content-between align-items-center">
+                                                <h5>Agregar a tu publicacíon</h5>
+                                                <label for="postContentUpload" class="post-content-upload">
+                                                    <img src="assets/images/media-icon.png" alt=""> <span>Fotos y Videos</span>
+                                                    <input type="file" class="form-control-file" id="postContentUpload">
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn blue-btn big-btn" style="max-width: 100%;">Publicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Crear Publicación with Price, image and Label</h2>
+                <!-- Create Post with Price and Label -->
+                <div class="create-post">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#createPost3">
+                        Crear Publicación
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="createPost3" tabindex="-1" aria-labelledby="createPost3" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="createPostLabel">Crear Publicación</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Profile Info and Post Price -->
+                                    <div class="d-flex justify-content-between">
+                                        <!-- profile Info -->
+                                        <div class="profile-info">
+                                            <div class="d-flex align-items-center">
+                                                <div class="profile-img rounded-circle">
+                                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                </div>
+                                                <div class="profile-name">
+                                                    <h4>Ayelen Elias</h4>
+                                                    <p>ayelen.elias</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-price filled">
+                                            <h2>$1500.00</h2>
+                                            <p>Minimo $100 Pesos</p>
+                                        </div>
+                                    </div>
+                                    <!-- Post content -->
+                                    <div class="create-post-content">
+                                        <form>
+                                            <input type="text" class="post-description form-control" value="¿Qué estás pensando?" id="postDescription" name="postDescription">
+                                            <!-- Post Category -->
+                                            <div class="post-category-container">
+                                                <div class="post-category-content d-flex justify-content-between flex-wrap">
+                                                    <div class="post-category-col">
+                                                        <input type="checkbox" class="form-control free-post" id="freePost" name="freePost">
+                                                        <label for="freePost" class="free-post-label d-flex justify-content-between align-items-center">
+                                                            <span>Vista Previa Gratuita</span>
+                                                            <span>
+                                                                <svg width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M27 1.13141L25.8852 0.0102539L22.8366 3.04161L12.9532 1.89458L0 14.8309L12.1431 26.9898L25.0963 14.0535L23.9605 4.15376L27 1.13141ZM23.4385 13.4748L12.1446 24.7539L2.23594 14.8323L13.5298 3.55313L21.4033 4.46691L19.82 6.04124C19.5377 5.91576 19.2299 5.84915 18.9117 5.84915C18.3147 5.84915 17.7533 6.08145 17.3309 6.50332C16.4581 7.37494 16.4571 8.79418 17.3288 9.66696C17.7515 10.0901 18.3136 10.3232 18.9117 10.3232C19.5087 10.3232 20.07 10.0909 20.4925 9.66901C21.1723 8.99007 21.323 7.979 20.9446 7.15265L22.532 5.57415L23.4385 13.4748ZM19.3752 8.55033C19.2514 8.67402 19.0867 8.74216 18.9117 8.74216C18.7362 8.74216 18.5714 8.67381 18.4475 8.54975C18.1919 8.29384 18.1921 7.8776 18.4481 7.622C18.572 7.49826 18.7366 7.43017 18.9117 7.43017C19.0871 7.43017 19.2519 7.49853 19.3759 7.62258C19.6315 7.8785 19.6311 8.29473 19.3752 8.55033Z" fill=""/>
+                                                                </svg>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="post-category-col">
+                                                        <input type="checkbox" class="form-control paid-post" id="paidPost" name="paidPost">
+                                                        <label for="paidPost" class="paid-post-label d-flex justify-content-between align-items-center">
+                                                            <span>Precio Para Ver</span>
+                                                            <span>
+                                                                <svg width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g clip-path="url(#clip0)">
+                                                                        <path d="M15.8643 10.2451L15.1598 10.9496C14.3101 10.5074 13.2722 10.6696 12.562 11.3799C12.0935 11.8484 11.8919 12.3497 11.928 12.9621C11.9676 13.4926 12.0549 13.8551 12.3 14.5086C12.6542 15.5069 12.6637 15.9539 12.3376 16.2801C12.1304 16.4873 11.9044 16.6048 11.6658 16.6294C11.3673 16.6524 11.1088 16.5438 10.8528 16.2878C10.3682 15.8031 10.3839 15.2473 10.9089 14.3052L11.0947 13.972L9.58018 13.5995L9.46713 13.7713C8.84036 14.7236 8.79757 15.8518 9.33812 16.7715L8.64062 17.469L9.67161 18.5L10.3749 17.7967C10.7854 18.0415 11.2395 18.1539 11.7269 18.1315C12.3802 18.1054 12.9586 17.845 13.4461 17.3575L13.4547 17.3485C14.0039 16.7501 14.1903 16.167 14.0783 15.401C14.0119 14.92 13.9344 14.6753 13.7809 14.2149L13.5807 13.5831C13.548 13.4717 13.5201 13.3207 13.4848 13.1299L13.4816 13.1126C13.439 12.7654 13.533 12.5949 13.7093 12.4186C13.9714 12.1565 14.384 12.1426 14.629 12.3876C14.8968 12.6553 15.0086 12.9187 14.8332 13.5428L14.7493 13.8414L16.2147 14.1546L16.296 13.9054C16.5274 13.1958 16.49 12.5514 16.1853 11.9861L16.8954 11.2761L15.8643 10.2451Z" fill=""/>
+                                                                        <path d="M27 1.13141L25.8852 0.0102539L22.8366 3.04161L12.9532 1.89458L0 14.8309L12.1431 26.9898L25.0963 14.0535L23.9605 4.15376L27 1.13141ZM23.4385 13.4748L12.1446 24.7539L2.23594 14.8323L13.5298 3.55313L21.4033 4.46691L19.82 6.04124C19.5377 5.91576 19.2299 5.84915 18.9117 5.84915C18.3147 5.84915 17.7533 6.08145 17.3309 6.50332C16.4581 7.37494 16.4571 8.79418 17.3288 9.66696C17.7515 10.0901 18.3136 10.3232 18.9117 10.3232C19.5087 10.3232 20.07 10.0909 20.4925 9.66901C21.1723 8.99007 21.323 7.979 20.9446 7.15265L22.532 5.57415L23.4385 13.4748ZM19.3752 8.55033C19.2514 8.67402 19.0867 8.74216 18.9117 8.74216C18.7362 8.74216 18.5714 8.67381 18.4475 8.54975C18.1919 8.29384 18.1921 7.8776 18.4481 7.622C18.572 7.49826 18.7366 7.43017 18.9117 7.43017C19.0871 7.43017 19.2519 7.49853 19.3759 7.62258C19.6315 7.8785 19.6311 8.29473 19.3752 8.55033Z" fill=""/>
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0">
+                                                                            <rect width="27" height="27" fill=""/>
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>       
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-upload-output position-relative">
+                                                <img src="assets/images/grey-box.jpg" alt="">
+                                                <button class="btn discard-btn">
+                                                    &times;
+                                                </button>
+                                                <button class="btn play-btn">
+                                                    <img src="assets/images/play-icon.svg" alt="">
+                                                </button>
+                                                <div class="video-prog progress" style="height: 10px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 43%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="post-uploader d-flex justify-content-between align-items-center">
+                                                <h5>Agregar a tu publicacíon</h5>
+                                                <label for="postContentUpload" class="post-content-upload">
+                                                    <img src="assets/images/media-icon.png" alt=""> <span>Fotos y Videos</span>
+                                                    <input type="file" class="form-control-file" id="postContentUpload">
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn blue-btn big-btn" style="max-width: 100%;">Publicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Crear Publicación with Multiple Content</h2>
+                <!-- Create Post with Price and Label -->
+                <div class="create-post multiple">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#createPost4">
+                        Crear Publicación
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="createPost4" tabindex="-1" aria-labelledby="createPost4" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="createPostLabel">Crear Publicación</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Profile Info and Post Price -->
+                                    <div class="d-flex justify-content-between">
+                                        <!-- profile Info -->
+                                        <div class="profile-info">
+                                            <div class="d-flex align-items-center">
+                                                <div class="profile-img rounded-circle">
+                                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                </div>
+                                                <div class="profile-name">
+                                                    <h4>Ayelen Elias</h4>
+                                                    <p>ayelen.elias</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-price filled">
+                                            <h2>$1500.00</h2>
+                                            <p>Minimo $100 Pesos</p>
+                                        </div>
+                                    </div>
+                                    <!-- Post content -->
+                                    <div class="create-post-content">
+                                        <form>
+                                            <input type="text" class="post-description form-control" value="¿Qué estás pensando?" id="postDescription" name="postDescription">
+                                            <!-- Post Category -->
+                                            <div class="post-category-container">
+                                                <div class="post-category-content d-flex justify-content-between flex-wrap">
+                                                    <div class="post-category-col">
+                                                        <input type="checkbox" class="form-control free-post" id="freePost2" name="freePost">
+                                                        <label for="freePost2" class="free-post-label d-flex justify-content-between align-items-center">
+                                                            <span>Vista Previa Gratuita</span>
+                                                            <span>
+                                                                <svg width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M27 1.13141L25.8852 0.0102539L22.8366 3.04161L12.9532 1.89458L0 14.8309L12.1431 26.9898L25.0963 14.0535L23.9605 4.15376L27 1.13141ZM23.4385 13.4748L12.1446 24.7539L2.23594 14.8323L13.5298 3.55313L21.4033 4.46691L19.82 6.04124C19.5377 5.91576 19.2299 5.84915 18.9117 5.84915C18.3147 5.84915 17.7533 6.08145 17.3309 6.50332C16.4581 7.37494 16.4571 8.79418 17.3288 9.66696C17.7515 10.0901 18.3136 10.3232 18.9117 10.3232C19.5087 10.3232 20.07 10.0909 20.4925 9.66901C21.1723 8.99007 21.323 7.979 20.9446 7.15265L22.532 5.57415L23.4385 13.4748ZM19.3752 8.55033C19.2514 8.67402 19.0867 8.74216 18.9117 8.74216C18.7362 8.74216 18.5714 8.67381 18.4475 8.54975C18.1919 8.29384 18.1921 7.8776 18.4481 7.622C18.572 7.49826 18.7366 7.43017 18.9117 7.43017C19.0871 7.43017 19.2519 7.49853 19.3759 7.62258C19.6315 7.8785 19.6311 8.29473 19.3752 8.55033Z" fill=""/>
+                                                                </svg>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="post-category-col">
+                                                        <input type="checkbox" class="form-control paid-post" id="paidPost2" name="paidPost">
+                                                        <label for="paidPost2" class="paid-post-label d-flex justify-content-between align-items-center">
+                                                            <span>Precio Para Ver</span>
+                                                            <span>
+                                                                <svg width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g clip-path="url(#clip0)">
+                                                                        <path d="M15.8643 10.2451L15.1598 10.9496C14.3101 10.5074 13.2722 10.6696 12.562 11.3799C12.0935 11.8484 11.8919 12.3497 11.928 12.9621C11.9676 13.4926 12.0549 13.8551 12.3 14.5086C12.6542 15.5069 12.6637 15.9539 12.3376 16.2801C12.1304 16.4873 11.9044 16.6048 11.6658 16.6294C11.3673 16.6524 11.1088 16.5438 10.8528 16.2878C10.3682 15.8031 10.3839 15.2473 10.9089 14.3052L11.0947 13.972L9.58018 13.5995L9.46713 13.7713C8.84036 14.7236 8.79757 15.8518 9.33812 16.7715L8.64062 17.469L9.67161 18.5L10.3749 17.7967C10.7854 18.0415 11.2395 18.1539 11.7269 18.1315C12.3802 18.1054 12.9586 17.845 13.4461 17.3575L13.4547 17.3485C14.0039 16.7501 14.1903 16.167 14.0783 15.401C14.0119 14.92 13.9344 14.6753 13.7809 14.2149L13.5807 13.5831C13.548 13.4717 13.5201 13.3207 13.4848 13.1299L13.4816 13.1126C13.439 12.7654 13.533 12.5949 13.7093 12.4186C13.9714 12.1565 14.384 12.1426 14.629 12.3876C14.8968 12.6553 15.0086 12.9187 14.8332 13.5428L14.7493 13.8414L16.2147 14.1546L16.296 13.9054C16.5274 13.1958 16.49 12.5514 16.1853 11.9861L16.8954 11.2761L15.8643 10.2451Z" fill=""/>
+                                                                        <path d="M27 1.13141L25.8852 0.0102539L22.8366 3.04161L12.9532 1.89458L0 14.8309L12.1431 26.9898L25.0963 14.0535L23.9605 4.15376L27 1.13141ZM23.4385 13.4748L12.1446 24.7539L2.23594 14.8323L13.5298 3.55313L21.4033 4.46691L19.82 6.04124C19.5377 5.91576 19.2299 5.84915 18.9117 5.84915C18.3147 5.84915 17.7533 6.08145 17.3309 6.50332C16.4581 7.37494 16.4571 8.79418 17.3288 9.66696C17.7515 10.0901 18.3136 10.3232 18.9117 10.3232C19.5087 10.3232 20.07 10.0909 20.4925 9.66901C21.1723 8.99007 21.323 7.979 20.9446 7.15265L22.532 5.57415L23.4385 13.4748ZM19.3752 8.55033C19.2514 8.67402 19.0867 8.74216 18.9117 8.74216C18.7362 8.74216 18.5714 8.67381 18.4475 8.54975C18.1919 8.29384 18.1921 7.8776 18.4481 7.622C18.572 7.49826 18.7366 7.43017 18.9117 7.43017C19.0871 7.43017 19.2519 7.49853 19.3759 7.62258C19.6315 7.8785 19.6311 8.29473 19.3752 8.55033Z" fill=""/>
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0">
+                                                                            <rect width="27" height="27" fill=""/>
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>       
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- POst Upload Output -->
+                                            <div class="row justify-content-between">
+                                                <!-- Column 1 -->
+                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                    <div class="post-upload-output position-relative">
+                                                        <img src="assets/images/grey-box.jpg" alt="">
+                                                        <button class="btn discard-btn">
+                                                                &times;
+                                                            </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 2 -->
+                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                    <div class="post-upload-output position-relative">
+                                                        <img src="assets/images/grey-box.jpg" alt="">
+                                                        <button class="btn discard-btn">
+                                                                &times;
+                                                            </button>
+                                                        <button class="btn play-btn">
+                                                                <img src="assets/images/play-icon.svg" alt="">
+                                                            </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 3 -->
+                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                    <div class="post-upload-output position-relative">
+                                                        <img src="assets/images/grey-box.jpg" alt="">
+                                                        <button class="btn discard-btn">
+                                                    &times;
+                                                </button>
+                                                        <button class="btn play-btn">
+                                                    <img src="assets/images/play-icon.svg" alt="">
+                                                </button>
+                                                        <div class="video-prog progress" style="height: 10px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 43%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 4 -->
+                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                    <div class="post-upload-output position-relative">
+                                                        <img src="assets/images/grey-box.jpg" alt="">
+                                                        <button class="btn discard-btn">
+                                                                &times;
+                                                            </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 5 -->
+                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                    <div class="post-upload-output position-relative">
+                                                        <img src="assets/images/grey-box.jpg" alt="">
+                                                        <button class="btn discard-btn">
+                                                                &times;
+                                                            </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 6 -->
+                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                    <div class="post-upload-output position-relative">
+                                                        <img src="assets/images/grey-box.jpg" alt="">
+                                                        <button class="btn discard-btn">
+                                                                &times;
+                                                            </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-uploader d-flex justify-content-between align-items-center">
+                                                <h5>Agregar a tu publicacíon</h5>
+                                                <label for="postContentUpload" class="post-content-upload">
+                                                    <img src="assets/images/media-icon.png" alt=""> <span>Fotos y Videos</span>
+                                                    <input type="file" class="form-control-file" id="postContentUpload">
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn blue-btn big-btn" style="max-width: 100%;">Publicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Remove Favroite</h2>
+                <!-- Remove From Favroite Popup -->
+                <div class="remove-favr8">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#removeFavr8">
+                        Quitar Favoritos
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="removeFavr8" tabindex="-1" aria-labelledby="removeFavr8" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-10">
+                                <div class="modal-header border-0 pb-0">
+                                    <button type="button" class="close small-close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-center py-0">
+                                    <div class="profile-img rounded-circle">
+                                        <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                    </div>
+                                    <h5>Seguro querés quitar a <span class="name font-weight-bold">Micaela Suarez</span> de favoritos?</h5>
+                                </div>
+                                <div class="modal-footer justify-content-center border-0 pt-0 pb-4">
+                                    <button type="button" class="btn success-bg white-text yes">Si</button>
+                                    <button type="button" class="btn danger-bg white-text no">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Borrar Tu Cuenta</h2>
+                <!-- Remove From Favroite Popup -->
+                <div class="delete-account">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#deleteAccount">
+                        Borrar Tu Cuenta
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="deleteAccount" tabindex="-1" aria-labelledby="deleteAccount" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-10">
+                                <div class="modal-header border-0 pb-0">
+                                    <button type="button" class="close small-close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-center py-0">
+                                    <h5>Estas seguro que qeres borrar tu cuenta para siempre? </h5>
+                                </div>
+                                <div class="modal-footer justify-content-center border-0 pt-0 pb-4">
+                                    <button type="button" class="btn blue-btn yes">Si</button>
+                                    <button type="button" class="btn light-blue-btn no">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Desbloquea este contenido</h2>
+                <!-- Remove From Favroite Popup -->
+                <div class="unlock-content">
+                    <!-- Content Header -->
+                    <div class="content-header d-flex justify-content-between">
+                        <!-- profile Info -->
+                        <div class="profile-info">
+                            <div class="d-flex align-items-center">
+                                <div class="profile-img rounded-circle">
+                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <p>perfil.1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown -->
+                        <div class="post-options d-flex align-items-center">
+                            <span>hace 6 horas</span>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                    <a class="dropdown-item" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Compartir</a>
+                                    <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Body -->
+                    <div class="content-body">
+                        <div class="post-price">
+                            <h2>$300</h2>
+                        </div>
+                        <div class="post-content">
+                            <p>Este es un post privado, continua con el pago para desbloquearlo.</p>
+                            <button type="button" class="blue-btn big-btn mt-3 mb-4" style="max-width: 100%;">
+                                <span>
+                                    <svg width="12" height="16" viewBox="0 0 31 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill="white"/>
+                                    </svg>
+                                </span>
+                                Desbloquea este contenido
+                            </button>
+                            <button type="button" class="light-blue-btn big-btn" style="max-width: 100%;">
+                                <span>
+                                    <svg width="12" height="16" viewBox="0 0 31 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill="white"/>
+                                    </svg>
+                                </span>
+                                Suscribite mensualmente a TODO el contenido por $2500
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

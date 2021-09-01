@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Feed Inicio</title>
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header>
+        <section class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <nav class="navbar navbar-expand-md justify-content-between pr-0">
+                        <!-- Nav Search Bar & logo Container -->
+                        <div class="nav-searchbar d-flex">
+                            <!-- Brand -->
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="Brand Logo"></a>
+                            <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="Buscar Persona">
+                                <div class="input-group-append">
+                                    <span class="input-group-text p-0">
+                                        <button class="btn" type="submit"><i class="far fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Nav User Right Area -->
+                        <div class="nav-user d-flex">
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html"><img src="assets/images/home.svg" alt="Home Icon"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/globe.svg" alt="World Globe"></a>
+                                    </li>
+                                    <li class="nav-item dropdown notification">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                                            <img src="assets/images/bell.svg" alt="Notification Bell">
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Link 1</a>
+                                            <a class="dropdown-item" href="#">Link 2</a>
+                                            <a class="dropdown-item" href="#">Link 3</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="user-area d-flex justify-content-between">
+                                <!-- User Img Uploader -->
+                                <div class="img-uploader">
+                                    <label for="navUploader" class="position-relative">
+                                        <span><img src="assets/images/cloud-upload.svg" alt="Cloud Upload"> Subir fotos</span>
+                                        <input type="file" name="nav-photo-upload" id="navUploader">
+                                    </label>
+                                </div>
+                                <!-- User Dropdown -->
+                                <div class="user-drop dropdown">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                        <span>
+                                        <img src="assets/images/profile-img.png" alt="User Profile Image">
+                                        Ayelen Elias
+                                        </span>
+                                        <span>
+                                            Ganancias: $10.532
+                                        </span>
+                                    </button>
+                                    <div class="dropdown-menu p-0 " style="width: 300px;">
+                                        <div class="dropdown-component">
+                                            <div class="drop-header p-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="person-name">
+                                                        <h2>Ayelen Elias</h2>
+                                                        <p>ayelen.elias</p>
+                                                    </div>
+                                                    <div class="fans-count">
+                                                        125 Fans
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="drop-options user">
+                                                <p>Opciones de Usuario</p>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/profile-icon.svg" alt=""> Perfil</a>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/settings-icon.svg" alt=""> Configuración</a>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/cart-icon.svg" alt=""> Compras y suscripciones</a>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/star.svg" alt=""> Favoritos</a>
+                                            </div>
+                                            <div class="drop-options author">
+                                                <p>Opciones de Autor</p>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/wallet-icon.svg" alt=""> Ganancias y pagos</a>
+                                            </div>
+                                            <a class="dropdown-item support" href="#"><img src="assets/images/support-icon.svg" alt=""> Soporte</a>
+                                            <a class="dropdown-item pt-3" href="#"><img src="assets/images/logout-icon.svg" alt=""> Salir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--Feed section-->
+    <section class="feed-start-main mt-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-7">
+                    <div class="feed-content">
+                        <div class="feed-content-anc">
+                            <a href="#" class="blue-btn mr-3 small-btn">Todos</a>
+                            <a href="#" class="blue-btn  small-btn">Mis creadores pagos</a>
+                        </div>
+                        <div class="blue-feed-box mt-4">
+                            <div class="blue-feed-content small-border">
+                                <p>Para poder empezar a publicar contenido pago o poner precio de suscripción tenés que validar tu identidad. Hacelo haciendo click en el botón de abajo.</p>
+                                <a href="#" class="blue-btn medium-btn mt-3">Validarme</a>
+                            </div>
+                        </div>
+                        <div class="white-feed-box bg-transparent px-0 mt-3">
+                            <div class="white-feed-content small-border">
+                                <p>No hay feed para mostrar, empezá a seguir gente para ver sus publicaciones.</p>
+                                <a href="#" class="blue-btn medium-btn mt-3"><span class="d-inline-block mr-2"><i class="fal fa-globe"></i></span> Explorar Perfiles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="suggestion-sec pt-1">
+                        <h2>Sugerencias</h2>
+                        <div class="suggestion-content mt-4">
+                            <div class="suggest-box mt-4">
+                                <div class="cover-img">
+                                    <img src="assets/images/grey-box.jpg" alt="">
+                                </div>
+                                <div class="profile-info bg-white">
+                                    <div class="d-flex align-items-center">
+                                        <div class="profile-img rounded-circle">
+                                            <img src="assets/images/grey-box.jpg" class="rounded-circle" alt="">
+                                        </div>
+                                        <div class="profile-name">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="name">
+                                                    <p>Zoe Folguera</p>
+                                                    <span>@folguerazoe</span>
+                                                </div>
+                                                <a href="#" class="btn bg-blue white-text">Seguir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="suggest-box mt-2">
+                                <div class="cover-img">
+                                    <img src="assets/images/grey-box.jpg" alt="">
+                                </div>
+                                <div class="profile-info bg-white">
+                                    <div class="d-flex align-items-center">
+                                        <div class="profile-img rounded-circle">
+                                            <img src="assets/images/grey-box.jpg" class="rounded-circle" alt="">
+                                        </div>
+                                        <div class="profile-name">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="name">
+                                                    <p>Orne Caruzo</p>
+                                                    <span>@ornecaruzo</span>
+                                                </div>
+                                                <a href="#" class="btn bg-blue white-text">Seguir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="suggest-box mt-2">
+                                <div class="cover-img">
+                                    <img src="assets/images/grey-box.jpg" alt="">
+                                </div>
+                                <div class="profile-info bg-white">
+                                    <div class="d-flex align-items-center">
+                                        <div class="profile-img rounded-circle">
+                                            <img src="assets/images/grey-box.jpg" class="rounded-circle" alt="">
+                                        </div>
+                                        <div class="profile-name">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="name">
+                                                    <p>Xiomara</p>
+                                                    <span>@xioma.tissera</span>
+                                                </div>
+                                                <a href="#" class="btn bg-blue white-text">Seguir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="suggestion-content-anc mt-4">
+                                <a href="#" class="blue-btn medium-btn mt-3"><span class="d-inline-block mr-2"><i class="fal fa-globe"></i></span> Explorar Perfiles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content pt-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer-content-img">
+                            <a href="#"><img src="assets/images/logo.svg" alt="Brand Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="footer-content-input">
+                            <input type="text" placeholder="Suscribite para recibir todas las noticias!">
+                            <a href="#" class="blue-btn big-btn">Suscribirse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="foot-list-content">
+                                <h4>FanPush Tuts+</h4>
+                                <li>
+                                    <a href="#">Empezar a vender</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mensajes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Como retirar mis fondos</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="foot-list-content">
+                                <h4>En Redes</h4>
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Twitter</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="foot-list-content">
+                                <h4>Faqs</h4>
+                                <li>
+                                    <a href="#">Quien puede ver mi contenido?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Puedo tener mas de un perfil activo?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Como funcionan los pagos por mensajes?</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="foot-list-content">
+                                <h4>Soporte</h4>
+                                <li>
+                                    <a href="#">Soporte por Email</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacto</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Creadores Reconocidos</h5>
+                </div>
+                <div class="footer-bottom d-flex justify-content-between">
+                    <div class="footer-bottom-content">
+                        <span><a href="#">© 2020 FanPush Inc.</a></span>
+                        <span><a href="#">Privacy</a></span>
+                        <span><a href="#">Terms</a></span>
+                    </div>
+                    <div class="footer-bottom-content">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
