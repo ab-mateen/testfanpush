@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Login - FanPush</title>
+    <title>Register - FanPush</title>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
         </section>
     </header>
     <!-- Form Section -->
-    <section class="ui-form-section login">
+    <section class="ui-form-section register">
         <div class="container">
             <div class="ui-form-content">
                 <!-- Form Section -->
@@ -68,19 +68,35 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-col small-border">
-                            <h2>Ingresa o Registrate</h2>
-                            <form>
-                                <input class="form-control" type="email" id="usrname" placeholder="Email" name="usrname" required>
-                                <input class="form-control" type="password" id="psw" placeholder="Contraseña" name="psw" required>
-                                <div class="form-group mb-0">
-                                    <label for="submit" class="d-block text-brand text-right">Me olvide la contraseña</label>
-                                    <input class="form-control btn submit-btn" name="submit" type="submit" value="Entrar">
+                            <div class="multi-step-form">
+                                <!-- Register Form -->
+                                <div class="register-form js-form-container">
+                                    <h2>Registro</h2>
+                                    <form>
+                                        <input class="form-control" type="email" id="usrname" placeholder="Email" name="usrname" required>
+                                        <input class="form-control" type="password" id="psw" placeholder="Contraseña" name="psw" required>
+                                        <input class="form-control" type="text" id="name" placeholder="Nombre y Apellido" name="name" required>
+                                        <input class="form-control" type="text" id="phoneNum" placeholder="Teléfono" name="phoneNum" required>
+                                        <div class="input-checkemark position-relative">
+                                            <input type="text" class="form-control small-border" placeholder="@manuelvega1">
+                                        </div>
+                                        <div class="form-check form-check-inline mb-3">
+                                            <input class="form-check-input" type="checkbox" id="registerTerms">
+                                            <label class="form-check-label" for="registerTerms">Al registrarse, acepta nuestros <a href="#" class="text-blue">Términos de Política de servicio y privacidad.</a></label>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input class="form-control btn form-next-msg register-btn" name="register" type="button" value="Crear mi cuenta en FanPush!">
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="form-group mb-0">
-                                    <label for="register" class="d-block text-blue text-right">No tenes cuenta todavia?</label>
-                                    <a href="register.html" class="btn blue-btn big-btn" style="max-width: 100%;">Registerme on Fanpush</a>
+                                <div class="register-success success-msg text-center">
+                                    <h2 class="text-base pb-4">Cuenta creada con éxito!</h2>
+                                    <img src="assets/images/thumbsup.svg" class="mt-2 mb-4 mx-auto" alt="">
+                                    <p>Tu cuenta se registró con exito!</p>
+                                    <p>Gracias por formar parte de nuestra comunidad.</p>
+                                    <a href="login.html" class="btn blue-btn big-btn mt-4">Ingresar</a>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,6 +116,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/global.js"></script>
 </body>
 
 </html>

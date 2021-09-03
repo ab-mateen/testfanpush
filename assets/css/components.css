@@ -92,6 +92,10 @@
     border-radius: 20px;
 }
 
+.mw-100 {
+    max-width: 100%;
+}
+
 
 /* Buttons Sizes */
 
@@ -111,7 +115,7 @@
     font-size: 14px;
     font-weight: 600;
     text-align: center;
-    padding: 9.5px 10px;
+    padding: 9.5px 10px !important;
     display: inline-block;
     width: 100%;
     max-width: 105px;
@@ -132,9 +136,9 @@
 /* Blue Button */
 
 .blue-btn {
-    background: var(--ui-blue);
-    color: var(--white);
-    border: none;
+    background: var(--ui-blue) !important;
+    color: var(--white) !important;
+    border: none !important;
 }
 
 
@@ -142,8 +146,8 @@
 
 .blue-btn:hover,
 .blue-btn:focus {
-    background: var(--ui-blue-hover);
-    color: var(--white);
+    background: var(--ui-blue-hover) !important;
+    color: var(--white) !important;
 }
 
 
@@ -192,9 +196,15 @@
 
 /* Blue Feed Box */
 
+@media (min-width: 768px) {
+    .blue-feed-box.col-md-8 {
+        flex: 0 0 69.73%;
+        max-width: 69.73%;
+    }
+}
+
 .blue-feed-box .blue-feed-content {
     background: #E0F2FF;
-    max-width: 774px;
     padding: 16px 25px;
 }
 
@@ -210,9 +220,15 @@
 
 /* White feed Box */
 
+@media (min-width: 768px) {
+    .white-feed-box.col-md-9 {
+        flex: 0 0 78.11%;
+        max-width: 78.11%;
+    }
+}
+
 .white-feed-box {
     background: #EAEAEA;
-    max-width: 867px;
     padding: 26px 46px;
 }
 
@@ -373,10 +389,6 @@ input.white-input::placeholder {
 //////////////////////
 Small Box */
 
-.small-img-box {
-    max-width: 399px;
-}
-
 .small-img-box img:not(img.lock) {
     max-height: 330px;
     border-radius: 20px;
@@ -395,10 +407,6 @@ Small Box */
 
 
 /* Large Img Box */
-
-.large-img-box {
-    max-width: 804px;
-}
 
 .large-img-box img:not(.img.lock) {
     max-height: 874px;
@@ -589,7 +597,6 @@ Small Box */
 /* Suggestion Box */
 
 .suggest-box {
-    max-width: 427px;
     border-radius: 10px;
 }
 
@@ -898,25 +905,12 @@ Small Box */
 
 /* When Label Selected */
 
-#freePost:checked~label[for="freePost"],
-#freePost2:checked~label[for="freePost2"] {
+.post-category-col input:checked+label {
     background: var(--ui-blue);
     color: var(--white);
 }
 
-#freePost:checked~label[for="freePost"] svg,
-#freePost2:checked~label[for="freePost2"] svg {
-    fill: var(--white);
-}
-
-#paidPost:checked~label[for="paidPost"],
-#paidPost2:checked~label[for="paidPost2"] {
-    background: var(--ui-blue);
-    color: var(--white);
-}
-
-#paidPost:checked~label[for="paidPost"] svg,
-#paidPost2:checked~label[for="paidPost2"] svg {
+.post-category-col input:checked+label svg {
     fill: var(--white);
 }
 
@@ -1065,13 +1059,31 @@ Small Box */
 
 /* Unlock Post */
 
-.unlock-content {
-    background-color: #fff;
-    max-width: 559px;
+.post-popup .modal-dialog {
+    max-width: 1363px;
+    width: 95%;
 }
 
-.unlock-content .content-header {
-    padding: 23px 34px 31px;
+.post-popup .modal-header button.close {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    background: transparent;
+    top: -35px;
+    right: -21px;
+    font-size: 36px;
+}
+
+.post-border-top {
+    border-top: 1px solid #E0E0E0;
+}
+
+.post-border-bottom {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.unlock-content {
+    background-color: #fff;
 }
 
 .unlock-content .profile-img {
@@ -1083,14 +1095,298 @@ Small Box */
 .unlock-content .post-options .dropdown-toggle {
     font-size: 28px;
     padding: 1px 8px;
+    box-shadow: none;
+}
+
+.post-options .dropdown .dropdown-menu {
+    right: 0;
+    left: unset !important;
+    top: -4px !important;
+    border-radius: 10px;
+    border: 1px solid #CECECE;
+    padding: 17px 15px 21px;
+    min-width: 136px;
+}
+
+@media (max-width: 1500px) {
+    .post-options .dropdown .dropdown-menu {
+        right: -25px;
+    }
+}
+
+.post-options .dropdown .dropdown-menu a {
+    padding: 2px;
+    margin: 0 0 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post-options .dropdown .dropdown-menu::after {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    border-color: #CECECE;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    transform: rotate( -45deg);
+    width: 16px;
+    height: 16px;
+    top: -9px;
+    right: 18px;
+    background: #fff;
 }
 
 .unlock-content .post-options .dropdown-toggle::after {
     content: unset;
 }
 
-.unlock-content .post-options span {
+.unlock-content .post-options span:not(.close span) {
     color: var(--ui-base-p);
     font-size: 13px;
     margin-right: 8px;
+}
+
+.unlock-content .post-price {
+    margin: 28px 0 27px;
+}
+
+.unlock-content .post-content button {
+    font-size: 13px;
+}
+
+.unlock-content .post-content button svg {
+    fill: var(--white);
+    margin: -2px 5px 0 0;
+}
+
+.unlock-content .post-content button.unlock-all svg {
+    fill: var(--ui-blue);
+}
+
+
+/* Unlocked Content */
+
+.unlock-content.is-unlock {
+    padding: 0;
+}
+
+.unlock-content-header {
+    padding: 11px 29px 11px 39px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.unlock-header-text p {
+    color: white;
+}
+
+.unlock-header-text p span {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: #B96337;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.unlock-header-button button span {
+    text-decoration: underline;
+    color: white;
+}
+
+.unlock-header-button button img {
+    max-width: 18px;
+    margin-right: 6px;
+    vertical-align: -2px;
+}
+
+.unlock-content.is-unlock .content-options {
+    padding: 22px 0 17px;
+}
+
+.unlock-content .post-space {
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.unlock-content.is-unlock .post-content {
+    padding: 0 0 17px;
+}
+
+.unlock-content.is-unlock .post-content p {
+    font-weight: 400;
+}
+
+.unlock-content.is-unlock .post-content button span {
+    width: 16px;
+    display: inline-block;
+}
+
+.post-likes {
+    padding: 25px 0 0;
+}
+
+.post-likes button {
+    padding: 0;
+}
+
+.post-likes button i {
+    font-size: 21px;
+    color: #FC5353;
+}
+
+.post-likes button span {
+    color: var(--ui-base-p);
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+
+/* Report Post Popup */
+
+.report-post-popup .modal-dialog {
+    width: 95%;
+    max-width: 612px;
+}
+
+.post-popup .report-post-popup .modal-header .close {
+    background: var(--ui-brand);
+    top: 8px;
+    right: 15px;
+    font-size: 1.5rem;
+}
+
+.report-post-popup .modal-body label {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--ui-base-text);
+    margin-bottom: 0;
+    display: block;
+    cursor: pointer;
+}
+
+.report-post-popup .modal-body textarea {
+    background: #F3F3F3;
+    border-radius: 5px;
+    color: var(--ui-base-p);
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    display: none;
+    height: 0;
+    transition: .3s all ease;
+    margin-bottom: 16px;
+}
+
+.report-post-popup .modal-body input:checked+textarea {
+    display: block;
+    height: 100%;
+    transition: .3s all ease;
+}
+
+
+/* Report Post Sucess msg */
+
+.report-post-popup .success-msg img {
+    max-width: 128px;
+    margin: auto;
+}
+
+.report-post-popup .success-msg h3 {
+    color: var(--ui-base-text);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.report-post-popup .success-msg p {
+    max-width: 435px;
+    margin: auto;
+}
+
+.report-post-popup .success-msg button {
+    opacity: 1;
+}
+
+
+/* Give Tip Popup */
+
+.give-tip .modal-dialog {
+    max-width: 463px;
+}
+
+.give-tip .modal-dialog .modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.give-tip .modal-dialog .modal-header button.close {
+    margin: 0rem 0.5rem 0rem auto;
+}
+
+.give-tip .profile-info .profile-img {
+    width: 103px;
+    height: 103px;
+}
+
+.give-tip .profile-info .profile-name h4 {
+    font-size: 20px;
+}
+
+.give-tip .profile-info .profile-name p {
+    font-size: 17px;
+    color: #1C78A1;
+}
+
+.give-tip .modal-dialog .modal-body {
+    padding: 0 44px 40px;
+}
+
+.give-tip form label {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--ui-base-text);
+}
+
+.give-tip form input {
+    border: none;
+    border-bottom: 1px solid #DFDFDF;
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 30px;
+    color: #DCDCDC;
+    padding-left: 0;
+}
+
+.give-tip form input::placeholder {
+    color: #DCDCDC;
+}
+
+.give-tip form textarea {
+    font-weight: 500;
+    font-size: 30px;
+    color: #DCDCDC;
+    border: 2px solid #D1D1D1;
+    border-radius: 10px;
+}
+
+.give-tip form p.input-min {
+    color: #BDBDBD;
+}
+
+.give-tip .tip-payment,
+.give-tip .tip-success {
+    transition: .3s all ease;
+}
+
+.give-tip .tip-success .checkmark {
+    color: #A5EB78;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.give-tip .tip-success a {
+    max-width: 178px;
 }

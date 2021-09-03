@@ -58,7 +58,7 @@
                 <div class="feed-boxes mt-5">
                     <h2 class="text-center mb-4">Blue Feed Box</h2>
                     <!--=========================== blue feed box =========================== -->
-                    <div class="blue-feed-box">
+                    <div class="blue-feed-box col-md-8 px-0">
                         <div class="blue-feed-content small-border">
                             <p>Para poder empezar a publicar contenido pago o poner precio de suscripción tenés que validar tu identidad. Hacelo haciendo click en el botón de abajo.</p>
                             <a href="#" class="blue-btn medium-btn mt-3">Validarme</a>
@@ -67,7 +67,7 @@
                     <div class="mt-4"></div>
                     <h2 class="text-center mb-4">white Feed Box</h2>
                     <!-- White feed box -->
-                    <div class="white-feed-box">
+                    <div class="white-feed-box col-md-9">
                         <div class="white-feed-content small-border">
                             <p>No hay feed para mostrar, empezá a seguir gente para ver sus publicaciones.</p>
                             <a href="#" class="blue-btn medium-btn mt-3"><span class="d-inline-block mr-2"><i class="fal fa-globe"></i></span> Explorar Perfiles</a>
@@ -154,21 +154,27 @@
                 <div class="gradient-boxes mt-4">
                     <!-- Small Gradient -->
                     <h2 class="text-center">Small Gradient Box</h2>
-                    <div class="ui-img-boxes small-img-box border-20 position-relative">
-                        <img src="assets/images/gradient.png" alt="Gradient Img">
-                        <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                    <div class="col-md-4">
+                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                        </div>
                     </div>
                     <!-- Grey Box -->
                     <h2 class="text-center my-4">Small Grey Box</h2>
-                    <div class="ui-img-boxes small-img-box border-20 position-relative">
-                        <img src="assets/images/grey-box.jpg" alt="Grey Img">
-                        <img src="assets/images/plus-icon.svg" alt="Lock plus" class="lock">
+                    <div class="col-md-4">
+                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                            <img src="assets/images/plus-icon.svg" alt="Lock plus" class="lock">
+                        </div>
                     </div>
                     <!-- Large Box -->
                     <h2 class="text-center my-4">Large Gradient Box</h2>
-                    <div class="ui-img-boxes large-img-box position-relative">
-                        <img src="assets/images/gradient.png" alt="Gradient Img">
-                        <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                    <div class="col-md-7">
+                        <div class="ui-img-boxes large-img-box position-relative">
+                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                        </div>
                     </div>
                 </div>
                 <h2 class="text-center my-4">Profile Dropdown Without Button</h2>
@@ -390,22 +396,24 @@
                 </div>
                 <h2 class="text-center my-4">Suggestion Box</h2>
                 <!-- Suggestion Box -->
-                <div class="suggest-box">
-                    <div class="cover-img">
-                        <img src="assets/images/grey-box.jpg" alt="">
-                    </div>
-                    <div class="profile-info bg-white">
-                        <div class="d-flex align-items-center">
-                            <div class="profile-img rounded-circle">
-                                <img src="assets/images/grey-box.jpg" class="rounded-circle" alt="">
-                            </div>
-                            <div class="profile-name">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="name">
-                                        <p>Orne Caruzo</p>
-                                        <span>@ornecaruzo</span>
+                <div class="col-md-5">
+                    <div class="suggest-box">
+                        <div class="cover-img">
+                            <img src="assets/images/grey-box.jpg" alt="">
+                        </div>
+                        <div class="profile-info bg-white">
+                            <div class="d-flex align-items-center">
+                                <div class="profile-img rounded-circle">
+                                    <img src="assets/images/grey-box.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="name">
+                                            <p>Orne Caruzo</p>
+                                            <span>@ornecaruzo</span>
+                                        </div>
+                                        <a href="#" class="btn bg-blue white-text">Seguir</a>
                                     </div>
-                                    <a href="#" class="btn bg-blue white-text">Seguir</a>
                                 </div>
                             </div>
                         </div>
@@ -877,7 +885,7 @@
                     </div>
                 </div>
                 <h2 class="text-center my-4">Borrar Tu Cuenta</h2>
-                <!-- Remove From Favroite Popup -->
+                <!-- Delete Account Popup -->
                 <div class="delete-account">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#deleteAccount">
@@ -896,67 +904,565 @@
                                     <h5>Estas seguro que qeres borrar tu cuenta para siempre? </h5>
                                 </div>
                                 <div class="modal-footer justify-content-center border-0 pt-0 pb-4">
-                                    <button type="button" class="btn blue-btn yes">Si</button>
-                                    <button type="button" class="btn light-blue-btn no">No</button>
+                                    <a href="login.html" type="button" class="btn blue-btn yes">Si</a>
+                                    <a href="#" type="button" class="btn light-blue-btn no">No</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">correo ordinario</h2>
+                <!-- Post Popup -->
+                <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#regPost">
+                    correo ordinario
+                </button>
+                <!-- Modal -->
+                <div class="modal fade post-popup" id="regPost" tabindex="-1" aria-labelledby="regPost" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-transparent border-0">
+                            <div class="modal-header border-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="post-popup-container">
+                                <div class="row no-gutters">
+                                    <div class="col-md-7">
+                                        <div class="ui-img-boxes large-img-box position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="unlock-content is-unlock h-100">
+                                            <div class="d-flex flex-column justify-content-between h-100">
+                                                <div class="content-wrapper">
+                                                    <!-- Profile Opions and Info -->
+                                                    <div class="post-space">
+                                                        <div class="content-options d-flex justify-content-between">
+                                                            <!-- profile Info -->
+                                                            <div class="profile-info">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="profile-img rounded-circle">
+                                                                        <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                                    </div>
+                                                                    <div class="profile-name">
+                                                                        <p>perfil.1</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Dropdown -->
+                                                            <div class="post-options d-flex align-items-center">
+                                                                <span>hace 6 horas</span>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-ellipsis-h"></i>
+                                                    </button>
+                                                                    <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                                                        <a class="dropdown-item danger-text" href="#">Eliminar</a>
+                                                                        <a class="dropdown-item" href="#">Compartir</a>
+                                                                        <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Content Body -->
+                                                    <div class="content-body">
+                                                        <div class="post-content">
+                                                            <div class="post-space">
+                                                                <p>D mis mejores veranos. </p>
+                                                                <p> Que el próximo sea mejor</p>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <div class="post-likes">
+                                                                    <button type="button" class="btn">
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>253</span>
+                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom">
+                                                                <div class="action-btn">
+                                                                    <button type="button" class="blue-btn big-btn mt-3 mb-4 mw-100" data-toggle="modal" data-target="#givTip">
+                                                        <span>
+                                                            <img src="assets/images/coins.svg" alt="">
+                                                        </span>
+                                                        Dar Propina
+                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-wrapper">
+                                                    <div class="post-space post-border-top pb-4">
+                                                        <div class="post-likes d-flex justify-content-between">
+                                                            <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                            </button>
+                                                            <span style="font-size: 14px;">253 me gusta</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">correo ordinario con Denunciar</h2>
+                <!-- Post Popup -->
+                <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#postReport">
+                    correo ordinario con Denunciar
+                </button>
+                <!-- Modal -->
+                <div class="modal fade post-popup" id="postReport" tabindex="-1" aria-labelledby="postReport" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-transparent border-0">
+                            <div class="modal-header border-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="post-popup-container">
+                                <div class="row no-gutters">
+                                    <div class="col-md-7">
+                                        <div class="ui-img-boxes large-img-box position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="unlock-content is-unlock h-100">
+                                            <div class="d-flex flex-column justify-content-between h-100">
+                                                <div class="content-wrapper">
+                                                    <!-- Profile Opions and Info -->
+                                                    <div class="post-space">
+                                                        <div class="content-options d-flex justify-content-between">
+                                                            <!-- profile Info -->
+                                                            <div class="profile-info">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="profile-img rounded-circle">
+                                                                        <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                                    </div>
+                                                                    <div class="profile-name">
+                                                                        <p>perfil.1</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Dropdown -->
+                                                            <div class="post-options d-flex align-items-center">
+                                                                <span>hace 6 horas</span>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        <i class="far fa-ellipsis-h"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                                                        <a class="dropdown-item danger-text" type="button" data-toggle="modal" data-target="#reportIt">Denunciar</a>
+                                                                        <a class="dropdown-item" href="#">Compartir</a>
+                                                                        <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                                                    </div>
+                                                                    <!-- Report Post Content -->
+                                                                    <div class="report-post-popup">
+                                                                        <div class="modal fade show" id="reportIt" tabindex="-1" aria-labelledby="reportIt" aria-modal="true">
+                                                                            <div class="modal-dialog">
+                                                                                <div class="modal-content border-0">
+                                                                                    <div class="multi-step-form">
+                                                                                        <!-- Form-container -->
+                                                                                        <div class="js-form-container">
+                                                                                            <div class="modal-header pb-4 justify-content-center">
+                                                                                                <h3>Denunciar</h3>
+                                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                    <span aria-hidden="true">×</span>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div class="modal-body p-0">
+                                                                                                <form>
+                                                                                                    <!-- Report Post reason -->
+                                                                                                    <div class="post-space post-border-top">
+                                                                                                        <div class="form-group mb-0">
+                                                                                                            <label for="reportOpt1" class="py-4">Porqué queres denunciar esta publicación?</label>
+                                                                                                            <input type="radio" class="form-control d-none" id="reportOpt1">
+                                                                                                            <textarea class="form-control" id="reportOpt1" rows="4"></textarea>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!-- Report Post reason -->
+                                                                                                    <div class="post-space post-border-top">
+                                                                                                        <div class="form-group mb-0">
+                                                                                                            <label for="reportOpt2" class="py-4">Desnudos o actividad sexual</label>
+                                                                                                            <input type="radio" class="form-control d-none" id="reportOpt2">
+                                                                                                            <textarea class="form-control" id="reportOpt2" rows="4"></textarea>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!-- Report Post reason -->
+                                                                                                    <div class="post-space post-border-top post-border-bottom">
+                                                                                                        <div class="form-group mb-0">
+                                                                                                            <label for="reportOpt3" class="danger-text py-4">Querés agregar un mensaje?</label>
+                                                                                                            <input type="radio" class="form-control d-none" id="reportOpt3">
+                                                                                                            <textarea class="form-control" id="reportOpt3" rows="4"></textarea>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="post-space mt-4 mb-4 pb-1">
+                                                                                                        <button type="button" class="form-next-msg btn blue-btn medium-btn mw-100">Enviar</button>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- Form Success Text -->
+                                                                                        <div class="success-msg text-center pt-4 pb-5">
+                                                                                            <div class="post-space">
+                                                                                                <img src="assets/images/like-thumb.png" alt="" />
+                                                                                                <h3 class="mt-3 mb-2">Gracias por informarnos</h3>
+                                                                                                <p class="mb-4">Tus comentarios son importantes para ayudarnos a conseguir que la comunidad siga siendo un lugar seguro.</p>
+                                                                                                <button type="button" class="close float-none blue-btn medium-btn m-auto mw-100" data-dismiss="modal" aria-label="Close">
+                                                                                                Cerrar
+                                                                                            </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Content Body -->
+                                                    <div class="content-body">
+                                                        <div class="post-content">
+                                                            <div class="post-space">
+                                                                <p>D mis mejores veranos. </p>
+                                                                <p> Que el próximo sea mejor</p>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <div class="post-likes">
+                                                                    <button type="button" class="btn">
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>253</span>
+                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom">
+                                                                <div class="action-btn">
+                                                                    <button type="button" class="blue-btn big-btn mt-3 mb-4 mw-100" data-toggle="modal" data-target="#givTip">
+                                                                        <span>
+                                                                            <img src="assets/images/coins.svg" alt="">
+                                                                        </span>
+                                                                        Dar Propina
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-wrapper">
+                                                    <div class="post-space post-border-top pb-4">
+                                                        <div class="post-likes d-flex justify-content-between">
+                                                            <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                            </button>
+                                                            <span style="font-size: 14px;">253 me gusta</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <h2 class="text-center my-4">Desbloquea este contenido</h2>
-                <!-- Remove From Favroite Popup -->
-                <div class="unlock-content">
-                    <!-- Content Header -->
-                    <div class="content-header d-flex justify-content-between">
-                        <!-- profile Info -->
-                        <div class="profile-info">
-                            <div class="d-flex align-items-center">
-                                <div class="profile-img rounded-circle">
-                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
-                                </div>
-                                <div class="profile-name">
-                                    <p>perfil.1</p>
-                                </div>
+                <!-- Post Popup -->
+                <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#unlockPost">
+                    Desbloquea este contenido
+                </button>
+                <!-- Modal -->
+                <div class="modal fade post-popup" id="unlockPost" tabindex="-1" aria-labelledby="unlockPost" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content border-0">
+                            <div class="modal-header border-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                             </div>
-                        </div>
-                        <!-- Dropdown -->
-                        <div class="post-options d-flex align-items-center">
-                            <span>hace 6 horas</span>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="post-popup-container">
+                                <div class="row no-gutters">
+                                    <div class="col-md-7">
+                                        <div class="ui-img-boxes large-img-box position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="unlock-content pt-4 h-100">
+                                            <div class="d-flex flex-column justify-content-between h-100">
+                                                <div class="content-wrapper">
+                                                    <!-- Content Header -->
+                                                    <div class="post-space">
+                                                        <div class="content-options d-flex justify-content-between">
+                                                            <!-- profile Info -->
+                                                            <div class="profile-info">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="profile-img rounded-circle">
+                                                                        <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                                    </div>
+                                                                    <div class="profile-name">
+                                                                        <p>perfil.1</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Dropdown -->
+                                                            <div class="post-options d-flex align-items-center">
+                                                                <span>hace 6 horas</span>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="far fa-ellipsis-h"></i>
                                 </button>
-                                <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
-                                    <a class="dropdown-item" href="#">Eliminar</a>
-                                    <a class="dropdown-item" href="#">Compartir</a>
-                                    <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                                                    <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                                                        <a class="dropdown-item danger-text" href="#">Eliminar</a>
+                                                                        <a class="dropdown-item" href="#">Compartir</a>
+                                                                        <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Content Body -->
+                                                    <div class="content-body">
+                                                        <div class="post-space">
+                                                            <div class="post-price">
+                                                                <h2>$300</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <div class="post-space">
+                                                                <p>Este es un post privado, continua con el pago para desbloquearlo.</p>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <div class="post-likes">
+                                                                    <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>253</span>
+                                                            </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <button type="button" class="blue-btn big-btn mt-3 mb-4" style="max-width: 100%;">
+                                                            <span>
+                                                                <svg width="12" height="16" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""/>
+                                                                </svg>
+                                                            </span>
+                                                            Desbloquea este contenido
+                                                        </button>
+                                                                <button type="button" class="unlock-all light-blue-btn big-btn" style="max-width: 100%;">
+                                                            <span>
+                                                                <svg width="12" height="16" viewBox="0 0 31 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""/>
+                                                                </svg>
+                                                            </span>
+                                                            Suscribite mensualmente a TODO el contenido por $2500
+                                                        </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-wrapper">
+                                                    <div class="post-space post-border-top pb-4">
+                                                        <div class="post-likes d-flex justify-content-between">
+                                                            <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                            </button>
+                                                            <span style="font-size: 14px;">253 me gusta</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Content Body -->
-                    <div class="content-body">
-                        <div class="post-price">
-                            <h2>$300</h2>
+                </div>
+                <h2 class="text-center my-4">Contenido desbloqueado</h2>
+                <!-- Post Popup -->
+                <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#unlockedPost">
+                    Contenido desbloqueado
+                </button>
+                <div class="modal fade post-popup" id="unlockedPost" tabindex="-1" aria-labelledby="unlocedkPost" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-transparent border-0">
+                            <div class="modal-header border-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="post-popup-container">
+                                <div class="row no-gutters">
+                                    <div class="col-md-7">
+                                        <div class="ui-img-boxes large-img-box position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="unlock-content is-unlock h-100">
+                                            <div class="d-flex flex-column justify-content-between h-100">
+                                                <div class="content-wrapper">
+                                                    <!-- Content Header -->
+                                                    <div class="unlock-content-header bg-brand">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <!-- Text -->
+                                                            <div class="unlock-header-text">
+                                                                <p><span>&#10003;</span> Contenido Desbloqueado por $300</p>
+                                                            </div>
+                                                            <!-- Download Button -->
+                                                            <div class="unlock-header-button">
+                                                                <button class="btn" type="button">
+                                                        <img src="assets/images/download-icon.svg" alt="">
+                                                        <span>Descargar</span>
+                                                    </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Profile Opions and Info -->
+                                                    <div class="post-space">
+                                                        <div class="content-options d-flex justify-content-between">
+                                                            <!-- profile Info -->
+                                                            <div class="profile-info">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="profile-img rounded-circle">
+                                                                        <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                                    </div>
+                                                                    <div class="profile-name">
+                                                                        <p>perfil.1</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Dropdown -->
+                                                            <div class="post-options d-flex align-items-center">
+                                                                <span>hace 6 horas</span>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-ellipsis-h"></i>
+                                                    </button>
+                                                                    <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                                                        <a class="dropdown-item danger-text" href="#">Eliminar</a>
+                                                                        <a class="dropdown-item" href="#">Compartir</a>
+                                                                        <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Content Body -->
+                                                    <div class="content-body">
+                                                        <div class="post-content">
+                                                            <div class="post-space">
+                                                                <p>D mis mejores veranos. </p>
+                                                                <p> Que el próximo sea mejor</p>
+                                                            </div>
+
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <div class="post-likes">
+                                                                    <button type="button" class="btn">
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>253</span>
+                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom">
+                                                                <div class="action-btn">
+                                                                    <button type="button" class="blue-btn big-btn mt-3 mb-4 mw-100" data-toggle="modal" data-target="#givTip">
+                                                                        <span>
+                                                                            <img src="assets/images/coins.svg" alt="">
+                                                                        </span>
+                                                                        Dar Propina
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-wrapper">
+                                                    <div class="post-space post-border-top pb-4">
+                                                        <div class="post-likes d-flex justify-content-between">
+                                                            <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                            </button>
+                                                            <span style="font-size: 14px;">253 me gusta</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="post-content">
-                            <p>Este es un post privado, continua con el pago para desbloquearlo.</p>
-                            <button type="button" class="blue-btn big-btn mt-3 mb-4" style="max-width: 100%;">
-                                <span>
-                                    <svg width="12" height="16" viewBox="0 0 31 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill="white"/>
-                                    </svg>
-                                </span>
-                                Desbloquea este contenido
-                            </button>
-                            <button type="button" class="light-blue-btn big-btn" style="max-width: 100%;">
-                                <span>
-                                    <svg width="12" height="16" viewBox="0 0 31 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill="white"/>
-                                    </svg>
-                                </span>
-                                Suscribite mensualmente a TODO el contenido por $2500
-                            </button>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Dar Propina</h2>
+                <!-- Give Tip POpup -->
+                <div class="give-tip">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#givTip">
+                        Dar propina
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="givTip" tabindex="-1" aria-labelledby="givTip" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0 pb-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- profile Info -->
+                                    <div class="profile-info text-center">
+                                        <div class="profile-img mx-auto mb-2 rounded-circle">
+                                            <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                        </div>
+                                        <div class="profile-name pt-1">
+                                            <h4>Ayelen Elias</h4>
+                                            <p>ayelen.elias</p>
+                                        </div>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="give-tip-content">
+                                        <div class="multi-step-form">
+                                            <!-- Tip Payment Form -->
+                                            <div class="tip-payment js-form-container">
+                                                <form>
+                                                    <div class="form-group my-4">
+                                                        <label for="tipPrice" class="text-center d-block">Ingresá el monto de la Propina</label>
+                                                        <input class="form-control" type="text" id="tipPrice" name="tipPrice" placeholder="$0.00" min="$100">
+                                                        <p class="mt-2 input-min">Minimo $100 Pesos</p>
+                                                    </div>
+                                                    <div class="form-group mb-4">
+                                                        <label for="tipMsg" class="text-center d-block">Escribile un mensaje</label>
+                                                        <textarea class="form-control" id="tipMsg" name="tipMsg" rows="6"></textarea>
+                                                    </div>
+                                                    <button type="button" class="form-next-msg btn blue-btn medium-btn d-block" style="max-width: 100%;">Pagar con Mercadopago</button>
+                                                    <button type="button" class="form-next-msg btn light-blue-btn medium-btn d-block mt-3" style="max-width: 100%;">Pagar con Paypal</button>
+                                                </form>
+                                            </div>
+                                            <!-- When Tip Successfully Paid -->
+                                            <div class="tip-success success-msg text-center mt-3">
+                                                <p class="checkmark">&#10003;</p>
+                                                <h2 class="text-base mt-3 mb-4">Le enviaste $575</h2>
+                                                <a href="#" class="btn blue-btn medium-btn">Volver al Perfil</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -968,6 +1474,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/global.js"></script>
 </body>
 
 </html>

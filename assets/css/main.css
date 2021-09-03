@@ -106,7 +106,7 @@ header {
 /* UI Login/Register Form Section */
 
 section.ui-form-section.login {
-    background: url(../images/ui-login-bg.png);
+    background: url(../images/ui-login-bg.png) no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -152,6 +152,7 @@ section.ui-form-section .ui-form-content {
     max-width: 571px;
     margin-left: auto;
     padding: 60px 56px;
+    position: relative;
 }
 
 .ui-form-content .form-col h2 {
@@ -230,6 +231,68 @@ section.ui-form-section .ui-form-content {
 
 .twitter {
     background: #1C9CEA;
+}
+
+
+/* Register Page */
+
+section.ui-form-section.register {
+    background: url(../images/register-bg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ui-form-content form .form-check {
+    max-width: 345px;
+}
+
+.ui-form-content form .form-check label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #8B8B8B;
+    letter-spacing: -0.01em;
+    position: relative;
+    padding-left: 12px;
+}
+
+.ui-form-content form .form-check input {
+    opacity: 0;
+}
+
+.ui-form-content form .form-check label::before {
+    content: '';
+    width: 19px;
+    height: 19px;
+    background: transparent;
+    border: 2px solid var(--ui-brand);
+    border-radius: 3px;
+    position: absolute;
+    left: -19px;
+    top: 5px;
+}
+
+.ui-form-content form .form-check label::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 14px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+.ui-form-content form .form-check input:checked+label::before {
+    background: var(--ui-brand);
+}
+
+section.ui-form-section.register .register-success p {
+    letter-spacing: -0.01em;
+}
+
+section.ui-form-section.register .register-success img {
+    max-width: 86px;
 }
 
 
@@ -453,20 +516,6 @@ section.profile-cover-img .cover-content-img {
     max-width: 155px;
 }
 
-
-/*
-.col-btn-content a {
-    max-width: 94px;
-}
-
-.col-btn-content a {
-    max-width: 108px;
-}
-
-.col-btn-content a {
-    max-width: 155px;
-}*/
-
 .profile-des-content .col-rate-btn {
     margin-top: 10px;
 }
@@ -551,6 +600,151 @@ section.feed-start-main {
 
 .suggestion-sec .suggestion-content-anc a {
     max-width: 200px;
+}
+
+
+/*profile-own-view */
+
+.profile-view-main .profile-view-content .profile-own-data img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.profile-view-main .profile-image-data .own-data-content p,
+.fan-follow-content .follow-tab-content .image-data-content p {
+    color: #8DA2AC;
+}
+
+.profile-view-main .profile-image-data a {
+    color: #E79166;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/*fan follow */
+
+.fan-follow-sec .fan-follow-content .ui-nav-tabs ul {
+    justify-content: start;
+}
+
+.fan-follow-content .follow-tab-content .image-data-content img {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+}
+
+.fan-follow-content .follow-tab-content .image-data-content {
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.fan-follow-content .follow-tab-content .fan-follow-anc {
+    border: 2px solid #365969;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 8px;
+    display: inline-block;
+    width: 100%;
+    max-width: 95px;
+}
+
+.fan-follow-content .follow-tab-content .fan-follow-anc a {
+    color: #365969;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/*payement method*/
+
+.payement-main .payement-content .payement-des h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.payement-content .payement-des .payement-des-content span img {
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+.payement-content .payement-des .payement-des-content span {
+    font-size: 15px;
+    color: #878787;
+    font-weight: 500;
+}
+
+.payement-content .payement-method-content .method-content-image img {
+    max-width: 200px;
+}
+
+.payement-content .payement-method-content .method-content-image1 img {
+    max-width: 144px;
+}
+
+.payement-content .payement-method-content {
+    min-height: 277px;
+    max-width: 595px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-main .summary-sec .summary-content-image img {
+    width: 56px;
+    height: 57px;
+    border-radius: 50%;
+}
+
+.summary-main .summary-sec h2 span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #365969;
+}
+
+.summary-main .summary-sec .summary-anc a {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #1877F2;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+
+/*medium*/
+
+.medium-dropdown .dropdown-content a {
+    color: #365969;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.medium-main .medium-sec .medium-query-content h3 {
+    font-weight: 600;
+    max-width: 900px;
+}
+
+.medium-main .medium-sec .medium-query-content p {
+    max-width: 815px;
+    font-weight: 400;
+}
+
+.medium-main .medium-sec .medium-query-content textarea {
+    max-width: 902px;
+    font-size: 14px;
+    color: #828282;
+    font-weight: 400;
+    background-color: #EAEAEA;
+}
+
+.medium-sec .medium-query-content .query-anc a {
+    max-width: 125px;
+    width: 100%;
+    display: inline-block;
 }
 
 
@@ -663,5 +857,8 @@ footer {
     .feed-start-main .col-md-5 {
         flex: 0 0 41.666667%;
         max-width: 35.666667%;
+    }
+    .medium-main .medium-sec .col-md-9 {
+        max-width: 73%;
     }
 }
