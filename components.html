@@ -157,7 +157,9 @@
                     <div class="col-md-4">
                         <div class="ui-img-boxes small-img-box border-20 position-relative">
                             <img src="assets/images/gradient.png" alt="Gradient Img">
-                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                            <button type="button" class="btn post-icon">
+                                <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
+                            </button>
                         </div>
                     </div>
                     <!-- Grey Box -->
@@ -165,7 +167,9 @@
                     <div class="col-md-4">
                         <div class="ui-img-boxes small-img-box border-20 position-relative">
                             <img src="assets/images/grey-box.jpg" alt="Grey Img">
-                            <img src="assets/images/plus-icon.svg" alt="Lock plus" class="lock">
+                            <button type="button" class="btn post-icon">
+                                <img src="assets/images/plus-icon.svg" alt="plus" class="icon plus">
+                            </button>
                         </div>
                     </div>
                     <!-- Large Box -->
@@ -173,7 +177,19 @@
                     <div class="col-md-7">
                         <div class="ui-img-boxes large-img-box position-relative">
                             <img src="assets/images/gradient.png" alt="Gradient Img">
-                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                            <button type="button" class="btn post-icon">
+                                <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Large Box -->
+                    <h2 class="text-center my-4">Large Gradient Box with PLay Icon</h2>
+                    <div class="col-md-7">
+                        <div class="ui-img-boxes large-img-box position-relative">
+                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                            <button type="button" class="btn post-icon">
+                                <img src="assets/images/play-icon.svg" alt="video-icon" class="icon play-icon">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1083,7 +1099,7 @@
                                                                                                     <div class="post-space post-border-top">
                                                                                                         <div class="form-group mb-0">
                                                                                                             <label for="reportOpt1" class="py-4">Porqué queres denunciar esta publicación?</label>
-                                                                                                            <input type="radio" class="form-control d-none" id="reportOpt1">
+                                                                                                            <input type="checkbox" class="form-control d-none" id="reportOpt1">
                                                                                                             <textarea class="form-control" id="reportOpt1" rows="4"></textarea>
                                                                                                         </div>
                                                                                                     </div>
@@ -1091,7 +1107,7 @@
                                                                                                     <div class="post-space post-border-top">
                                                                                                         <div class="form-group mb-0">
                                                                                                             <label for="reportOpt2" class="py-4">Desnudos o actividad sexual</label>
-                                                                                                            <input type="radio" class="form-control d-none" id="reportOpt2">
+                                                                                                            <input type="checkbox" class="form-control d-none" id="reportOpt2">
                                                                                                             <textarea class="form-control" id="reportOpt2" rows="4"></textarea>
                                                                                                         </div>
                                                                                                     </div>
@@ -1099,7 +1115,7 @@
                                                                                                     <div class="post-space post-border-top post-border-bottom">
                                                                                                         <div class="form-group mb-0">
                                                                                                             <label for="reportOpt3" class="danger-text py-4">Querés agregar un mensaje?</label>
-                                                                                                            <input type="radio" class="form-control d-none" id="reportOpt3">
+                                                                                                            <input type="checkbox" class="form-control d-none" id="reportOpt3">
                                                                                                             <textarea class="form-control" id="reportOpt3" rows="4"></textarea>
                                                                                                         </div>
                                                                                                     </div>
@@ -1194,7 +1210,7 @@
                                     <div class="col-md-7">
                                         <div class="ui-img-boxes large-img-box position-relative">
                                             <img src="assets/images/gradient.png" alt="Gradient Img">
-                                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                            <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
                                         </div>
                                     </div>
                                     <div class="col-md-5">
@@ -1307,7 +1323,7 @@
                                     <div class="col-md-7">
                                         <div class="ui-img-boxes large-img-box position-relative">
                                             <img src="assets/images/gradient.png" alt="Gradient Img">
-                                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                            <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
                                         </div>
                                     </div>
                                     <div class="col-md-5">
@@ -1407,6 +1423,365 @@
                         </div>
                     </div>
                 </div>
+                <h2 class="text-center my-4">POST ABIERTO PAGO</h2>
+                <!-- Post Popup -->
+                <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#postOpenPay">
+                    POST ABIERTO PAGO
+                </button>
+                <!-- Modal -->
+                <div class="modal fade post-popup" id="postOpenPay" tabindex="-1" aria-labelledby="postOpenPay" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content border-0">
+                            <div class="modal-header border-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="post-popup-container">
+                                <div class="row no-gutters">
+                                    <div class="col-md-7">
+                                        <div class="ui-img-boxes large-img-box position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="unlock-content pt-4 h-100">
+                                            <div class="d-flex flex-column justify-content-between h-100">
+                                                <div class="content-wrapper">
+                                                    <!-- Content Header -->
+                                                    <div class="post-space">
+                                                        <div class="content-options d-flex justify-content-between">
+                                                            <!-- profile Info -->
+                                                            <div class="profile-info">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="profile-img rounded-circle">
+                                                                        <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                                    </div>
+                                                                    <div class="profile-name">
+                                                                        <p>perfil.1</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Dropdown -->
+                                                            <div class="post-options d-flex align-items-center">
+                                                                <span>hace 6 horas</span>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-ellipsis-h"></i>
+                                </button>
+                                                                    <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                                                        <a class="dropdown-item danger-text" href="#">Eliminar</a>
+                                                                        <a class="dropdown-item" href="#">Compartir</a>
+                                                                        <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Content Body -->
+                                                    <div class="content-body">
+                                                        <!-- pack-includes -->
+                                                        <div class="post-space post-border-top post-border-bottom mt-3 pt-2 pb-3">
+                                                            <div class="pack-includes">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="col-5 px-0">
+                                                                        <h4>Este pack incluye </h4>
+                                                                    </div>
+                                                                    <div class="col-7 px-0">
+                                                                        <div class="includes-count d-flex justify-content-end">
+                                                                            <div class="col-4 px-0 mr-3">
+                                                                                <img src="assets/images/video-icon.svg" alt="">
+                                                                                <span>6 Videos</span>
+                                                                            </div>
+                                                                            <div class="col-4 px-0">
+                                                                                <img src="assets/images/img-icon.svg" alt="">
+                                                                                <span>26 Fotos</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Post Price -->
+                                                        <div class="post-space">
+                                                            <div class="post-price">
+                                                                <h2>$300</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <div class="post-space">
+                                                                <p>Este es un post privado, continua con el pago para desbloquearlo.</p>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <div class="post-likes">
+                                                                    <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>253</span>
+                                                            </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <button type="button" class="blue-btn big-btn mt-3 mb-4" style="max-width: 100%;">
+                                                            <span>
+                                                                <svg width="12" height="16" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""/>
+                                                                </svg>
+                                                            </span>
+                                                            Desbloquea este contenido
+                                                        </button>
+                                                                <button type="button" class="unlock-all light-blue-btn big-btn" style="max-width: 100%;">
+                                                            <span>
+                                                                <svg width="12" height="16" viewBox="0 0 31 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""/>
+                                                                </svg>
+                                                            </span>
+                                                            Suscribite mensualmente a TODO el contenido por $2500
+                                                        </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-wrapper">
+                                                    <div class="post-space post-border-top pb-4">
+                                                        <div class="post-likes d-flex justify-content-between">
+                                                            <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                            </button>
+                                                            <span style="font-size: 14px;">253 me gusta</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4"> POST ABIERTO PAGO EN PACK</h2>
+                <!-- Post Popup -->
+                <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#postpayinpack">
+                    POST ABIERTO PAGO EN PACK
+                </button>
+                <div class="modal fade post-popup" id="postpayinpack" tabindex="-1" aria-labelledby="postpayinpack" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-transparent border-0">
+                            <div class="modal-header border-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="post-popup-container">
+                                <div class="row no-gutters">
+                                    <div class="col-md-7">
+                                        <div id="postPopupSlider" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#postPopupSlider" data-slide-to="0" class="active"></li>
+                                                <li data-target="#postPopupSlider" data-slide-to="1"></li>
+                                                <li data-target="#postPopupSlider" data-slide-to="2"></li>
+                                                <li data-target="#postPopupSlider" data-slide-to="3"></li>
+                                                <li data-target="#postPopupSlider" data-slide-to="4"></li>
+                                                <li data-target="#postPopupSlider" data-slide-to="5"></li>
+                                                <li data-target="#postPopupSlider" data-slide-to="6"></li>
+                                                <li data-target="#postPopupSlider" data-slide-to="7"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="Lock" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="Lock" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="Lock" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="Lock" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="Lock" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="Lock" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="Lock" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="ui-img-boxes large-img-box position-relative">
+                                                        <img src="assets/images/gradient.png" alt="Gradient Img">
+                                                        <button type="button" class="post-icon btn">
+                                                            <img src="assets/images/play-icon.svg" alt="video-icon" class="icon play-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#postPopupSlider" role="button" data-slide="prev">
+                                                <span class="carousel-icon"><i class="fas fa-chevron-left"></i></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#postPopupSlider" role="button" data-slide="next">
+                                                <span class="carousel-icon"><i class="fas fa-chevron-right"></i></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="unlock-content is-unlock h-100">
+                                            <div class="d-flex flex-column justify-content-between h-100">
+                                                <div class="content-wrapper">
+                                                    <!-- Content Header -->
+                                                    <div class="unlock-content-header bg-brand">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <!-- Text -->
+                                                            <div class="unlock-header-text">
+                                                                <p><span>&#10003;</span> Contenido Desbloqueado por $300</p>
+                                                            </div>
+                                                            <!-- Download Button -->
+                                                            <div class="unlock-header-button">
+                                                                <button class="btn" type="button">
+                                                        <img src="assets/images/download-icon.svg" alt="">
+                                                        <span>Descargar</span>
+                                                    </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Profile Opions and Info -->
+                                                    <div class="post-space">
+                                                        <div class="content-options d-flex justify-content-between">
+                                                            <!-- profile Info -->
+                                                            <div class="profile-info">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="profile-img rounded-circle">
+                                                                        <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                                                    </div>
+                                                                    <div class="profile-name">
+                                                                        <p>perfil.1</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Dropdown -->
+                                                            <div class="post-options d-flex align-items-center">
+                                                                <span>hace 6 horas</span>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-ellipsis-h"></i>
+                                                    </button>
+                                                                    <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                                                        <a class="dropdown-item danger-text" href="#">Eliminar</a>
+                                                                        <a class="dropdown-item" href="#">Compartir</a>
+                                                                        <a class="dropdown-item" href="#">Copiar Enlace</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Content Body -->
+                                                    <div class="content-body">
+                                                        <div class="post-content">
+                                                            <!-- pack-includes -->
+                                                            <div class="post-space post-border-top post-border-bottom mb-3 pt-2 pb-3">
+                                                                <div class="pack-includes">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <div class="col-5 px-0">
+                                                                            <h4>Este pack incluye </h4>
+                                                                        </div>
+                                                                        <div class="col-7 px-0">
+                                                                            <div class="includes-count d-flex justify-content-end">
+                                                                                <div class="col-4 px-0 mr-3">
+                                                                                    <img src="assets/images/video-icon.svg" alt="">
+                                                                                    <span>6 Videos</span>
+                                                                                </div>
+                                                                                <div class="col-4 px-0">
+                                                                                    <img src="assets/images/img-icon.svg" alt="">
+                                                                                    <span>26 Fotos</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-space">
+                                                                <p>D mis mejores veranos. </p>
+                                                                <p> Que el próximo sea mejor</p>
+                                                            </div>
+
+                                                            <div class="post-space post-border-bottom pb-4">
+                                                                <div class="post-likes">
+                                                                    <button type="button" class="btn">
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>253</span>
+                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-space post-border-bottom">
+                                                                <div class="action-btn">
+                                                                    <button type="button" class="blue-btn big-btn mt-3 mb-4 mw-100" data-toggle="modal" data-target="#givTip">
+                                                                        <span>
+                                                                            <img src="assets/images/coins.svg" alt="">
+                                                                        </span>
+                                                                        Dar Propina
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-wrapper">
+                                                    <div class="post-space post-border-top pb-4">
+                                                        <div class="post-likes d-flex justify-content-between">
+                                                            <button type="button" class="btn">
+                                                                <i class="fas fa-heart"></i>
+                                                            </button>
+                                                            <span style="font-size: 14px;">253 me gusta</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h2 class="text-center my-4">Dar Propina</h2>
                 <!-- Give Tip POpup -->
                 <div class="give-tip">
@@ -1460,6 +1835,139 @@
                                                 <a href="#" class="btn blue-btn medium-btn">Volver al Perfil</a>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">VALIDACION POR DNI</h2>
+                <!-- Give Tip POpup -->
+                <div class="id-verify">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#verifyDni">
+                        VALIDACION POR DNI
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal verify-dni fade" id="verifyDni" tabindex="-1" aria-labelledby="verifyDni" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0 pb-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- Content -->
+                                <div class="modal-body text-center">
+                                    <h2>Validá tu identidad para empezar a crear contenido pago!</h2>
+                                    <p>Si qerés empezar a recibir dinero de tus fans tenes que verificar tu identidad para publicar tu contenido, no es necesario si solo vas a usar tu cuenta para comprar. Recordá que tenes que ser <b>mayor de 18 años.</b></p>
+                                    <p>Tu documento va a ser encriptado y no va a ser compartido con otros miembros como esta explicado en nuestras
+                                        <a href="#">politicas de privacidad</a></p>
+                                    <!-- DNI Form -->
+                                    <div class="form-dni px-3">
+                                        <form>
+                                            <div class="row justify-content-between">
+                                                <!-- Column 1 -->
+                                                <div class="col-md-4">
+                                                    <div class="dni-form-field">
+                                                        <label for="dniUploaderFront" class="d-flex justify-content-center align-items-center flex-column position-relative">
+                                                            <img src="assets/images/id-icon.svg" class="icon" alt="">
+                                                            <p>Subir foto del DNI (ADELANTE)</p>
+                                                            <button type="button" class="btn blue-btn medium-btn">Cargar
+                                                                <input type='file' id="dniUploaderFront" class="dni-uploader" accept=".png, .jpg, .jpeg" />
+                                                            </button>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 2 -->
+                                                <div class="col-md-4">
+                                                    <div class="dni-form-field">
+                                                        <label for="dniUploaderBack" class="d-flex justify-content-center align-items-center flex-column position-relative">
+                                                            <img src="assets/images/id-icon.svg" class="icon" alt="">
+                                                            <p>Subir foto del DNI (ATRÁS)</p>
+                                                            <button type="button" class="btn blue-btn medium-btn">Cargar
+                                                                <input type='file' id="dniUploaderBack" class="dni-uploader" accept=".png, .jpg, .jpeg" />
+                                                            </button>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 3 -->
+                                                <div class="col-md-4">
+                                                    <div class="dni-form-field">
+                                                        <label for="dniSelfie" class="d-flex justify-content-end align-items-center flex-column position-relative">
+                                                            <p>Subir una Selfie tuya!</p>
+                                                            <button type="button" class="btn blue-btn medium-btn">Cargar
+                                                                <input type='file' id="dniSelfie" class="dni-uploader" accept=".png, .jpg, .jpeg" />
+                                                            </button>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn blue-btn big-btn btn-disable mt-4" disabled>Continuar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">VALIDACION POR DNI con foto</h2>
+                <!-- Give Tip POpup -->
+                <div class="id-verify is-preview">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#dniPreview">
+                        VALIDACION POR DNI con foto
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal verify-dni fade" id="dniPreview" tabindex="-1" aria-labelledby="dniPreview" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0 pb-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- Content -->
+                                <div class="modal-body">
+                                    <h2>Ayelen Perez</h2>
+                                    <p>@aye.perez10</p>
+                                    <p>ayelenperez@gmail.com</p>
+                                    <p>+54 3415484874</p>
+                                    <!-- DNI Form -->
+                                    <div class="form-dni px-3">
+                                        <form>
+                                            <div class="row justify-content-between">
+                                                <!-- Column 1 -->
+                                                <div class="col-md-4">
+                                                    <div class="dni-form-field">
+                                                        <h4>Foto DNI frente</h4>
+                                                        <img src="assets/images/id-front.jpg" alt="">
+                                                        <p>dnipartedeadelante.jpg</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 2 -->
+                                                <div class="col-md-4">
+                                                    <div class="dni-form-field">
+                                                        <h4>Foto DNI atrás</h4>
+                                                        <img src="assets/images/id-back.png" alt="">
+                                                        <p>dnipartedeatras.jpg</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Column 3 -->
+                                                <div class="col-md-4">
+                                                    <div class="dni-form-field">
+                                                        <h4>Selfie</h4>
+                                                        <img src="assets/images/selfie.png" alt="">
+                                                        <p>selfie.png</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <textarea name="" class="form-control mt-4" id="" rows="7" placeholder="Escribir mensaje aca"></textarea>
+                                            <div class="d-flex justify-content-center">
+                                                <button type="submit" class="btn success-bg white-text big-btn mt-4 mr-2">Aceptar</button>
+                                                <button type="button" class="btn danger-bg white-text big-btn mt-4 ml-2">Rechazar</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

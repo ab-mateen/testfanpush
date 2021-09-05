@@ -186,8 +186,8 @@
 .btn-disable,
 .btn-disable:hover,
 .btn-disable:focus {
-    color: var(--white);
-    background: var(--ui-disabled);
+    color: var(--white) !important;
+    background: var(--ui-disabled) !important;
 }
 
 
@@ -389,26 +389,44 @@ input.white-input::placeholder {
 //////////////////////
 Small Box */
 
-.small-img-box img:not(img.lock) {
+.small-img-box img:not(img.lock),
+.small-img-box video {
     max-height: 330px;
     border-radius: 20px;
 }
 
-.ui-img-boxes img.lock {
+.ui-img-boxes .post-icon {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    width: fit-content;
+    height: fit-content;
     margin: auto;
+}
+
+
+/* .ui-img-boxes .post-icon img {
+    border-radius: 50%;
+} */
+
+.ui-img-boxes img.lock,
+.ui-img-boxes img.plus {
     width: 30px;
     height: 40px;
+}
+
+.ui-img-boxes img.play-icon {
+    width: 50px;
+    height: 50px;
 }
 
 
 /* Large Img Box */
 
-.large-img-box img:not(.img.lock) {
+.large-img-box img:not(img.lock),
+.large-img-box video {
     max-height: 874px;
 }
 
@@ -1312,6 +1330,10 @@ Small Box */
 
 /* Give Tip Popup */
 
+.give-tip .modal {
+    z-index: 1060;
+}
+
 .give-tip .modal-dialog {
     max-width: 463px;
 }
@@ -1389,4 +1411,168 @@ Small Box */
 
 .give-tip .tip-success a {
     max-width: 178px;
+}
+
+
+/* Post Open Payment */
+
+.post-popup .pack-includes h4 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ui-base-text);
+}
+
+.pack-includes .includes-count img {
+    max-width: 20px;
+    margin-right: 8px;
+}
+
+.pack-includes .includes-count span {
+    letter-spacing: -0.01em;
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--ui-base-text);
+}
+
+.post-popup .post-content p {
+    letter-spacing: -0.01em;
+}
+
+#postPopupSlider .carousel-control-next,
+#postPopupSlider .carousel-control-prev {
+    opacity: 1;
+}
+
+#postPopupSlider .carousel-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #5C5C5C;
+}
+
+#postPopupSlider .carousel-indicators li {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+}
+
+
+/* DNI Verification Popup */
+
+.id-verify .modal-dialog {
+    max-width: 1112px;
+}
+
+.id-verify .modal-dialog .modal-content {
+    border-radius: 10px;
+}
+
+.id-verify .modal-dialog .modal-body {
+    max-width: 945px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.id-verify .modal-body h2 {
+    letter-spacing: -0.01em;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--ui-base-text);
+    max-width: 605px;
+    margin: 0 auto 15px;
+}
+
+.id-verify .modal-body p {
+    letter-spacing: -0.01em;
+}
+
+.id-verify .modal-body p a {
+    color: #1C78A1;
+}
+
+.id-verify .modal-body p+p {
+    max-width: 574px;
+    margin: 30px auto;
+}
+
+.id-verify .form-dni .col-md-4 {
+    padding: 0 10px;
+}
+
+.id-verify .form-dni .dni-form-field {
+    height: 100%;
+}
+
+.form-dni .dni-form-field label {
+    height: 100%;
+    border: 2px dashed #A9A9A9;
+    padding: 20px 10px 30px;
+    margin: 0;
+}
+
+.form-dni .dni-form-field img.icon {
+    max-width: 54px;
+}
+
+.form-dni .dni-form-field p {
+    max-width: 128px;
+    margin: 10px auto;
+}
+
+.form-dni .dni-form-field button {
+    position: relative;
+}
+
+.form-dni .dni-form-field input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/* DNI Popup With preview */
+
+.id-verify.is-preview .modal-body h2 {
+    font-size: 25px;
+    margin: 0 0 11px;
+}
+
+.id-verify.is-preview .modal-body p,
+.id-verify.is-preview .modal-body p+p {
+    max-width: 100%;
+    margin: unset;
+    color: #899AA2;
+    font-weight: normal;
+}
+
+.id-verify.is-preview .form-dni {
+    margin-top: 28px;
+}
+
+.id-verify.is-preview .form-dni h4 {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--ui-base-text);
+}
+
+.id-verify.is-preview .form-dni img {
+    margin: 10px 0;
+}
+
+.id-verify.is-preview .form-dni textarea {
+    background: #EAEAEA;
+    border-radius: 5px;
+    color: #828282;
+    letter-spacing: -0.01em;
+    font-size: 14px;
+    border: none;
+    padding: 20px 30px;
 }
