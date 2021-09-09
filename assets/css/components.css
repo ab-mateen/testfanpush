@@ -248,7 +248,7 @@
 
 /* Input Fields */
 
-input.grey-input {
+.grey-input {
     background: #EAEAEA;
     height: 50px;
     font-weight: 700;
@@ -258,14 +258,14 @@ input.grey-input {
     border: none;
 }
 
-input.white-input {
+.white-input {
     border: none;
     background: #FFFFFF;
     color: var(--ui-base-text);
     padding-left: 20px;
 }
 
-input.white-input::placeholder {
+.white-input::placeholder {
     color: var(--ui-base-text);
 }
 
@@ -561,12 +561,13 @@ Small Box */
     color: var(--ui-base-text);
 }
 
-.notification-drop .dropdown-item {
+.notification-drop a {
     padding: 6px 32px 1px;
     margin-top: 11px;
+    display: block;
 }
 
-.dropdown-item .notification-wrapper .notification-img {
+.notification-drop .notification-wrapper .notification-img {
     width: 70px;
 }
 
@@ -579,11 +580,11 @@ Small Box */
     margin-left: -20px;
 }
 
-.dropdown-item .notification-wrapper .notifictaion-content {
+.notification-drop .notification-wrapper .notifictaion-content {
     width: 85.3%;
 }
 
-.dropdown-item .notification-wrapper .notifictaion-content p {
+.notification-drop .notification-wrapper .notifictaion-content p {
     overflow: hidden;
     word-wrap: break-word;
     display: -webkit-box;
@@ -593,7 +594,7 @@ Small Box */
     text-overflow: ellipsis;
 }
 
-.dropdown-item .notification-wrapper .notifictaion-content span.noti-time {
+.notification-drop .notification-wrapper .notifictaion-content span.noti-time {
     color: #A3A3A3;
     font-weight: 600;
     font-size: 13px;
@@ -603,7 +604,7 @@ Small Box */
     padding: 6px 23px;
 }
 
-.notification-drop .dropdown-item.blue-btn {
+.notification-drop a.blue-btn {
     margin: 18px auto 0;
     width: 89%;
     padding: 8px;

@@ -92,12 +92,18 @@
                     <!-- Success Alert -->
                     <div class="alert alert-info alert-dismissible fade show small-border">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <p><span><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span> Las transacciones pueden tardar entre 3 y 5 dias hábiles.</p>
+                        <p class="d-flex align-items-center">
+                            <span class="mr-3"><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span>
+                            <span>Las transacciones pueden tardar entre 3 y 5 dias hábiles.</span>
+                        </p>
                     </div>
                     <h2 class="text-center mb-4">Warning Alert</h2>
                     <!-- warning Alert -->
                     <div class="alert alert-warning small-border">
-                        <p><span><img src="assets/images/alert-warning-icon.svg" alt="Info Icon"></span> Esto va a eliminar tu cuenta de forma permanente.</p>
+                        <p class="d-flex align-items-center">
+                            <span class="mr-3"><img src="assets/images/alert-warning-icon.svg" alt="Info Icon"></span>
+                            <span>Esto va a eliminar tu cuenta de forma permanente.</span>
+                        </p>
                     </div>
                 </div>
                 <div class="mt-5"></div>
@@ -406,7 +412,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="dropdown-item blue-btn text-center small-border">
+                    <a href="notifications.html" class="dropdown-item blue-btn text-center small-border">
                         Ver todas las notificaciones
                     </a>
                 </div>
@@ -458,7 +464,7 @@
                             <!-- Choose Method -->
                             <div class="choose-method">
                                 <!-- Mercado Mehtod -->
-                                <div class="form-check mb-3 pl-0">
+                                <div class="method-check mb-3 pl-0">
                                     <label class="form-check-label d-flex justify-content-between align-items-center">
                                         <div class="method-logo">
                                             <input type="radio" class="form-check-input" name="optradio">
@@ -1120,13 +1126,13 @@
                                                                                                         </div>
                                                                                                     </div>
                                                                                                     <div class="post-space mt-4 mb-4 pb-1">
-                                                                                                        <button type="button" class="form-next-msg btn blue-btn medium-btn mw-100">Enviar</button>
+                                                                                                        <button type="button" class="js-form-next btn blue-btn medium-btn mw-100" data-target="SuccessReportMsg">Enviar</button>
                                                                                                     </div>
                                                                                                 </form>
                                                                                             </div>
                                                                                         </div>
                                                                                         <!-- Form Success Text -->
-                                                                                        <div class="success-msg text-center pt-4 pb-5">
+                                                                                        <div class="success-msg text-center pt-4 pb-5" id="SuccessReportMsg">
                                                                                             <div class="post-space">
                                                                                                 <img src="assets/images/like-thumb.png" alt="" />
                                                                                                 <h3 class="mt-3 mb-2">Gracias por informarnos</h3>
@@ -1210,7 +1216,9 @@
                                     <div class="col-md-7">
                                         <div class="ui-img-boxes large-img-box position-relative">
                                             <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <button type="button" class="btn post-icon">
                                             <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-md-5">
@@ -1323,7 +1331,9 @@
                                     <div class="col-md-7">
                                         <div class="ui-img-boxes large-img-box position-relative">
                                             <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <button type="button" class="btn post-icon">
                                             <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-md-5">
@@ -1442,7 +1452,9 @@
                                     <div class="col-md-7">
                                         <div class="ui-img-boxes large-img-box position-relative">
                                             <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <button type="button" class="btn post-icon">
                                             <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-md-5">
@@ -1824,12 +1836,12 @@
                                                         <label for="tipMsg" class="text-center d-block">Escribile un mensaje</label>
                                                         <textarea class="form-control" id="tipMsg" name="tipMsg" rows="6"></textarea>
                                                     </div>
-                                                    <button type="button" class="form-next-msg btn blue-btn medium-btn d-block" style="max-width: 100%;">Pagar con Mercadopago</button>
-                                                    <button type="button" class="form-next-msg btn light-blue-btn medium-btn d-block mt-3" style="max-width: 100%;">Pagar con Paypal</button>
+                                                    <button type="button" class="js-form-next btn blue-btn medium-btn d-block" data-target="tipSucessMsg" style="max-width: 100%;">Pagar con Mercadopago</button>
+                                                    <button type="button" class="js-form-next btn light-blue-btn medium-btn d-block mt-3" data-target="tipSucessMsg" style="max-width: 100%;">Pagar con Paypal</button>
                                                 </form>
                                             </div>
                                             <!-- When Tip Successfully Paid -->
-                                            <div class="tip-success success-msg text-center mt-3">
+                                            <div class="tip-success success-msg text-center mt-3" id="tipSucessMsg">
                                                 <p class="checkmark">&#10003;</p>
                                                 <h2 class="text-base mt-3 mb-4">Le enviaste $575</h2>
                                                 <a href="#" class="btn blue-btn medium-btn">Volver al Perfil</a>

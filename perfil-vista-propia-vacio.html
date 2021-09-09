@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Profile Propia</title>
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header>
+        <section class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <nav class="navbar navbar-expand-md justify-content-between pr-0">
+                        <!-- Nav Search Bar & logo Container -->
+                        <div class="nav-searchbar d-flex">
+                            <!-- Brand -->
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="Brand Logo"></a>
+                            <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="Buscar Persona">
+                                <div class="input-group-append">
+                                    <span class="input-group-text p-0">
+                                        <button class="btn" type="submit"><i class="far fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Nav User Right Area -->
+                        <div class="nav-user d-flex">
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html"><img src="assets/images/home.svg" alt="Home Icon"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/globe.svg" alt="World Globe"></a>
+                                    </li>
+                                    <li class="nav-item dropdown notification">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                                            <img src="assets/images/bell.svg" alt="Notification Bell">
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Link 1</a>
+                                            <a class="dropdown-item" href="#">Link 2</a>
+                                            <a class="dropdown-item" href="#">Link 3</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="user-area d-flex justify-content-between">
+                                <!-- User Img Uploader -->
+                                <div class="img-uploader">
+                                    <label for="navUploader" class="position-relative">
+                                        <span><img src="assets/images/cloud-upload.svg" alt="Cloud Upload"> Subir fotos</span>
+                                        <input type="file" name="nav-photo-upload" id="navUploader">
+                                    </label>
+                                </div>
+                                <!-- User Dropdown -->
+                                <div class="user-drop dropdown">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                        <span>
+                                        <img src="assets/images/profile-img.png" alt="User Profile Image">
+                                        Ayelen Elias
+                                        </span>
+                                        <span>
+                                            Ganancias: $10.532
+                                        </span>
+                                    </button>
+                                    <div class="dropdown-menu p-0 " style="width: 300px;">
+                                        <div class="dropdown-component">
+                                            <div class="drop-header p-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="person-name">
+                                                        <h2>Ayelen Elias</h2>
+                                                        <p>ayelen.elias</p>
+                                                    </div>
+                                                    <div class="fans-count">
+                                                        125 Fans
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="drop-options user">
+                                                <p>Opciones de Usuario</p>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/profile-icon.svg" alt=""> Perfil</a>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/settings-icon.svg" alt=""> Configuración</a>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/cart-icon.svg" alt=""> Compras y suscripciones</a>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/star.svg" alt=""> Favoritos</a>
+                                            </div>
+                                            <div class="drop-options author">
+                                                <p>Opciones de Autor</p>
+                                                <a class="dropdown-item" href="#"><img src="assets/images/wallet-icon.svg" alt=""> Ganancias y pagos</a>
+                                            </div>
+                                            <a class="dropdown-item support" href="#"><img src="assets/images/support-icon.svg" alt=""> Soporte</a>
+                                            <a class="dropdown-item pt-3" href="#"><img src="assets/images/logout-icon.svg" alt=""> Salir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- profile Self View -->
+    <section class="profile-self-view is-empty">
+        <div class="container-fluid">
+            <div class="main-row row justify-content-between no-gutters">
+                <!-- Sidebar Links Column -->
+                <div class="col-md-5">
+                    <!-- Sidebar -->
+                    <div class="profile-sidebar h-100">
+                        <div class="d-flex justify-content-between h-100">
+                            <!-- Sidebar Column 1 -->
+                            <div class="sidebar-col-static">
+                                <h2>Configuración</h2>
+                                <div class="dropdown-component w-100">
+                                    <div class="drop-options user">
+                                        <p>Opciones de Usuario</p>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/profile-icon.svg" alt=""> Perfil</a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/settings-icon.svg" alt=""> Configuración</a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/cart-icon.svg" alt=""> Compras y suscripciones</a>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/star.svg" alt=""> Favoritos</a>
+                                    </div>
+                                    <div class="drop-options author">
+                                        <p>Opciones de Autor</p>
+                                        <a class="dropdown-item" href="#"><img src="assets/images/wallet-icon.svg" alt=""> Ganancias y pagos</a>
+                                    </div>
+                                    <a class="dropdown-item support" href="#"><img src="assets/images/support-icon.svg" alt=""> Soporte</a>
+                                    <a class="dropdown-item pt-3" href="#"><img src="assets/images/logout-icon.svg" alt=""> Salir</a>
+                                </div>
+                            </div>
+                            <!-- Sidebar Column 2 -->
+                            <div class="sidebar-col-tab">
+                                <h2>Editar Perfil</h2>
+                                <nav>
+                                    <div class="nav nav-tabs border-0 flex-column" id="nav-tab" role="tablist">
+                                        <a class="nav-link active" id="nav-tabPerfil" data-toggle="tab" href="#tabPerfil" role="tab" aria-controls="tabPerfil" aria-selected="true">Perfil</a>
+                                        <a class="nav-link" id="nav-tabCuenta" data-toggle="tab" href="#tabCuenta" role="tab" aria-controls="tabCuenta" aria-selected="false">Cuenta</a>
+                                        <a class="nav-link" id="nav-tabSuscripcion" data-toggle="tab" href="#tabSuscripcion" role="tab" aria-controls="tabSuscripcion" aria-selected="false">Precio de Suscripción</a>
+                                        <a class="nav-link" id="nav-tabBancarios" data-toggle="tab" href="#tabBancarios" role="tab" aria-controls="tabBancarios" aria-selected="false">Datos Bancarios</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profile Column -->
+                <div class="col-md-7">
+                    <div class="tab-content" id="profile-tabContent">
+                        <!-- Perfil Tab Content -->
+                        <div class="tab-pane fade show active" id="tabPerfil" role="tabpanel" aria-labelledby="nav-tabPerfil">
+                            <div class="main-self-profile">
+                                <form>
+                                    <!-- Cover Photo Show hide button -->
+                                    <div class="show-profile-cover">
+                                        <label class="d-flex justify-content-between align-items-center">
+                                        Mostrar foto de portada en mi perfil
+                                        <div class="btn-toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <!-- Profile Cover Photo -->
+                                    <div class="profile-cover position-relative">
+                                        <img src="assets/images/profile-self-cover.jpg" alt="">
+                                        <div class="profile-img-tool">
+                                            <button class="btn rounded-circle blue-btn">
+                                                <img src="assets/images/camera-icon.png" alt="">
+                                            </button>
+                                            <button class="btn rounded-circle blue-btn">
+                                                &times;
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- profile img -->
+                                    <div class="profile-img position-relative rounded-circle">
+                                        <img src="assets/images/profile-blank-img.png" alt="" class="rounded-circle">
+                                        <div class="profile-img-tool">
+                                            <button class="btn rounded-circle blue-btn">
+                                                <img src="assets/images/camera-icon.png" alt="">
+                                            </button>
+                                            <button class="btn rounded-circle blue-btn">
+                                                &times;
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- username Filed -->
+                                    <div class="profile-field-username">
+                                        <div class="form-group mb-0">
+                                            <label for="profileUserName">Nombre de usuario</label>
+                                            <div class="input-checkemark position-relative">
+                                                <input type="text" id="profileUserName" class="form-control small-border white-input" placeholder="@manuelvega1">
+                                            </div>
+                                            <p class="form-text">http://www.fanpush.com/manuelvega1</p>
+                                        </div>
+                                    </div>
+                                    <!-- Display Name Filed -->
+                                    <div class="profile-field-name">
+                                        <div class="form-group mb-0">
+                                            <label for="profileDisplayName">Nombre de usuario</label>
+                                            <input type="text" id="profileDisplayName" class="form-control small-border white-input" placeholder="Bebu de la Vega">
+                                        </div>
+                                    </div>
+                                    <!-- Profile Bio Filed -->
+                                    <div class="profile-field-bio">
+                                        <div class="form-group mb-0">
+                                            <label for="profileBio">Bio</label>
+                                            <textarea name="" id="profileBio" class="form-control small-border pt-3 white-input" placeholder="Contenido Variado" rows="6"></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Cover Photo Show hide button -->
+                                    <div class="show-profile-achv">
+                                        <h5>Mostrar Informacion y Logros</h5>
+                                        <label class="d-flex justify-content-between align-items-center">
+                                            FANS
+                                            <div class="btn-toggle-switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider"></span>
+                                            </div>
+                                        </label>
+                                        <label class="d-flex justify-content-between align-items-center">
+                                            Ingresos
+                                            <div class="btn-toggle-switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider"></span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- Profile Details SUbmit Button -->
+                                    <div class="profile-main-submit">
+                                        <button type="submit" class="btn blue-btn medium-btn">Guardar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Cuenta tab Content -->
+                        <div class="tab-pane fade" id="tabCuenta" role="tabpanel" aria-labelledby="nav-tabCuenta">
+                            <div class="main-self-profile">
+                                <!-- Multi Step for click on button jump to another content without changing Tab -->
+                                <div class="multi-step-form">
+                                    <form>
+                                        <div class="js-form-container">
+                                            <!-- username Filed -->
+                                            <div class="profile-field-username">
+                                                <div class="form-group mb-0">
+                                                    <label for="profileUserName1">Nombre de usuario</label>
+                                                    <div class="input-checkemark position-relative">
+                                                        <input type="text" id="profileUserName1" class="form-control small-border white-input" placeholder="@manuelvega1">
+                                                    </div>
+                                                    <p class="form-text">http://www.fanpush.com/manuelvega1</p>
+                                                </div>
+                                            </div>
+                                            <!-- Email Filed -->
+                                            <div class="profile-field-email">
+                                                <div class="form-group mb-0">
+                                                    <label for="profileEmail">Correo electrónico</label>
+                                                    <input type="email" id="profileEmail" class="form-control small-border white-input" placeholder="jmanueldlavega@gmail.com">
+                                                </div>
+                                            </div>
+                                            <!-- Telephone Filed -->
+                                            <div class="profile-field-phone position-relative">
+                                                <div class="form-group mb-0">
+                                                    <label for="profilePhone">Numero de teléfono</label>
+                                                    <input type="tel" id="profilePhone" class="form-control small-border white-input" placeholder="+54 3412165633">
+                                                    <div class="country-select d-inline-block">
+                                                        <select class="vodiapicker">
+                                                <option value="ar" class="test" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                <option value="au" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                <option value="uk" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                <option value="cn" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                <option value="de" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                <option value="dk" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                <option value="fr" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                <option value="gr" data-thumbnail="assets/images/argentina-flag.jpg"></option>
+                                                </select>
+                                                        <div class="lang-select">
+                                                            <button type="button" class="btn-select" value=""></button>
+                                                            <div class="b">
+                                                                <ul id="a"></ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Change Password -->
+                                            <div class="profile-field-password">
+                                                <label class="d-flex justify-content-between align-items-center mb-3">
+                                                    Cambiar contraseña
+                                                    <button class="btn js-form-next" type="button" data-target="changePasswordContent"><i class="fas fa-chevron-right"></i></button>
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-center">
+                                                    Eliminar cuenta
+                                                    <button class="btn js-form-next" type="button" data-target="profdeleteAccount"><i class="fas fa-chevron-right"></i></button>
+                                                </label>
+                                            </div>
+                                            <!-- Profile Details SUbmit Button -->
+                                            <div class="profile-main-submit">
+                                                <button type="submit" class="btn blue-btn medium-btn">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="success-msg" id="changePasswordContent">
+                                        <div class="msg-header text-right mb-2">
+                                            <button type="button" class="js-close-btn close" data-dismiss="#changePasswordContent" data-target="#mercadoFields" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <form>
+                                            <!-- Old Password -->
+                                            <div class="profile-field-pwd">
+                                                <div class="form-group mb-0">
+                                                    <label for="currentPwd">Cambiar contraseña</label>
+                                                    <div class="input-checkemark position-relative">
+                                                        <input type="password" id="currentPwd" class="form-control small-border white-input" placeholder="Contraseña actual">
+                                                    </div>
+                                                    <p class="form-text">¿Olvidaste tu contraseña?</p>
+                                                </div>
+                                            </div>
+                                            <!-- New password -->
+                                            <div class="profile-field-pwd">
+                                                <div class="form-group mb-0">
+                                                    <input type="password" id="newPwd" class="form-control small-border white-input mb-3" placeholder="Nueva Contraseña">
+                                                    <input type="password" id="confirmnewPwd" class="form-control small-border white-input" placeholder="Confirmar Nueva Contraseña">
+                                                </div>
+                                            </div>
+                                            <!-- New Password SUbmit Button -->
+                                            <div class="profile-main-submit">
+                                                <button type="submit" class="btn blue-btn medium-btn">Guardar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="success-msg" id="profdeleteAccount">
+                                        <div class="msg-header text-right mb-2">
+                                            <button type="button" class="js-close-btn close" data-dismiss="#profdeleteAccount" data-target="#mercadoFields" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <form>
+                                            <!-- Warning -->
+                                            <div class="alert alert-warning small-border">
+                                                <p><span><img src="assets/images/alert-warning-icon.svg" alt="Info Icon"></span> Esto va a eliminar tu cuenta de forma permanente.</p>
+                                            </div>
+                                            <!-- Delete Account -->
+                                            <div class="profile-field-delete-account">
+                                                <div class="form-group mb-0">
+                                                    <label for="verifyCode">Eliminar Cuenta</label>
+                                                    <input type="text" id="verifyCode" class="form-control small-border white-input mb-3" placeholder="Código de Verificación">
+                                                    <img src="assets/images/verify-code.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Delete Account SUbmit Button -->
+                                            <div class="profile-main-submit delete-btn">
+                                                <button type="button" class="btn danger-bg white-text big-btn" data-toggle="modal" data-target="#deleteAccount">
+                                                    Eliminar Cuenta
+                                                </button>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="delete-account">
+                                        <div class="modal fade" id="deleteAccount" tabindex="-1" aria-labelledby="deleteAccount" aria-hidden="true" style="display: none;">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content border-10">
+                                                    <div class="modal-header border-0 pb-0">
+                                                        <button type="button" class="close small-close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                                    </div>
+                                                    <div class="modal-body text-center py-0">
+                                                        <h5>Estas seguro que qeres borrar tu cuenta para siempre? </h5>
+                                                    </div>
+                                                    <div class="modal-footer justify-content-center border-0 pt-0 pb-4">
+                                                        <a href="login.html" type="button" class="btn blue-btn yes">Si</a>
+                                                        <a href="#" type="button" class="btn light-blue-btn no">No</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Subscription Tab Content -->
+                        <div class="tab-pane" id="tabSuscripcion" role="tabpanel" aria-labelledby="nav-tabSuscripcion">
+                            <div class="main-self-profile position-relative">
+                                <!-- Info -->
+                                <div class="alert alert-info alert-dismissible fade show small-border">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p class="d-flex align-items-center">
+                                        <span class="mr-3"><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span>
+                                        <span>Si dejás el precio en $0 el boton de suscripción mensual no va a aparecer en tu perfil y vas a tener un perfil gratuito (Pero vas a poder seguir
+                                        poniendo precio a tus publicaciones igualmente)</span>
+                                    </p>
+                                </div>
+                                <form>
+                                    <!-- Display Name Filed -->
+                                    <div class="profile-field-amount">
+                                        <div class="form-group mb-0">
+                                            <label for="subscriptionPrice">Precio de suscripción mensual</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">$</div>
+                                                </div>
+                                                <input type="text" id="subscriptionPrice" class="form-control small-border white-input" placeholder="500">
+                                            </div>
+                                            <p class="form-text">Mínimo $1000</p>
+                                        </div>
+                                    </div>
+                                    <!-- Profile Details SUbmit Button -->
+                                    <div class="multi-step-form">
+                                        <div class="profile-main-submit">
+                                            <button type="button" data-target="changesSaved" class="btn blue-btn medium-btn js-form-next">Guardar</button>
+                                        </div>
+                                        <div class="success-msg changes-saved success-bg" id="changesSaved">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Se guardaron los cambios</p>
+                                                <span>&#10003;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Bancarios Tab content -->
+                        <div class="tab-pane" id="tabBancarios" role="tabpanel" aria-labelledby="nav-tabBancarios">
+                            <div class="main-self-profile position-relative">
+                                <!-- Info -->
+                                <div class="alert alert-info alert-dismissible fade show small-border">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p class="d-flex align-items-center">
+                                        <span class="mr-3"><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span>
+                                        <span>Podés cargar solo una cuenta de Mercadopago y una cuenta de Banco, podés borrarla y cargar otra en cualquier momento.</span>
+                                    </p>
+                                </div>
+                                <!-- Bank Accounts Details -->
+                                <div class="bacnk-account-details">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-6 pl-md-0">
+                                            <div id="detailsMercado" class="bank-account-Mercado">
+                                                <div class="wrapper">
+                                                    <div class="bank-acc-header">
+                                                        <button type="button" class="js-close-btn close" data-dismiss="#detailsMercado" data-target="#mercadoFields" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                    <label class="d-flex justify-content-between align-items-center mb-0">
+                                                    <div class="bank-info">
+                                                        <h5 class="font-weight-bold text-base mb-1">Cuenta</h5>
+                                                        <p>jmanueldlavega@gmail.com</p>
+                                                        <p>CBU : 000154085751987297</p>
+                                                        <p>Alias : bebudlv</p>
+                                                    </div>
+                                                    <div class="bank-logo">
+                                                        <img src="assets/images/mercado-pago.png" alt="Mercado Pago">
+                                                    </div>
+                                                    </label>
+                                                </div>
+                                                <p class="acc-add-date mt-2">Tu pago va a ser procesado el <span>15 de Agosto de 2021</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pr-md-0">
+                                            <div id="detailsBanco" class="bank-account-local">
+                                                <div class="wrapper">
+                                                    <div class="bank-acc-header">
+                                                        <button type="button" class="js-close-btn close" data-dismiss="#detailsBanco" data-target="#bancoFields" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                    <label class="d-flex justify-content-between align-items-center mb-0">
+                                                    <div class="bank-info">
+                                                        <h5 class="font-weight-bold text-base mb-1">Cuenta</h5>
+                                                        <p>Juan Manuel de la Vega</p>
+                                                        <p>CBU : 000154085751987297</p>
+                                                        <p>Alias : bebudlv</p>
+                                                    </div>
+                                                    <div class="bank-logo">
+                                                        <img src="assets/images/santander.png" alt="Santander Logo">
+                                                    </div>
+                                                    </label>
+                                                </div>
+                                                <p class="acc-add-date mt-2">Tu pago va a ser procesado el <span>15 de Agosto de 2021</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Banks Filed -->
+                                <div class="profile-field-bankAccount">
+                                    <form action="#" id="mercadoFields">
+                                        <div class="form-group mb-5">
+                                            <label for="emailMercadopago">Mercadopago</label>
+                                            <input type="email" id="emailMercadopago" class="form-control small-border white-input mb-3" placeholder="Email Mercadopago">
+                                            <input type="text" id="cbuMercadopago" class="form-control small-border white-input mb-3" placeholder="CBU Mercadopago">
+                                            <input type="text" id="codeMercadopago" class="form-control small-border white-input" placeholder="Código de verifiación">
+                                            <div class="profile-main-submit mt-4">
+                                                <button type="button" class="js-bank-sub btn blue-btn medium-btn" data-target="#detailsMercado">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form action="#" id="bancoFields">
+                                        <div class="form-group mb-0">
+                                            <label for="accOwnerBank">Cuenta Bancaria</label>
+                                            <input type="text" id="accOwnerBank" class="form-control small-border white-input mb-3" placeholder="Nombre del titular">
+                                            <input type="text" id="accBankNo" class="form-control small-border white-input mb-3" placeholder="N° de cuenta (18 digitos)">
+                                            <input type="text" id="nameBank" class="form-control small-border white-input mb-3" placeholder="Nombre del banco">
+                                            <input type="text" id="addressBank" class="form-control small-border white-input mb-3" placeholder="Domicilio">
+                                            <input type="text" id="cbuBank" class="form-control small-border white-input" placeholder="CBU N°">
+                                            <div class="profile-main-submit mt-4">
+                                                <button type="button" class="js-bank-sub btn blue-btn medium-btn" data-target="#detailsBanco">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content pt-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer-content-img">
+                            <a href="#"><img src="assets/images/logo.svg" alt="Brand Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="footer-content-input">
+                            <input type="text" placeholder="Suscribite para recibir todas las noticias!">
+                            <a href="#" class="blue-btn big-btn">Suscribirse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="foot-list-content">
+                                <h4>FanPush Tuts+</h4>
+                                <li>
+                                    <a href="#">Empezar a vender</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mensajes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Como retirar mis fondos</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="foot-list-content">
+                                <h4>En Redes</h4>
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Twitter</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="foot-list-content">
+                                <h4>Faqs</h4>
+                                <li>
+                                    <a href="#">Quien puede ver mi contenido?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Puedo tener mas de un perfil activo?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Como funcionan los pagos por mensajes?</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="foot-list-content">
+                                <h4>Soporte</h4>
+                                <li>
+                                    <a href="#">Soporte por Email</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacto</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Creadores Reconocidos</h5>
+                </div>
+                <div class="footer-bottom d-flex justify-content-between">
+                    <div class="footer-bottom-content">
+                        <span><a href="#">© 2020 FanPush Inc.</a></span>
+                        <span><a href="#">Privacy</a></span>
+                        <span><a href="#">Terms</a></span>
+                    </div>
+                    <div class="footer-bottom-content">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/global.js"></script>
+</body>
+
+</html>
