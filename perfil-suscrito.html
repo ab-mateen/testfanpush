@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Perfil Vacio</title>
+    <title>Perfil Suscrito</title>
 </head>
 
 <body>
@@ -282,24 +282,6 @@
             <div class="cover-content-img">
                 <img src="assets/images/pro-cover.png" alt="profile-cov">
             </div>
-            <div class="container position-relative">
-                <label for="profileCover" class="cover-upload blue-btn big-btn">
-                <input type="file" name="profileCover" id="profilCover">
-                <img src="assets/images/photo-camera.svg" alt="Camera"> Editar foto de portada
-            </label>
-            </div>
-        </div>
-    </section>
-    <!--section feed box-->
-    <section class="profile-feed-box">
-        <div class="container">
-            <div class="blue-feed-box">
-                <div class="blue-feed-content small-border">
-                    <p>Para poder empezar a publicar contenido pago o poner precio de suscripción tenés que validar tu identidad. Hacelo haciendo click en el botón de abajo.</p>
-                    <a href="#" class="blue-btn medium-btn mt-3">Validarme</a>
-                </div>
-            </div>
-            <div class="mt-4"></div>
         </div>
     </section>
     <!--section profile Description-->
@@ -310,44 +292,52 @@
                     <div class="col-md-3 pr-sm-2">
                         <div class="des-col-logo">
                             <div class="des-col-image">
-                                <img src="./assets/images/description-img.svg" alt="des-image">
+                                <img src="assets/images/grey-box.jpg" alt="des-image">
                             </div>
                         </div>
-                        <h4>Ayelen Elias</h4>
-                        <h5>ayelen.elias</h5>
                     </div>
                     <div class="col-md-9 pl-sm-0">
                         <div class="des-col-rate d-flex justify-content-between">
                             <div class="col-rate-content">
-                                <span>0</span>
+                                <span>100</span>
                                 <P>Siguiendo</P>
                             </div>
                             <div class="col-rate-content">
-                                <span>0</span>
+                                <span>413k</span>
                                 <P>Seguidores</P>
                             </div>
                             <div class="col-rate-content">
-                                <span>0</span>
+                                <span>125</span>
                                 <P>Suscriptores</P>
                             </div>
                             <div class="col-rate-content">
-                                <span>0</span>
+                                <span>75</span>
                                 <P>Posteos</P>
                             </div>
                             <div class="col-rate-content">
-                                <span>$0</span>
+                                <span>$13,5k</span>
                                 <P>Ingresos</P>
                             </div>
                         </div>
-                        <div class="col-rate-btn">
-                            <a href="#">Editar Perfil</a>
+                        <div class="des-col-btn mt-2">
+                            <div class="col-btn-content">
+                                <a href="#" class="blue-btn mr-2 border-0 bg-white medium-btn">Seguir</a>
+                                <a href="#" class="transparent-btn border-0 mr-2 medium-btn bg-white btn-disable">Mensaje</a>
+                                <a href="#" class="transparent-btn mr-2 border-0 bg-white medium-btn"><span class="d-inline-block mr-2"><img src="assets/images/coin-icon.svg"></span>Propina</a>
+                                <a href="#" class="blue-btn  border-0 bg-white medium-btn">Añadir a Favorito</a>
+                            </div>
+                        </div>
+                        <div class="col-rate-btn regular-color1 small-border">
+                            <a href="#" class="py-2" data-toggle="tooltip" data-placement="top" title="Plan : 1500$   Vence : 08/08/2021">Suscrito</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-description">
+                    <h4>Ayelen Elias</h4>
+                    <h5 class="pt-1 pb-3">ayelen.elias <span class="ml-5">Visto por ultima vez 08 julio 2021</span></h5>
                     <p>Familia, amigos, música, cerveza 🍻</p>
-                    <!--<p>Psicología UNR 📚</p>
-                    <p>Venta de contenido exclusivo 💖</p>-->
+                    <p>Psicología UNR 📚</p>
+                    <p>Venta de contenido exclusivo 💖</p>
                 </div>
             </div>
         </div>
@@ -372,24 +362,171 @@
                         <div class="tab-pane container active" id="fotostab">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="ui-img-boxes small-img-box border-20 position-relative">
-                                        <img src="assets/images/grey-box.jpg" alt="Grey Img">
-                                        <button type="button" class="btn post-icon">
-                                            <img src="assets/images/plus-icon.svg" alt="plus" class="icon plus">
-                                        </button>
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/play-icon.svg" alt="Lock plus" class="lock">
+                                            </button>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/dark-grey-box.jpg" alt="Dark-Grey Img">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/heart-icon.svg" alt="Lock plus" class="lock">
+                                                <span class="text-white ml-2">32</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative mt-4">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative mt-4">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <div class="spinner-border  text-secondary" role="status">
+                                    <span class="sr-only">Loading...</span>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="videostab">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="ui-img-boxes small-img-box border-20 position-relative">
-                                        <img src="assets/images/grey-box.jpg" alt="Grey Img">
-                                        <button type="button" class="btn post-icon">
-                                            <img src="assets/images/plus-icon.svg" alt="plus" class="icon plus">
-                                        </button>
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/play-icon.svg" alt="Lock plus" class="lock">
+                                            </button>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/dark-grey-box.jpg" alt="Grey Img">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/heart-icon.svg" alt="Lock plus" class="lock">
+                                                <span class="text-white ml-2">32</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box mt-4">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative mt-4">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative mt-4">
+                                            <img src="assets/images/grey-box.jpg" alt="Grey Img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tabing-box">
+                                        <div class="ui-img-boxes small-img-box border-20 position-relative">
+                                            <img src="assets/images/gradient.png" alt="Gradient Img">
+                                            <button type="button" class="btn post-icon">
+                                                <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <div class="spinner-border  text-secondary" role="status">
+                                    <span class="sr-only">Loading...</span>
                                 </div>
                             </div>
                         </div>
@@ -495,6 +632,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>

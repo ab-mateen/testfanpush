@@ -443,8 +443,32 @@ header .nav-user {
     max-width: 24px;
 }
 
+.nav-user ul.navbar-nav li .dropdown-menu img {
+    max-width: 100% !important;
+}
+
+.nav-user ul.navbar-nav li.globe a::after,
 .nav-user ul.navbar-nav li.notification a::after {
     display: none;
+}
+
+.nav-user ul.navbar-nav li.globe .dropdown-menu {
+    border: none;
+    left: unset;
+    right: -55px;
+    top: 53px;
+}
+
+.nav-user ul.navbar-nav li.notification .dropdown-menu {
+    border: none;
+    top: 53px;
+}
+
+@media (max-width: 1380px) {
+    .nav-user ul.navbar-nav li.notification .dropdown-menu {
+        left: unset;
+        right: -100px;
+    }
 }
 
 header .nav-user .user-area {
@@ -630,6 +654,11 @@ section.profile-cover-img .cover-content-img {
     color: var(--white);
 }
 
+.profile-des-content .regular-color1 a {
+    background-color: #2DBD7D;
+    color: var(--white);
+}
+
 
 /*regular-profile*/
 
@@ -647,7 +676,11 @@ section.profile-cover-img .cover-content-img {
 /*feed page */
 
 section.feed-start-main {
-    margin-bottom: 330px;
+    margin-bottom: 317px;
+}
+
+section.feed-mar-2 {
+    margin-bottom: 265px;
 }
 
 .feed-start-main .feed-content .feed-content-anc a:nth-of-type(1) {
@@ -667,6 +700,12 @@ section.feed-start-main {
     border-bottom: 1px solid #DBDBDB;
 }
 
+.feed-follow-sec .feed-follow-content .feed-follow-image span {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ui-base-text);
+}
+
 .feed-follow-sec .feed-follow-content .feed-follow-image span img {
     width: 43px;
     height: 43px;
@@ -674,10 +713,14 @@ section.feed-start-main {
     margin-right: 5px;
 }
 
-.feed-follow-sec .feed-follow-para span img {
-    width: 22px;
-    height: 19.72px;
-    margin-right: 5px;
+.feed-follow-sec .feed-follow-para span button {
+    border: none;
+    background-color: transparent;
+    margin-right: 3px;
+}
+
+.feed-follow-sec .feed-follow-para span button i {
+    font-size: 20px;
 }
 
 .feed-follow-sec .feed-follow-para span {
@@ -695,10 +738,22 @@ section.feed-start-main {
 
 /*profile-own-view */
 
+.profile-mar {
+    margin-bottom: 146px;
+}
+
+.profile-banner-mar {
+    margin-bottom: 176px;
+}
+
 .profile-view-main .profile-view-content .profile-own-data img {
     width: 46px;
     height: 46px;
     border-radius: 50%;
+}
+
+.profile-view-main .profile-view-content .profile-view-image img {
+    border-radius: 10px;
 }
 
 .profile-view-main .profile-image-data .own-data-content p,
@@ -712,8 +767,17 @@ section.feed-start-main {
     font-weight: 600;
 }
 
+.tooltip-inner {
+    max-width: 230px !important;
+    padding: 5px 8px !important;
+}
+
 
 /*fan follow */
+
+.fan-fellow-mar {
+    margin-bottom: 73px;
+}
 
 .fan-follow-sec .fan-follow-content .ui-nav-tabs ul {
     justify-content: start;
@@ -729,20 +793,14 @@ section.feed-start-main {
     border-bottom: 1px solid #DEDEDE;
 }
 
-.fan-follow-content .follow-tab-content .fan-follow-anc {
-    border: 2px solid var(--ui-base-text);
-    border-radius: 50px;
-    text-align: center;
-    padding: 5px 8px;
-    display: inline-block;
-    width: 100%;
-    max-width: 95px;
-}
-
 .fan-follow-content .follow-tab-content .fan-follow-anc a {
     color: var(--ui-base-text);
     font-size: 13px;
     font-weight: 500;
+    text-align: center;
+    border: 2px solid var(--ui-base-text);
+    padding: 6px 19px 7px 19px;
+    border-radius: 50px;
 }
 
 
@@ -765,12 +823,8 @@ section.feed-start-main {
     font-weight: 500;
 }
 
-.payement-content .payement-method-content .method-content-image img {
-    max-width: 200px;
-}
-
-.payement-content .payement-method-content .method-content-image1 img {
-    max-width: 144px;
+.payement-mar {
+    margin-bottom: 75px;
 }
 
 .payement-content .method-payement-main label {
@@ -780,14 +834,25 @@ section.feed-start-main {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
-.method-payement-check {
-    display: none;
+.payement-content .method-payement-main label img {
+    max-width: 200px;
 }
 
-.method-payement-main .method-payement-check input:checked+label::before {
-    background-color: var(--ui-blue);
+.payement-content .method-payement-main input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+input.method-payement-check:checked+label {
+    background-color: #DAF2FF;
+    border: 3px solid #50B4E9;
 }
 
 .summary-main .summary-sec .summary-content-image img {
@@ -802,6 +867,34 @@ section.feed-start-main {
     color: #365969;
 }
 
+.summary-sec .summary-content-image .image-content p {
+    color: #636363;
+    font-weight: 500;
+}
+
+.summary-sec .summary-content-image .video-content span {
+    color: var(--ui-base-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.summary-sec .summary-content-image .video-content span a img {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    margin-right: 5px;
+}
+
+.summary-content .method-content h2 {
+    color: var(--ui-base-text);
+}
+
+.summary-content .method-content span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #636363;
+}
+
 .summary-main .summary-sec .summary-anc a {
     display: block;
     font-size: 14px;
@@ -810,6 +903,12 @@ section.feed-start-main {
     color: #fff;
     border-radius: 5px;
     padding: 10px 0;
+}
+
+.summary-main .summary-sec .summary-cancel a {
+    color: #696969;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
@@ -822,7 +921,7 @@ section.soporte-main {
 }
 
 .soporte-main .soporte-main-overlay {
-    background-color: rgba(255, 109, 16, .5);
+    background-color: rgb(224 102 42 / 70%);
     min-height: 239px;
 }
 
@@ -833,7 +932,6 @@ section.soporte-main {
 .soporte-main .soporte-content h1 {
     font-size: 40px;
     font-weight: 800;
-    color: black;
     color: var(--white);
 }
 
@@ -878,9 +976,15 @@ section.soporte-main {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 }
 
+.collection-main .collection-content .collection-head h1 {
+    font-weight: 800;
+    color: var(--ui-base-text);
+}
+
 .collection-main .collection-content .collection-head p {
     border-bottom: 1px solid #E3E3E3;
     font-weight: 400;
+    color: #646464;
 }
 
 .collection-main .collection-row .collection-col-main {
@@ -903,40 +1007,46 @@ section.soporte-main {
     top: 30px;
 }
 
-
-/* .collection-row .collection-col-main .collection-col-content p {
-    color: #666666;
-} */
-
 .collection-row .collection-col-main .collection-col-content h2 {
-    color: var(--ui-base-text);
     font-size: 40px;
     font-weight: 700;
 }
 
-.collection-row .collection-col-main .collection-col-content h2 span,
-.detail-sec .detail-content .detail-image-content span {
+.collection-row .collection-col-main .collection-col-content h2 span {
     color: var(--ui-dark-grey4);
     font-size: 25px;
     font-weight: 600;
 }
 
-.collection-row .collection-col-main .collection-col-content~h2 {
-    color: black;
-    font-size: 40px;
-    font-weight: 700;
+.tb-color3 {
+    color: var(--ui-base-text);
 }
 
 
 /*payement method*/
 
-.payement-content .payement-col-content .payement-image img {
-    width: 25px;
-    height: 30px;
+.payement-content .payement-col-content .payement-head h3 {
+    font-weight: 600;
+    color: var(--ui-base-text);
+}
+
+.payement-content .payement-col-content .payement-image button {
+    background: transparent;
+}
+
+.payement-content .payement-col-content .payement-image button i {
+    color: var(--ui-base-text);
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .payement-main .payement-col-sec {
     min-height: 238px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.payement-main .payement-col-sec .admin-data {
+    text-align: right;
 }
 
 .payement-main .payement-col-sec .payement-para h5 {
@@ -954,6 +1064,10 @@ section.soporte-main {
 
 section.board-tabing-main .ui-nav-tabs {
     min-height: 428px;
+}
+
+.board-mar {
+    margin-bottom: 157px;
 }
 
 .board-tabing-main .ui-nav-tabs ul li {
@@ -1006,7 +1120,7 @@ section.board-tabing-main .ui-nav-tabs {
 
 .admin-sec .admin-mercedes {
     border: 1px solid #CFCFCF;
-    border-radius: 5px;
+    padding: 15px 15px 15px 20px;
 }
 
 .admin-sec .admin-mercedes img {
@@ -1017,10 +1131,17 @@ section.board-tabing-main .ui-nav-tabs {
     color: #898989;
     font-size: 14px;
     font-weight: 500;
+    text-align: right;
 }
 
 
 /*detail page*/
+
+.detail-sec .detail-content .detail-image-content span {
+    color: var(--ui-dark-grey4);
+    font-size: 25px;
+    font-weight: 600;
+}
 
 .detail-sec .detail-content .detail-image-content h2 {
     color: #2DBD7D;
@@ -1076,6 +1197,10 @@ section.board-tabing-main .board-table-content .ui-nav-tabs {
     padding: 5px 8px;
 }
 
+.board-table-content .board-tabing-content .board-bottom-anc {
+    padding: 12px 8px 50px 0px;
+}
+
 .board-table-content .board-tabing-content .board-bottom-anc span a {
     color: #636363;
     font-size: 15px;
@@ -1108,16 +1233,30 @@ section.board-tabing-main .board-table-content .ui-nav-tabs {
 
 /*work-faqs*/
 
+.works-mar {
+    margin-bottom: 237px;
+}
+
 .work-faqs-main .work-faqs-content h3 {
     font-weight: 600;
+    color: var(--ui-base-text);
 }
 
 .work-faqs-main .work-faqs-content p {
     font-weight: 400;
+    color: var(--ui-dark-grey4);
 }
 
 
 /*purchaser*/
+
+.purchaser-tabing-main {
+    margin-bottom: 208px;
+}
+
+.tabing-abs-border .ui-nav-tabs ul li a::before {
+    height: 6px;
+}
 
 .purchaser-tabing-content .ui-nav-tabs ul li {
     width: 50%;
@@ -1154,7 +1293,7 @@ section.board-tabing-main .board-table-content .ui-nav-tabs {
     background-color: #F8F8FB;
     box-shadow: 1px 1px 10px #DDDDDD;
     color: var(--ui-base-text);
-    padding: 27px 0 27px 0;
+    padding: 29px 0 29px 0;
     margin: 0;
 }
 
@@ -1175,8 +1314,29 @@ section.board-tabing-main .board-table-content .ui-nav-tabs {
 }
 
 .purchaser-tabing-content .purchase-table-content table tr td .notification-images span img {
-    width: 36px;
-    height: 36px;
+    width: 39px;
+    height: 39px;
+}
+
+.purchase-table-content table tr td .notification-images .ui-img-boxes img {
+    width: 39px;
+    height: 39px;
+}
+
+.purchase-table-content table tr td .notification-images .ui-img-boxes span img {
+    width: 21px;
+    height: 21px;
+}
+
+.purchase-table-content table tr td .notification-images .ui-img-boxes span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
 }
 
 .purchaser-tabing-content .purchase-table-content table tr td .notification-images span {
@@ -1188,14 +1348,74 @@ section.board-tabing-main .board-table-content .ui-nav-tabs {
     color: var(--ui-blue);
 }
 
-.purchaser-tabing-content .purchase-table-content table tr td .sp-color {
+.purchaser-tabing-content .purchase-table-content table tr td .sp-color button {
     font-size: 20px;
     font-weight: 500;
     color: var(--ui-base-text);
+    background: transparent;
+    border: 0;
 }
 
 
-/*notification*/
+/*calender*/
+
+.board-tabing-content .calender-main {
+    width: 90%;
+}
+
+.calender-mar {
+    margin-bottom: 147px;
+}
+
+.board-tabing-content .calender-main .calender-content {
+    border: 1px solid #DFDFDF;
+    padding: 16px 20px 7px 20px;
+}
+
+.calender-main .calender-content .calender-month h5 {
+    font-size: 15px;
+    color: #333333;
+}
+
+.calender-main .calender-content .calender-month-content p {
+    color: #333333;
+}
+
+.calender-main .calender-content .calender-month-content span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #B4B4B4;
+}
+
+.calender-main .calender-content .calender-month-content label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2DBD7D;
+}
+
+.calender-main .calender-subscription {
+    border: 1px solid #DFDFDF;
+    padding: 16px 20px 7px 20px;
+}
+
+.calender-subscription .subscription-main .subscription-content h5 {
+    color: #365969;
+    font-size: 15px;
+}
+
+.calender-subscription .subscription-main {
+    border-top: 1px solid #EAEAEA;
+}
+
+.subscription-main .subscription-content .subscription-data p {
+    color: #333333;
+}
+
+.subscription-main .subscription-content .subscription-data label {
+    color: #2DBD7D;
+    font-size: 15px;
+    font-weight: 500;
+}
 
 
 /*footer*/
@@ -1830,4 +2050,328 @@ section.all-notifications .notification-wrapper .notifictaion-content {
 .all-notifications .noti-img img.icon {
     width: 24px;
     height: 24px;
+}
+
+
+/* ============================= Intranet Login ============================= */
+
+section.intranet-login {
+    min-height: 100vh;
+    padding: 50px;
+}
+
+section.intranet-login .intranet-login-content {
+    max-width: 770px;
+    width: 100%;
+}
+
+.intranet-login-content .logo img {
+    max-width: 131px;
+}
+
+.intranet-login-content .login-form {
+    background-color: #fff;
+    padding: 65px;
+}
+
+.intranet-login-content .login-form h2 {
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--ui-base-text);
+}
+
+.intranet-login-content .login-form p {
+    font-weight: normal;
+    letter-spacing: -0.01em;
+    color: #888888;
+    font-size: 17px;
+}
+
+.intranet-login-content input:not([type="submit"], .grey-input) {
+    height: 62px;
+    background: #fff;
+    border-color: #CFCFCF;
+    padding-left: 24px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #365969;
+}
+
+.intranet-login-content a {
+    color: #899AA2;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.intranet-login-content input.grey-input {
+    height: 62px;
+}
+
+
+/* ============================= Intranet Dashboard ============================= */
+
+@media (min-width: 768px) {
+    .dashboard-sec .main-row>.col-md-3 {
+        flex: 0 0 22.8%;
+        max-width: 22.8%;
+        padding-left: 0;
+    }
+    .dashboard-sec .main-row .col-md-9 {
+        flex: 0 0 74.8%;
+        max-width: 74.8%;
+    }
+}
+
+.dashboard-sec aside {
+    padding: 40px 53px 40px 45px;
+    background-color: #fff;
+}
+
+.dashboard-sec aside .logo {
+    margin-left: 15px;
+}
+
+.dashboard-sec aside .logo img {
+    max-width: 137px;
+}
+
+aside .dashboard-member-info {
+    margin: 45px 10px 69px;
+}
+
+.dashboard-member-info .profile-pic img {
+    width: 72px;
+    height: 72px;
+}
+
+.dashboard-member-info .profile-name {
+    margin-left: 27px;
+}
+
+.dashboard-member-info .profile-name p {
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    color: #899AA2;
+}
+
+.dashboard-member-info .profile-name h3 {
+    color: var(--ui-base-text);
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+aside .dashboard-tab-nav a {
+    padding: 0.6rem 0.5rem;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--ui-base-text);
+    border-radius: 5px;
+    margin-bottom: 3px;
+    position: relative;
+}
+
+aside .dashboard-tab-nav a span {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+
+
+/* Icons */
+
+aside .dashboard-tab-nav a svg {
+    fill: var(--ui-base-text);
+    transition: .3s all ease;
+}
+
+aside .dashboard-tab-nav a.active {
+    background: var(--ui-blue);
+}
+
+aside .dashboard-tab-nav a.active svg {
+    fill: var(--white);
+    transition: .3s all ease;
+}
+
+
+/* when have Notification appear dot */
+
+aside .dashboard-tab-nav a.is-notification::before {
+    content: '';
+    position: absolute;
+    background: #EC5D5D;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+}
+
+
+/* Dashboard COntent */
+
+.dashboard-sec .dashboard-content {
+    padding: 45px 65px 80px 0;
+}
+
+.dashboard-content [class*="dashboard-col-"] {
+    background: var(--white);
+    border-radius: 5px;
+    padding: 49px 10px 20px 40px;
+    min-height: 228px;
+}
+
+.dashboard-content [class*="dashboard-col-"] .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ui-base-text);
+    letter-spacing: -0.01em;
+    margin-bottom: 32px;
+}
+
+.dashboard-content [class*="dashboard-col-"] .count {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--ui-base-text);
+    letter-spacing: -0.01em;
+    word-break: break-all;
+}
+
+.dashboard-content [class*="dashboard-col-"] .count span {
+    font-size: 25px;
+}
+
+
+/* Dashboard Table */
+
+.dashboard-content [class*="dashboard-table-"] {
+    padding: 20px 0 0;
+}
+
+
+/* Table Title */
+
+[class*="dashboard-table-"] .sec-title h2 {
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    color: var(--ui-base-text);
+}
+
+[class*="dashboard-table-"] .sec-title p {
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    color: var(--ui-base-text);
+}
+
+
+/* Table */
+
+.dashboard-content [class*="dashboard-table-"] table {
+    background: var(--white);
+    margin-top: 18px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+/* Table HEading */
+
+[class*="dashboard-table-"] table th {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+[class*="dashboard-table-"] table th,
+[class*="dashboard-table-"] table td {
+    padding: 18px 24px;
+    color: var(--ui-base-text);
+}
+
+[class*="dashboard-table-"] table td {
+    letter-spacing: -0.01em;
+    font-weight: 500;
+}
+
+[class*="dashboard-table-"] table tr:not(:last-of-type) {
+    border-bottom: 1px solid #DEDEDE;
+}
+
+[class*="dashboard-table-"] .member-info .profile-pic {
+    width: 39px;
+    height: 39px;
+    margin-right: 16px;
+}
+
+[class*="dashboard-table-"] .member-info .profile-name p {
+    color: #365969;
+    line-height: 1.0;
+    font-size: 16px;
+}
+
+[class*="dashboard-table-"] .member-info .profile-name p:last-of-type {
+    font-size: 15px;
+    color: #8DA2AC;
+    margin-top: 3px;
+}
+
+[class*="dashboard-table-"] .desc {
+    color: #8DA2AC;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+[class*="dashboard-table-"] td i {
+    font-size: 15px;
+    color: #8DA2AC;
+}
+
+[class*="dashboard-table-"] .name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #313131;
+}
+
+[class*="dashboard-table-"] .user {
+    font-size: 16px;
+    color: #9D9D9D;
+}
+
+[class*="dashboard-table-"] td a {
+    color: var(--ui-blue) !important;
+    text-decoration: underline !important;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.dashboard-table-validate tr:last-of-type td {
+    padding-bottom: 32px;
+}
+
+[class*="dashboard-table-"] .media {
+    color: var(--ui-base-text);
+}
+
+.dashboard-table-topusers table th {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+/* Validation Main Tab */
+
+[class*="dashboard-table-"] ul.nav li a {
+    margin: 0 20px 0 0;
+    padding-left: 0;
+}
+
+.dashboard-table-validateMain table th {
+    font-weight: 500;
+    font-size: 15px;
 }

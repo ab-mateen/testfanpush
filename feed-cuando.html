@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Feed Cuando</title>
 </head>
@@ -50,17 +49,174 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="index.html"><img src="assets/images/home.svg" alt="Home Icon"></a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><img src="assets/images/globe.svg" alt="World Globe"></a>
+                                    <li class="nav-item dropdown globe">
+                                        <a class="nav-link dropdown-toggle" type="button" id="globalDropdown" data-toggle="dropdown">
+                                            <img src="assets/images/globe.svg" alt="World Globe">
+                                        </a>
+                                        <div class="dropdown-menu p-0">
+                                            <div class="global-dropdown bg-white py-3">
+                                                <div class="dropdown-item d-flex justify-content-between align-items-center">
+                                                    <div class="profile-info">
+                                                        <a href="#" class="d-flex align-items-center">
+                                                            <div class="profile-img d-inline-block rounded-circle">
+                                                                <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="Profile Img">
+                                                            </div>
+                                                            <div class="profile-name d-inline-block">
+                                                                <h5>Micaela Suarez</h5>
+                                                                <p>mikaelasuarez8</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn close-btn" type="button" data-dismiss="dropdown-item">&times;</button>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex justify-content-between align-items-center">
+                                                    <div class="profile-info">
+                                                        <a href="#" class="d-flex align-items-center">
+                                                            <div class="profile-img d-inline-block rounded-circle">
+                                                                <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="Profile Img">
+                                                            </div>
+                                                            <div class="profile-name d-inline-block">
+                                                                <h5>Micaela Suarez</h5>
+                                                                <p>mikaelasuarez8</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn close-btn" type="button" data-dismiss="dropdown-item">&times;</button>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item d-flex justify-content-between align-items-center">
+                                                    <div class="profile-info">
+                                                        <a href="#" class="d-flex align-items-center">
+                                                            <div class="profile-img d-inline-block rounded-circle">
+                                                                <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="Profile Img">
+                                                            </div>
+                                                            <div class="profile-name d-inline-block">
+                                                                <h5>Micaela Suarez</h5>
+                                                                <p>mikaelasuarez8</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn close-btn" type="button" data-dismiss="dropdown-item">&times;</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li class="nav-item dropdown notification">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="notificationDrop" data-toggle="dropdown">
                                             <img src="assets/images/bell.svg" alt="Notification Bell">
                                         </a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
+                                        <div class="dropdown-menu p-0">
+                                            <div class="notification-drop">
+                                                <span class="noti-header">Notificaciones</span>
+                                                <!-- Admin Notificacions -->
+                                                <a href="#" class="dropdown-item">
+                                                    <div class="notification-wrapper admin">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="notification-img">
+                                                                <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-admin-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                                                <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                                            </div>
+                                                            <div class="notifictaion-content">
+                                                                <p class="text-base-grey">
+                                                                    <span class="name text-base d-inline-block">El ADMIN Leito</span> te envió un mensaje [“Tu verificacion fue <br> <span class="text-error d-inline-block">rechazada</span>, por favor volve
+                                                                    a subir fotos de tu por favor volve a subir fotos de tu subir fotos de tu
+                                                                </p>
+                                                                <span class="noti-time">5 min</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- Follow Notificacions -->
+                                                <a href="#" class="dropdown-item">
+                                                    <div class="notification-wrapper follow">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="notification-img">
+                                                                <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-person-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                                                <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                                            </div>
+                                                            <div class="notifictaion-content">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="noti-text">
+                                                                        <p class="text-base-grey">
+                                                                            <span class="name text-base">Milagros623</span> comenzó a seguirte
+                                                                        </p>
+                                                                        <span class="noti-time">10 hrs</span>
+                                                                    </div>
+                                                                    <div class="noti-btn">
+                                                                        <button type="button" class="transparent-btn small-btn">Siguiendo</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- Like Notificacions -->
+                                                <a href="#" class="dropdown-item">
+                                                    <div class="notification-wrapper like">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="notification-img">
+                                                                <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-like-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                                                <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                                            </div>
+                                                            <div class="notifictaion-content">
+                                                                <p class="text-base-grey">
+                                                                    <span class="name text-base">CarlaNob.85</span> le gustó tu <span class="pic text-blue">foto</span>
+                                                                </p>
+                                                                <span class="noti-time">2 dias</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- Buy Notificacions -->
+                                                <a href="#" class="dropdown-item">
+                                                    <div class="notification-wrapper buy">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="notification-img">
+                                                                <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-buy-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                                                <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                                            </div>
+                                                            <div class="notifictaion-content">
+                                                                <p class="text-base-grey">
+                                                                    <span class="name text-base">Carlos15</span> compró tu <span class="pic text-blue">foto</span> por <span class="money text-base">$250</span>
+                                                                </p>
+                                                                <span class="noti-time">2 dias</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- Follow Notificacions -->
+                                                <a href="#" class="dropdown-item">
+                                                    <div class="notification-wrapper follow">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="notification-img">
+                                                                <span class="flag-icon d-inline-block rounded-circle position-relative"><img src="assets/images/notification-person-icon.png" class="rounded-circle h-100" alt="Admin Image"></span>
+                                                                <span class="person-img d-inline-block rounded-circle"><img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt=""></span>
+                                                            </div>
+                                                            <div class="notifictaion-content">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="noti-text">
+                                                                        <p class="text-base-grey">
+                                                                            <span class="name text-base">Willy</span> comzenzó a seguirte
+                                                                        </p>
+                                                                        <span class="noti-time">10 hrs</span>
+                                                                    </div>
+                                                                    <div class="noti-btn">
+                                                                        <button type="button" class="blue-btn small-btn">Seguir</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="notifications.html" class="dropdown-item blue-btn text-center small-border">
+                                                    Ver todas las notificaciones
+                                                </a>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -146,7 +302,7 @@
                                     <div class="follow-para-image my-2 mb-2">
                                         <img src="assets/images/grey-big-rectangle.svg" alt="Grey-box">
                                     </div>
-                                    <span><a href="#"><img src="assets/images/border-heart.svg" alt="border-heart"></a>253 Me gusta</span>
+                                    <span><button><i class="far fa-heart"></i></button>253 Me gusta</span>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +322,7 @@
                                     <div class="follow-para-image my-2 mb-2">
                                         <img src="assets/images/grey-big-rectangle.svg" alt="Grey-box">
                                     </div>
-                                    <span><a href="#"><img src="assets/images/red-heart.svg" alt="border-heart"></a>253 Me gusta</span>
+                                    <span><button><i class="text-danger fas fa-heart"></i></button>253 Me gusta</span>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +342,7 @@
                                     <div class="follow-para-image my-2 mb-2">
                                         <img src="assets/images/grey-big-rectangle.svg" alt="Grey-box">
                                     </div>
-                                    <span><a href="#"><img src="assets/images/border-heart.svg" alt="border-heart"></a>253 Me gusta</span>
+                                    <span><button><i class="far fa-heart"></i></button>253 Me gusta</span>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +362,7 @@
                                     <div class="follow-para-image my-2">
                                         <img src="assets/images/grey-big-rectangle.svg" alt="Grey-box">
                                     </div>
-                                    <span><a href="#"><img src="assets/images/red-heart.svg" alt="border-heart"></a>253 Me gusta</span>
+                                    <span><button><i class="text-danger fas fa-heart"></i></button>253 Me gusta</span>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +370,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="suggestion-sec pt-1">
-                        <h2>Sugerencias</h2>
+                        <h2 class="font-weight-bold">Sugerencias</h2>
                         <div class="suggestion-content mt-4">
                             <div class="suggest-box mt-4">
                                 <div class="cover-img">
@@ -237,7 +393,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="suggest-box mt-2">
+                            <div class="suggest-box mt-4">
                                 <div class="cover-img">
                                     <img src="assets/images/grey-box.jpg" alt="">
                                 </div>
@@ -258,7 +414,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="suggest-box mt-2">
+                            <div class="suggest-box mt-4">
                                 <div class="cover-img">
                                     <img src="assets/images/grey-box.jpg" alt="">
                                 </div>
