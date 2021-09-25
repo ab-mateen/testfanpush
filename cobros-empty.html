@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Formas DE Pago</title>
+    <title>DASHBOARD COBROS</title>
 </head>
 
 <body>
@@ -308,57 +308,135 @@
             </div>
         </section>
     </header>
-    <!--payement method-->
-    <section class="payement-main mt-5 pt-3 mb-2">
+    <!--collection-->
+    <section class="collection-main mt-5">
         <div class="container">
-            <div class="payement-content pt-4">
-                <div class="payement-des text-center">
-                    <h1>Completá tu compra!</h1>
-                    <div class="payement-des-content pt-3 pb-5">
-                        <span>
-                    <img src="assets/images/lock-icon.svg" alt="lock-icon">Tus datos van a permanecer seguro con nosotros
-                </span>
-                    </div>
-                    <h2 class="text-center font-weight-bold">Formas de Pago</h2>
+            <div class="collection-content">
+                <div class="collection-head pt-3">
+                    <h1>Ganancias</h1>
+                    <p class="py-3">Desde acá podes ver todas tus estadisticas y tambien retirar tu dinero!</p>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <div class="method-payement-main position-relative border-10">
-                            <input type="radio" class="method-payement-check" name="optradio">
-                            <label class="method-content m-0 d-flex"><img src="assets/images/mercado-pago.png" alt="Mercado Pago"></label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="method-payement-main position-relative border-10">
-                            <input type="radio" class="method-payement-check" name="optradio">
-                            <label class="method-content m-0">
-                                <img src="assets/images/PayPal-Logo.png" alt="Mercado Pago">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <!--summary-->
-                <div class="summary-main payement-mar mt-5 pt-2">
-                    <h2 class=" text-center font-weight-bold">Resumen</h2>
-                    <div class="summary-sec bg-white p-4 mt-3 mx-3 border-10">
-                        <div class="summary-content d-flex justify-content-between align-items-center pt-1">
-                            <div class="summary-content-image d-flex align-items-center">
-                                <img src="./assets/images/grey-box.jpg" alt="grey-box">
-                                <div class="image-content det-pay-to ml-4">
-                                    <p>Suscripción mensual</p>
-                                    <p>al contenido de <a href="#">@usuario</a></p>
+                <div class="collection-row border-10 white-bg mt-5 mb-2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="collection-col-main d-flex align-items-center justify-content-center">
+                                <div class="collection-col-content">
+                                    <p>Balance <b>disponible</b></p>
+                                    <h2 class="tb-color2"><span>$ </span>1,500.00</h2>
                                 </div>
                             </div>
-                            <div class="method-content">
-                                <h2>$2500<span>/mes</span></h2>
-                                <span>Vto : 03/09/2021</span>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="collection-col-main  d-flex align-items-center justify-content-center">
+                                <div class="collection-col-content collection-border">
+                                    <p>Generado <b>este mes</b></p>
+                                    <h2 class="tb-color3"><span>$ </span>1,500.00</h2>
+                                </div>
                             </div>
                         </div>
-                        <div class="summary-anc mt-4 text-center">
-                            <a href="#" class="btn blue-btn medium-btn mw-100">Pagar</a>
+                        <div class="col-md-4">
+                            <div class="collection-col-main  d-flex align-items-center justify-content-center">
+                                <div class="collection-col-content collection-border">
+                                    <p>Volumen <b>total</b> de ventas</p>
+                                    <h2 class="tb-color3"><span>$ </span>15,500.00</h2>
+                                </div>
+                            </div>
                         </div>
-                        <div class="summary-cancel mt-3 mb-3 text-center">
-                            <a href="#" class="btn transparent-btn border-0 medium-btn mw-100">Cancelar y Volver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--next payement-->
+    <section class="payement-main mt-4">
+        <div class="container">
+            <div class="payement-content">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="payement-col-sec white-bg border-10 px-4 pt-4">
+                            <div class="payement-col-content d-flex justify-content-between">
+                                <div class="payement-head">
+                                    <h3>Próximo Pago</h3>
+                                </div>
+                                <div class="payement-image">
+                                    <button class="border-0"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="payement-para d-flex align-items-center justify-content-center text-center mt-5">
+                                <h5 class="pt-2">Para procesar un nuevo pago debe cargar una cuenta de cobro, por favor utilize el boton de la derecha.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="payement-col-sec white-bg border-10 px-4 pt-4">
+                            <div class="account-content pt-2">
+                                <h3 class="pb-3">Cuenta de Pago</h3>
+                                <h5 class="pb-3">No hay seteada ninguna cuenta de banco o de mercadopago</h5>
+                                <div class="account-anc">
+                                    <a href="#" class="blue-btn small-btn">Cargar cuenta para cobro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-info alert-dismissible fade show small-border mt-5">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <p><span><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span> Las transacciones pueden tardar entre 3 y 5 dias hábiles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--dashboard tabing-->
+    <section class="board-tabing-main tabing-abs-border board-mar mt-5 pb-3">
+        <div class="container">
+            <div class="ui-nav-tabs white-bg ui-big-tabbing">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#detalletab">Detalle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#pagostab">Pagos a autor </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#estadisticastab">Estadisticas</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container fade" id="detalletab">
+                        <div class="board-tabing-content pt-5">
+                            <table>
+                                <tr>
+                                    <th>Dia y Hora</th>
+                                    <th>Factura</th>
+                                    <th>Monto</th>
+                                    <th>Método</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane container  active" id="pagostab">
+                        <div class="board-tabing-content">
+                            <div class="board-tabing-content pt-4">
+                                <table>
+                                    <tr>
+                                        <th>Dia y Hora</th>
+                                        <th>Factura</th>
+                                        <th>Monto</th>
+                                        <th>Método</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="estadisticastab">
+                        <div class="board-tabing-content pt-4">
+                            <div class="earning-content mx-auto mt-4">
+                                <p>Estadisticas de ganancias mes a mes</p>
+                            </div>
                         </div>
                     </div>
                 </div>

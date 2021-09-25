@@ -1,6 +1,6 @@
 /* Declaring CSS Variables */
 
-:root {
+ :root {
     --ui-brand: #E79166;
     --ui-blue: #1877F2;
     --ui-blue-hover: #1D6ACE;
@@ -293,7 +293,16 @@
 /* Success Alert */
 
 .alert {
-    padding: 1rem 1.4rem;
+    padding: 1rem 2.2rem 1rem 1.4rem;
+}
+
+@media (max-width: 767px) {
+    .alert {
+        padding-right: 45px;
+    }
+    .alert p {
+        line-height: 25px;
+    }
 }
 
 .alert.alert-info {
@@ -303,7 +312,7 @@
 }
 
 .alert p img {
-    max-width: 25px;
+    width: 25px;
     margin-right: 15px;
 }
 
@@ -395,6 +404,13 @@ Small Box */
     border-radius: 20px;
 }
 
+@media (min-width: 768px) {
+    .small-img-box img:not(img.lock),
+    .small-img-box video {
+        min-height: 330px;
+    }
+}
+
 .ui-img-boxes .post-icon {
     position: absolute;
     top: 0;
@@ -434,7 +450,6 @@ Small Box */
 /* Dropdown Components */
 
 .dropdown-component {
-    width: 300px;
     background: #fff;
     padding-bottom: 20px;
     border-bottom-left-radius: 10px;
@@ -511,7 +526,6 @@ Small Box */
 /* Global DropDown */
 
 .global-dropdown {
-    width: 637px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
 }
@@ -548,11 +562,22 @@ Small Box */
 /* Notifications Dropdown */
 
 .notification-drop {
-    width: 637px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 10px 10px;
     background: var(--white);
     padding: 32px 0 38px;
+}
+
+@media (min-width: 768px) {
+    .dropdown-component {
+        width: 300px;
+    }
+    .notification-drop {
+        width: 637px;
+    }
+    .global-dropdown {
+        width: 637px;
+    }
 }
 
 .notification-drop .noti-header {
@@ -628,6 +653,10 @@ Small Box */
     padding: 0 20px 15px 30px;
 }
 
+.suggest-box .profile-info .d-flex {
+    flex-wrap: wrap;
+}
+
 .suggest-box .profile-info .profile-img {
     border: 1px solid #fff;
     margin-top: -30px;
@@ -638,9 +667,26 @@ Small Box */
     height: 111px;
 }
 
+@media (max-width: 1380px) and (min-width: 992px) {
+    .suggest-box .profile-info .profile-img img {
+        width: 90px;
+        height: 90px;
+    }
+    .suggest-box .profile-info .profile-img {
+        margin-top: -20px;
+    }
+}
+
 .suggest-box .profile-info .profile-name {
-    width: 100%;
+    width: 70%;
     padding-left: 20px;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .suggest-box .profile-info .profile-name {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 .suggest-box .profile-info .profile-name p {
@@ -753,6 +799,7 @@ Small Box */
 
 .withdraw-content .choose-method label img {
     max-width: 120px;
+    margin-left: 15px;
 }
 
 .withdraw-content .choose-method label input {
@@ -1576,4 +1623,127 @@ Small Box */
     font-size: 14px;
     border: none;
     padding: 20px 30px;
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .id-verify .modal-dialog {
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal {
+        padding: 0 10px !important;
+    }
+    .modal-dialog {
+        margin: 2.5rem auto;
+    }
+    .withdraw-request {
+        padding: 35px;
+    }
+    .withdraw-request .withdraw-field label {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .withdraw-content .withdraw-field h2,
+    .withdraw-content .withdraw-field label span {
+        margin-bottom: 25px;
+    }
+    .withdraw-content .choose-method label {
+        flex-wrap: wrap;
+    }
+    .withdraw-content .choose-method label .method-logo {
+        margin-bottom: 35px;
+    }
+    .withdraw-content .choose-method label input {
+        top: 26px;
+        bottom: unset;
+    }
+    .choose-method label .method-account-info p {
+        text-align: left;
+    }
+    .withdraw-content .submit-cancel input {
+        margin-bottom: 15px;
+    }
+    .withdraw-content .submit-cancel input,
+    .withdraw-content .submit-cancel button {
+        max-width: 100%;
+        width: 100%;
+    }
+    /* ================================== Create Posts ================================== */
+    .modal-body .prof-info-price {
+        flex-direction: column;
+    }
+    .modal-body .post-price {
+        text-align: left;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0 10px;
+    }
+    .create-post-content .post-category-container .post-category-col {
+        width: 100%;
+    }
+    /* Remove Favorite Popup */
+    .remove-favr8 .modal-body .profile-img {
+        width: 60px;
+        height: 60px;
+    }
+    .remove-favr8 .modal-footer,
+    .delete-account .modal-footer {
+        flex-direction: column;
+    }
+    .remove-favr8 .modal-footer button,
+    .delete-account .modal-footer button {
+        padding: 3px 25px;
+    }
+    .unlock-content.is-unlock .post-content {
+        padding: 0;
+    }
+    .unlock-content .post-space {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .report-post-popup .modal-header {
+        justify-content: flex-start !important;
+    }
+    #unlockedPost .modal-content .col-md-5,
+    #postpayinpack .modal-content .col-md-5 {
+        position: unset;
+    }
+    .unlock-content-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 11px 15px;
+    }
+    .post-options .dropdown .dropdown-menu {
+        right: -53px;
+    }
+    #postPopupSlider .carousel-icon {
+        width: 35px;
+        height: 35px;
+    }
+    .id-verify .modal-body h2 {
+        font-size: 25px;
+        max-width: 270px;
+    }
+    .id-verify .form-dni .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .create-post .create-post-content h5 {
+        font-size: 14px;
+    }
+    .create-post .create-post-content label.post-content-upload span {
+        font-size: 12px;
+    }
 }

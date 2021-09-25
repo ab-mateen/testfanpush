@@ -20,13 +20,11 @@
     <header>
         <section class="ui-form-header">
             <div class="container">
-                <nav class="navbar navbar-expand-md p-0">
+                <nav class="navbar navbar-expand-lg p-0">
                     <!-- Brand -->
                     <a class="navbar-brand" href="/"><img src="assets/images/logo-white.svg" alt="Brand Logo"></a>
-
-
                     <!-- Navbar links -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="collapse navbar-collapse" id="loginRegNavbar">
                         <ul class="navbar-nav ml-md-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Registro</a>
@@ -40,14 +38,24 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Creadores</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-lg-inline-block">
                                 <a class="nav-link btn small-border bg-brand white-text" href="login.html">Ingresar</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-lg-inline-block">
                                 <a class="nav-link btn small-border text-base white-bg" href="register.html">Crear Cuenta</a>
                             </li>
                         </ul>
                     </div>
+                    <ul class="navbar-nav ml-auto d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-link btn small-border bg-brand white-text" href="login.html">Ingresar</a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#loginRegNavbar" aria-controls="loginRegNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="top"></span>
+                        <span class="mid"></span>
+                        <span class="bot"></span>
+                    </button>
                 </nav>
             </div>
         </section>
@@ -84,11 +92,11 @@
                                             <label class="form-check-label" for="registerTerms">Al registrarse, acepta nuestros <a href="#" class="text-blue">Términos de Política de servicio y privacidad.</a></label>
                                         </div>
                                         <div class="form-group mb-0">
-                                            <input class="form-control btn form-next-msg register-btn" name="register" type="button" value="Crear mi cuenta en FanPush!">
+                                            <input class="form-control btn js-form-next register-btn" name="register" type="button" value="Crear mi cuenta en FanPush!" data-target="regSucessMsg">
                                         </div>
                                     </form>
                                 </div>
-                                <div class="register-success success-msg text-center">
+                                <div class="register-success success-msg text-center" id="regSucessMsg">
                                     <h2 class="text-base pb-4">Cuenta creada con éxito!</h2>
                                     <img src="assets/images/thumbsup.svg" class="mt-2 mb-4 mx-auto" alt="">
                                     <p>Tu cuenta se registró con exito!</p>

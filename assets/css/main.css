@@ -130,6 +130,18 @@ header {
     left: 0;
 }
 
+.ui-form-header nav .navbar-toggler span {
+    background: #fff;
+    border-radius: 30px;
+    height: 1px;
+    display: block;
+    width: 30px;
+}
+
+.ui-form-header nav .navbar-toggler span.mid {
+    margin: 6px 0;
+}
+
 .ui-form-header nav ul li a {
     font-size: 15px;
     font-weight: 700;
@@ -375,7 +387,23 @@ header .nav-searchbar {
 .nav-searchbar a.navbar-brand {
     width: 100%;
     max-width: 104px;
-    margin-right: 30px;
+}
+
+header .site-header .navbar-toggler span {
+    width: 19px;
+    height: 4px;
+    background-color: var(--ui-base-text);
+    display: block;
+}
+
+header .site-header .navbar-toggler span.mid {
+    margin: 3px 0;
+}
+
+@media (min-width: 992px) {
+    .nav-searchbar a.navbar-brand {
+        margin-right: 30px;
+    }
 }
 
 
@@ -431,7 +459,7 @@ header .nav-user {
 
 /* Navigation */
 
-.nav-user ul.navbar-nav li:not(:last-of-type) {
+.nav-user ul.navbar-nav li {
     margin-right: 8px;
 }
 
@@ -462,6 +490,10 @@ header .nav-user {
 .nav-user ul.navbar-nav li.notification .dropdown-menu {
     border: none;
     top: 53px;
+}
+
+.user-area .user-drop .dropdown-menu {
+    top: 52px;
 }
 
 @media (max-width: 1380px) {
@@ -529,7 +561,7 @@ header .nav-user .user-area {
 
 /*profile cover image*/
 
-section.profile-cover-img .cover-content-img {
+section.profile-cover-img .cover-content-img img {
     max-height: 400px;
 }
 
@@ -615,6 +647,10 @@ section.profile-cover-img .cover-content-img {
 }
 
 .des-col-btn .col-btn-content a:nth-of-type(1) {
+    max-width: 99px;
+}
+
+.des-col-btn .col-btn-content.is-subscribed a:nth-of-type(1) {
     max-width: 80px;
 }
 
@@ -683,6 +719,10 @@ section.feed-mar-2 {
     margin-bottom: 265px;
 }
 
+.feed-start-main .feed-content .feed-content-anc a {
+    color: var(--white);
+}
+
 .feed-start-main .feed-content .feed-content-anc a:nth-of-type(1) {
     max-width: 81px;
     background-color: #E79166;
@@ -710,7 +750,19 @@ section.feed-mar-2 {
     width: 43px;
     height: 43px;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 18px;
+}
+
+.feed-follow-sec .feed-follow-para p {
+    font-weight: 400;
+}
+
+.feed-follow-sec .follow-para-image {
+    margin: 18px 0 20px !important;
+}
+
+.feed-follow-sec .follow-para-image img {
+    max-height: 700px;
 }
 
 .feed-follow-sec .feed-follow-para span button {
@@ -726,6 +778,10 @@ section.feed-mar-2 {
 .feed-follow-sec .feed-follow-para span {
     font-size: 15px;
     font-weight: 600;
+}
+
+section.feed-start-main .suggestion-sec h2 {
+    color: var(--ui-base-text);
 }
 
 
@@ -779,6 +835,11 @@ section.feed-mar-2 {
     margin-bottom: 73px;
 }
 
+section.fan-follow-sec .nav-tabs li a {
+    padding: 16px 0;
+    margin-right: 12px !important;
+}
+
 .fan-follow-sec .fan-follow-content .ui-nav-tabs ul {
     justify-content: start;
 }
@@ -809,6 +870,12 @@ section.feed-mar-2 {
 .payement-main .payement-content .payement-des h1 {
     font-size: 45px;
     font-weight: 700;
+    color: var(--ui-base-text);
+}
+
+.payement-content .payement-des h2 {
+    color: var(--ui-base-text);
+    letter-spacing: -0.01em;
 }
 
 .payement-content .payement-des .payement-des-content span img {
@@ -835,6 +902,7 @@ section.feed-mar-2 {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .payement-content .method-payement-main label img {
@@ -845,14 +913,19 @@ section.feed-mar-2 {
     opacity: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 input.method-payement-check:checked+label {
     background-color: #DAF2FF;
     border: 3px solid #50B4E9;
+}
+
+.payement-content .summary-main>h2 {
+    color: var(--ui-base-text);
 }
 
 .summary-main .summary-sec .summary-content-image img {
@@ -861,15 +934,24 @@ input.method-payement-check:checked+label {
     border-radius: 50%;
 }
 
+.summary-sec .summary-content-image.is-media img {
+    border-radius: 5px;
+}
+
 .summary-main .summary-sec h2 span {
     font-size: 15px;
     font-weight: 500;
     color: #365969;
+    margin-left: 8px;
 }
 
 .summary-sec .summary-content-image .image-content p {
+    color: var(--ui-base-text);
+    letter-spacing: -0.01em;
+}
+
+.summary-sec .summary-content-image .image-content.det-pay-to p {
     color: #636363;
-    font-weight: 500;
 }
 
 .summary-sec .summary-content-image .video-content span {
@@ -895,20 +977,8 @@ input.method-payement-check:checked+label {
     color: #636363;
 }
 
-.summary-main .summary-sec .summary-anc a {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: var(--ui-blue);
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 0;
-}
-
 .summary-main .summary-sec .summary-cancel a {
     color: #696969;
-    font-size: 14px;
-    font-weight: 600;
 }
 
 
@@ -991,6 +1061,10 @@ section.soporte-main {
     min-height: 238px;
 }
 
+.collection-main .collection-row .collection-col-main p b {
+    color: #242424;
+}
+
 .collection-row .collection-col-main {
     position: relative;
 }
@@ -1025,13 +1099,15 @@ section.soporte-main {
 
 /*payement method*/
 
-.payement-content .payement-col-content .payement-head h3 {
+.payement-content .payement-col-content .payement-head h3,
+.payement-content .payement-col-sec .account-content h3 {
     font-weight: 600;
     color: var(--ui-base-text);
 }
 
-.payement-content .payement-col-content .payement-image button {
+.payement-content .payement-col-content .payement-image button:not(.modal button) {
     background: transparent;
+    outline: 0 !important;
 }
 
 .payement-content .payement-col-content .payement-image button i {
@@ -1043,13 +1119,52 @@ section.soporte-main {
 .payement-main .payement-col-sec {
     min-height: 238px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    padding-bottom: 24px;
+}
+
+.payement-main .admin-sec .admin-content {
+    flex-wrap: wrap;
+}
+
+.payement-main .admin-content>h3,
+.payement-main .payement-head>h2 {
+    letter-spacing: -0.01em;
+    color: var(--ui-base-text);
+    margin-right: 8px;
+    font-weight: 600;
 }
 
 .payement-main .payement-col-sec .admin-data {
     text-align: right;
 }
 
-.payement-main .payement-col-sec .payement-para h5 {
+.payement-main .payement-col-sec .admin-data a {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--ui-base-text);
+}
+
+#payAccount .modal-dialog {
+    max-width: 627px;
+}
+
+#payAccount .modal-body {
+    padding: 0;
+}
+
+#payAccount .withdraw-request {
+    padding-top: 20px;
+}
+
+.withdraw-content h2,
+.withdraw-content p:not(form p) {
+    text-align: left;
+}
+
+
+/* .payement-main .payement-col-sec .payement-para h5 */
+
+.payement-main .payement-col-sec h5 {
     max-width: 500px;
     margin: 0 auto;
     color: var(--ui-dark-grey2);
@@ -1102,6 +1217,11 @@ section.board-tabing-main .ui-nav-tabs {
     padding: 10px;
 }
 
+.board-tabing-content table td {
+    padding: 10px;
+    font-size: 15px;
+}
+
 
 /*detail table */
 
@@ -1113,7 +1233,7 @@ section.board-tabing-main .ui-nav-tabs {
 
 /*create page*/
 
-.admin-sec .admin-content .admin-data img {
+.admin-sec .admin-content .admin-data img:not(.modal img) {
     width: 18px;
     height: 18px;
 }
@@ -1138,8 +1258,8 @@ section.board-tabing-main .ui-nav-tabs {
 /*detail page*/
 
 .detail-sec .detail-content .detail-image-content span {
-    color: var(--ui-dark-grey4);
-    font-size: 25px;
+    color: #A4A4A4;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -1149,9 +1269,18 @@ section.board-tabing-main .ui-nav-tabs {
     font-weight: 700;
 }
 
+.detail-sec .detail-content .detail-image-content p {
+    color: #A0A0A0;
+}
+
+.detail-sec .detail-para p {
+    letter-spacing: -0.01em;
+}
+
 .detail-sec .detail-para span {
     font-weight: 600;
     color: #474747;
+    margin-left: 5px;
 }
 
 
@@ -1295,6 +1424,7 @@ section.board-tabing-main .board-table-content .ui-nav-tabs {
     color: var(--ui-base-text);
     padding: 29px 0 29px 0;
     margin: 0;
+    border: 2px solid transparent;
 }
 
 .purchaser-tabing-content .purchase-table-content table tr {
@@ -1354,6 +1484,78 @@ section.board-tabing-main .board-table-content .ui-nav-tabs {
     color: var(--ui-base-text);
     background: transparent;
     border: 0;
+}
+
+.pay-table-sec {
+    padding: 40px 0 70px 0;
+}
+
+.pay-table-sec table {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.pay-table-sec .pay-content-para h3 {
+    width: 95%;
+    margin: 0 auto;
+    font-weight: 700;
+    color: #365969;
+}
+
+.pay-table-sec table th {
+    color: var(--ui-dark-grey4);
+    background: #F4F4FB;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.pay-table-sec table tr {
+    height: 57px;
+}
+
+.pay-table-sec table tr td span:not(li span) {
+    color: var(--ui-dark-grey4);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.pay-table-sec table tr {
+    background-color: #FFFCE4;
+}
+
+.pay-table-sec table tr td span img {
+    max-width: 150px;
+}
+
+.pay-table-sec table tr td li {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 8px;
+}
+
+.bg-li-0 {
+    color: #EAAA1C;
+    background-color: #FFF2D6;
+    max-width: 126px;
+}
+
+.bg-li {
+    background-color: #DBFCEA;
+    max-width: 131px;
+}
+
+.bg-li-2 {
+    color: #E06666;
+    background-color: #FFD2D2;
+    max-width: 185px;
+}
+
+.lab-st {
+    font-size: 14px;
+    color: #E06666;
+    font-weight: 700;
 }
 
 
@@ -1439,7 +1641,7 @@ footer .footer-content {
 
 .footer-content .footer-content-input input {
     width: 100%;
-    padding: 5px 10px 5px 86px;
+    padding: 5px 249px 5px 86px;
     height: 78px;
     border: none;
     outline: none;
@@ -1524,12 +1726,15 @@ footer .footer-content {
         max-width: 35.666667%;
     }
     */
-    .feed-start-main .col-md-5 {
-        flex: 0 0 41.666667%;
-        max-width: 35.666667%;
-    }
     .medium-main .medium-sec .col-md-9 {
         max-width: 73%;
+    }
+}
+
+@media (min-width: 992px) {
+    .feed-start-main .col-lg-5 {
+        flex: 0 0 41.666667%;
+        max-width: 35.666667%;
     }
 }
 
@@ -1538,12 +1743,12 @@ footer .footer-content {
 
 section.profile-self-view {}
 
-@media (min-width: 768px) {
-    section.profile-self-view .main-row .col-md-5 {
+@media (min-width: 992px) {
+    section.profile-self-view .main-row .col-lg-5 {
         flex: 0 0 39.4%;
         max-width: 39.4%;
     }
-    section.profile-self-view .main-row .col-md-7 {
+    section.profile-self-view .main-row .col-lg-7 {
         flex: 0 0 57.3%;
         max-width: 57.3%;
     }
@@ -1588,6 +1793,7 @@ section.profile-self-view {}
     padding: 3px 5px 3px;
     margin-bottom: 7px;
     border-left: none;
+    white-space: normal;
 }
 
 .profile-sidebar .sidebar-col-tab h2 {
@@ -2110,13 +2316,13 @@ section.intranet-login .intranet-login-content {
 
 /* ============================= Intranet Dashboard ============================= */
 
-@media (min-width: 768px) {
-    .dashboard-sec .main-row>.col-md-3 {
+@media (min-width: 1200px) {
+    .dashboard-sec .main-row>.col-xl-3 {
         flex: 0 0 22.8%;
         max-width: 22.8%;
         padding-left: 0;
     }
-    .dashboard-sec .main-row .col-md-9 {
+    .dashboard-sec .main-row .col-xl-9 {
         flex: 0 0 74.8%;
         max-width: 74.8%;
     }
@@ -2216,6 +2422,12 @@ aside .dashboard-tab-nav a.is-notification::before {
     padding: 45px 65px 80px 0;
 }
 
+@media (max-width: 991px) {
+    .dashboard-sec .dashboard-content {
+        padding-right: 0;
+    }
+}
+
 .dashboard-content [class*="dashboard-col-"] {
     background: var(--white);
     border-radius: 5px;
@@ -2248,6 +2460,12 @@ aside .dashboard-tab-nav a.is-notification::before {
 
 .dashboard-content [class*="dashboard-table-"] {
     padding: 20px 0 0;
+}
+
+@media (max-width: 991px) {
+    .dashboard-content [class*="dashboard-table-"] {
+        overflow-x: auto;
+    }
 }
 
 
@@ -2374,4 +2592,655 @@ aside .dashboard-tab-nav a.is-notification::before {
 .dashboard-table-validateMain table th {
     font-weight: 500;
     font-size: 15px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1199px) {
+    /* ====================== Site Header ==================== */
+    .nav-user .user-area .img-uploader {
+        width: 14%;
+    }
+    .nav-user .user-area .user-drop {
+        width: 84%;
+    }
+    .user-area .user-drop .dropdown-menu {
+        left: -17px;
+    }
+    .nav-user ul.navbar-nav li.nav-item.notification {
+        margin-right: 8px;
+    }
+    .nav-user ul.navbar-nav li.notification .dropdown-menu,
+    .nav-user ul.navbar-nav li.globe .dropdown-menu {
+        top: 51px;
+    }
+    /* ====================== perfil-vista-propia-vacio ==================== */
+    .profile-sidebar .sidebar-col-static {
+        padding-left: 0;
+    }
+    .profile-sidebar .sidebar-col-tab h2 {
+        margin-left: 15px;
+    }
+    .sidebar-col-tab .nav-tabs .nav-link {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .sidebar-col-tab .nav-tabs .nav-link:not(.nav-link.active):before {
+        left: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* Ui Login Register Page */
+    .ui-form-header nav .navbar-collapse {
+        position: absolute;
+        top: 58px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        padding: 15px 30px;
+        z-index: 99;
+        box-shadow: 0px 1px 10px rgb(0 0 0 / 30%);
+        border-radius: 15px;
+    }
+    .ui-form-header nav ul li a {
+        color: var(--ui-base-text);
+    }
+    .ui-form-header nav ul li a.btn.bg-brand {
+        color: #fff;
+    }
+    .ui-form-content .form-col {
+        padding: 30px;
+    }
+    /* ====================== Site Header ==================== */
+    header .nav-searchbar {
+        width: auto;
+    }
+    header .nav-searchbar .input-group {
+        display: none;
+    }
+    header .nav-user {
+        width: 70%;
+    }
+    .user-area .user-drop .dropdown-menu {
+        left: -7px;
+        top: 51px;
+    }
+    .nav-user ul.navbar-nav li.notification .dropdown-menu {
+        left: -272px;
+    }
+    .nav-user ul.navbar-nav li.globe .dropdown-menu {
+        left: -230px;
+    }
+    /* ====================== Site Footer ==================== */
+    .footer-content .footer-content-img {
+        width: 100%;
+    }
+    .footer-content .footer-content-input input {
+        padding: 5px 170px 5px 15px;
+    }
+    .footer-content .footer-content-input a {
+        max-width: 150px;
+    }
+    .footer-list {
+        max-width: 100%;
+        margin: 82px auto 0;
+    }
+    /* ====================== crear-pago Page ==================== */
+    .collection-row .collection-col-main .collection-col-content h2 {
+        font-size: 28px;
+    }
+    /* ====================== perfil-vista-propia-vacio ==================== */
+    .profile-sidebar .sidebar-col-static {
+        display: none;
+    }
+    .profile-sidebar .sidebar-col-tab {
+        width: 100%;
+        border-left: 0;
+    }
+    section.profile-self-view .main-self-profile {
+        padding: 35px 0 80px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Ui Login Register Page */
+    .ui-form-header {
+        padding: 26px 0 26px 15px;
+    }
+    .ui-form-header .navbar-brand {
+        width: 44%;
+        margin: 0;
+    }
+    .ui-form-header ul {
+        width: 50%;
+    }
+    .ui-form-header nav .navbar-toggler {
+        display: none;
+    }
+    .ui-form-header nav ul li a.btn {
+        padding: 13px !important;
+    }
+    section.ui-form-section .ui-form-content {
+        padding: 121px 0 30px;
+        text-align: center;
+    }
+    .ui-form-content .form-text h1 {
+        font-size: 40px;
+        letter-spacing: 0.5px;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+    .ui-form-content .form-text p {
+        margin-bottom: 51px;
+    }
+    .ui-form-content .form-text p::before {
+        width: 72%;
+        right: 0;
+        margin: auto;
+    }
+    .ui-form-content .form-col {
+        max-width: 361px;
+        margin: auto;
+    }
+    .ui-form-content .form-col h2 {
+        font-size: 27px;
+        letter-spacing: -0.01em;
+    }
+    .ui-form-social a {
+        max-width: 112px;
+        font-size: 14px;
+    }
+    /* Register Page */
+    .ui-form-content form .form-check label {
+        text-align: left;
+    }
+    /* ====================== Site Header ==================== */
+    header .site-header {
+        border-bottom: 1px solid #DADCDB;
+    }
+    .site-header nav {
+        padding-left: 0;
+        position: unset;
+    }
+    .nav-user .user-area .user-drop:not(.mob-menu .user-area .user-drop) {
+        display: none;
+    }
+    header .nav-user {
+        width: 56%;
+        align-items: center;
+    }
+    header .nav-user .user-area,
+    .nav-user .user-area .img-uploader {
+        width: auto;
+        height: fit-content;
+        margin-left: auto;
+    }
+    .user-area .img-uploader label {
+        padding: 0;
+    }
+    .user-area .img-uploader label img {
+        width: 27px;
+        max-width: 100%;
+        vertical-align: -5px;
+    }
+    header nav button.navbar-toggler {
+        outline: 0 !important;
+    }
+    .nav-user ul.navbar-nav li a img:not(.dropdown-menu img) {
+        width: 19px;
+        max-width: 100%;
+    }
+    .nav-user ul.navbar-nav li:not(:last-of-type) a img:not(.dropdown-menu img) {
+        width: 20px;
+        max-width: 100%;
+    }
+    .nav-user ul.navbar-nav li.nav-item.notification {
+        margin-right: 0;
+    }
+    .nav-user ul.navbar-nav li:not(:last-of-type) {
+        margin-right: 20px;
+    }
+    .site-header div#collapsibleNavbar {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fff;
+        z-index: 100;
+        padding-top: 20px;
+    }
+    .nav-user .user-area .user-drop {
+        width: 100%;
+    }
+    .user-area .user-drop button {
+        width: 91%;
+        margin: auto;
+        padding: 3px 20px;
+        font-size: 15px;
+    }
+    .mob-menu .dropdown-component {
+        box-shadow: none;
+    }
+    .mob-menu .dropdown-component a.support {
+        border-top: none;
+        border-bottom: none;
+    }
+    .nav-searchbar a.navbar-brand {
+        max-width: 82px;
+    }
+    .site-header .dropdown {
+        position: unset;
+    }
+    .site-header .dropdown-menu {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+    }
+    .notification-drop .notification-wrapper .notification-img {
+        margin-right: 16px;
+        width: 80px;
+    }
+    .notification-drop .notification-wrapper .notifictaion-content {
+        width: 100%;
+    }
+    .notification-wrapper .notifictaion-content>.d-flex {
+        flex-direction: column;
+    }
+    .notification-wrapper .notifictaion-content .noti-text,
+    .notification-wrapper .notifictaion-content .noti-btn {
+        width: 100%;
+    }
+    .notification-wrapper .notifictaion-content .noti-btn {
+        margin-top: 10px;
+    }
+    .notification-drop a {
+        padding: 6px 15px 1px;
+    }
+    .notification-drop .noti-header {
+        padding-left: 15px;
+        font-size: 35px;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+    }
+    .notification-wrapper.follow .noti-btn button {
+        padding: 6px 10px;
+    }
+    .nav-user ul.navbar-nav li.notification .dropdown-menu,
+    .nav-user ul.navbar-nav li.globe .dropdown-menu {
+        top: 58px;
+    }
+    .notification-drop,
+    .global-dropdown {
+        box-shadow: none;
+    }
+    /* ====================== Site Footer ==================== */
+    footer .footer-content {
+        padding-top: 47px !important;
+    }
+    .footer-content .footer-content-img {
+        max-width: 131px;
+    }
+    .footer-list {
+        margin: 41px auto 0 8px;
+    }
+    .footer-content h5 {
+        display: none;
+    }
+    .footer-bottom {
+        margin: 29px 0 0 0;
+    }
+    .footer-bottom .footer-bottom-content span:not(:first-of-type) {
+        display: none;
+    }
+    /* ====================== Soporte Page ==================== */
+    .soporte-main .soporte-main-overlay {
+        min-height: 296px;
+    }
+    .soporte-main .soporte-content {
+        padding: 83px 9px 0;
+    }
+    .soporte-main .soporte-content h1 {
+        font-size: 35px;
+    }
+    .works-mar {
+        margin-bottom: 93px;
+    }
+    section.work-faqs-main {
+        padding: 8px 11px 0;
+    }
+    .work-faqs-main .work-faqs-content p {
+        font-size: 17px;
+    }
+    .work-faqs-content:not(:first-of-type) {
+        padding-top: 6px;
+    }
+    /* ====================== Compras y Suscripciones Page ==================== */
+    section.collection-main {
+        margin-bottom: 14px !important;
+    }
+    .collection-main .collection-content .collection-head p {
+        border-bottom: none;
+    }
+    .ui-nav-tabs {
+        background: transparent;
+    }
+    .ui-nav-tabs ul.nav-tabs:not(.profile-tab-sec ul) {
+        flex-direction: column;
+    }
+    .ui-nav-tabs ul.nav-tabs li:not(.profile-tab-sec ul li) {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    /* .ui-nav-tabs ul.nav-tabs li a{
+        border: 2px solid var(--ui-base-text) !important;
+    } */
+    .ui-nav-tabs ul.nav-tabs li a:not(:hover, .active, .profile-tab-sec ul li a) {
+        border: 2px solid var(--ui-base-text) !important;
+        border-radius: 5px !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    .ui-nav-tabs ul.nav-tabs li a.active:not(.profile-tab-sec ul li a) {
+        background-color: var(--white) !important;
+        border-radius: 5px !important;
+        border: 2px solid transparent !important;
+    }
+    .ui-nav-tabs .tab-content:not(.profile-tab-sec .tab-content) {
+        background: var(--white);
+        overflow-x: auto;
+    }
+    section.purchaser-tabing-main .tab-content table tr:first-of-type {
+        display: none;
+    }
+    /* ====================== NotificationS  Page ==================== */
+    section.all-notifications {
+        padding: 35px 0;
+    }
+    section.all-notifications .notification-drop a {
+        padding: 6px 0 1px;
+    }
+    section.all-notifications .noti-img {
+        display: none;
+    }
+    /* ====================== Crear Pago Page ==================== */
+    .collection-main .collection-row .collection-col-main {
+        min-height: 150px;
+        border: 1px solid #D1D1D1;
+        justify-content: flex-start !important;
+        padding: 35px;
+    }
+    .payement-main .payement-col-sec .admin-data a span {
+        display: none;
+    }
+    .board-tabing-content table {
+        width: 100%;
+        min-height: 180px;
+    }
+    .admin-sec .admin-mercedes {
+        justify-content: center !important;
+    }
+    .admin-sec .admin-mercedes span {
+        display: none;
+    }
+    /* ====================== Favrito Fans Page ==================== */
+    .des-col-name {
+        margin-left: 18px;
+    }
+    .profile-des .profile-des-content h4 {
+        padding: 0 0 4px 0;
+    }
+    .profile-des-content .col-rate-btn:not(.other-profile .col-rate-btn) {
+        margin-top: -44px;
+        width: 69%;
+        margin-left: auto;
+    }
+    .profile-des-content .col-description {
+        margin-top: 29px;
+    }
+    .des-col-rate {
+        border-top: 1px solid #E3E3E3;
+        margin-top: 23px;
+        flex-wrap: wrap;
+    }
+    .des-col-rate .col-rate-content span {
+        font-size: 15px;
+    }
+    .des-col-rate .col-rate-content p {
+        font-size: 13px;
+    }
+    section.fan-follow-sec .nav-tabs {
+        padding-top: 20px;
+    }
+    section.fan-follow-sec .nav-tabs li a {
+        padding: .5rem 1rem;
+        margin-right: 0 !important;
+    }
+    /* ====================== Feeds Page ==================== */
+    .feed-start-main .feed-content .feed-content-anc a {
+        max-width: 100% !important;
+        width: 47%;
+    }
+    section.feed-start-main {
+        margin-bottom: 50px;
+    }
+    /* ====================== Formas De Pago Pages ==================== */
+    .payement-content .payement-des .payement-des-content span {
+        display: block;
+        max-width: 250px;
+        margin: auto;
+    }
+    .method-payement-main {
+        margin-bottom: 20px;
+    }
+    .summary-main .summary-content {
+        flex-direction: column;
+    }
+    .summary-main .summary-content-image {
+        flex-direction: column;
+    }
+    .summary-content-image .image-content {
+        margin: 20px 0 !important;
+    }
+    .summary-content-image .video-content {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .payement-main .payement-col-sec {
+        margin-bottom: 20px;
+    }
+    /* ====================== Cobros Pages ==================== */
+    .detail-sec .detail-content,
+    .detail-sec .detail-para {
+        flex-direction: column;
+    }
+    .detail-content img {
+        max-width: 212px;
+    }
+    .detail-sec .detail-content .detail-image-content h2 {
+        font-weight: 600;
+        margin: 35px 0 2px;
+    }
+    .detail-sec .detail-para p {
+        text-align: left !important;
+        margin-bottom: 20px;
+    }
+    div#detalletab table tr:first-of-type,
+    div#detalletab table tr td:not(:nth-of-type(4), :nth-of-type(5)) {
+        display: none;
+    }
+    div#pagostab table tr:first-of-type,
+    div#pagostab table:first-of-type td li span,
+    div#pagostab table:first-of-type td span label,
+    div#pagostab table:first-of-type tr td:not(:first-of-type, :nth-of-type(3), :nth-of-type(6), :nth-of-type(7)),
+    div#pagostab table:last-of-type tr td:not(:first-of-type, :nth-of-type(3), :last-of-type),
+    div#pagostab table:last-of-type td li span,
+    div#pagostab table:last-of-type td span label {
+        display: none;
+    }
+    div#pagostab table td li {
+        padding: 0;
+        max-width: none;
+        background: transparent;
+    }
+    div#pagostab table td li::marker {
+        width: 13px;
+        height: 13px;
+    }
+    div#estadisticastab .calender-subscription .subscription-main,
+    .calender-main .calender-content .calender-month-content p.font-weight-bold {
+        display: none;
+    }
+    /* section.board-tabing-main .pay-table-sec {
+        overflow-x: auto;
+    } */
+    .board-tabing-content .calender-main {
+        width: 100%;
+    }
+    .calender-month-content {
+        flex-wrap: wrap;
+        width: 53%;
+    }
+    .calender-month-content span:last-of-type,
+    .calender-month-content label,
+    .calender-month-content span:first-of-type,
+    .calender-month-content p {
+        margin-left: 0 !important;
+        display: block;
+        width: 45%;
+    }
+    /* ====================== Perfil Vacio Page ==================== */
+    section.profile-cover-img .cover-content-img img {
+        min-height: 380px;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .profile-tab-sec .ui-nav-tabs ul li a img {
+        max-width: 21px;
+    }
+    /* ====================== Perfil De Otro ==================== */
+    .des-col-btn .col-btn-content a:nth-of-type(1) {
+        display: block;
+        margin: -57px 0 0 30%;
+    }
+    .des-col-btn .col-btn-content a:nth-of-type(2) {
+        display: block;
+        margin: -41px 0 26px 54%;
+    }
+    .profile-des.other-profile .col-rate-btn {
+        margin-top: 14px;
+    }
+    /* ====================== Perfil De Suscrito ==================== */
+    .des-col-btn .col-btn-content:not(.is-subscribed) a:nth-of-type(2) {
+        margin-left: 58%;
+    }
+    /* ====================== perfil-vista-propia-vacio ==================== */
+    .profile-sidebar .sidebar-col-tab {
+        border-right: 0;
+    }
+    section.profile-self-view .main-self-profile {
+        padding-left: 15px;
+    }
+    .main-self-profile .profile-cover img:not(.profile-img-tool img) {
+        min-height: 305px;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .main-self-profile .changes-saved {
+        bottom: 0;
+    }
+    .main-self-profile .bacnk-account-details .col-md-6 {
+        padding: 0;
+    }
+    [class*="bank-account-"] label {
+        flex-direction: column-reverse;
+    }
+    [class*="bank-account-"] .bank-info,
+    [class*="bank-account-"] .bank-logo {
+        width: 100%;
+    }
+    [class*="bank-account-"] .bank-logo {
+        margin-bottom: 25px;
+    }
+    [class*="bank-account-"] .bank-logo img {
+        max-width: 165px;
+    }
+    /* ====================== Intranet Dashboard ==================== */
+    .intranet-login-content .login-form {
+        padding: 30px 15px;
+    }
+    .notification-wrapper .notifictaion-content .d-flex>div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 392px) {
+    header .nav-user {
+        width: 47%;
+    }
+    .nav-user ul.navbar-nav li:not(:last-of-type) {
+        margin-right: 12px;
+    }
+    .des-col-rate .col-rate-content p {
+        font-size: 11px;
+    }
+    /* ====================== Perfil De Otro ==================== */
+    .des-col-btn .col-btn-content a:nth-of-type(1) {
+        margin-left: 35%;
+    }
+    .des-col-btn .col-btn-content a:nth-of-type(2) {
+        margin-left: 62%;
+    }
+    /* ====================== Perfil De Suscrito ==================== */
+    .des-col-btn .col-btn-content:not(.is-subscribed) a:nth-of-type(2) {
+        margin-left: 66%;
+    }
+}
+
+@media (max-width: 350px) {
+    /* Ui Login Register Page */
+    .ui-form-content .form-text h1 {
+        font-size: 32px;
+    }
+    .ui-form-content .form-text p {
+        font-size: 16px;
+    }
+    .ui-form-content .form-col h2 {
+        font-size: 22px;
+    }
+    .ui-form-social a {
+        max-width: 94px;
+    }
+    /* ====================== Favrito Fans Page ==================== */
+    .profile-des-content .col-rate-btn:not(.other-profile .col-rate-btn) {
+        width: 60%;
+    }
+    .des-col-rate .col-rate-content {
+        width: 30%;
+    }
+    .feed-start-main .feed-content .feed-content-anc a {
+        width: 46%;
+    }
+    .feed-start-main .feed-content .feed-content-anc a {
+        font-size: 11px;
+    }
+    /* ====================== Perfil De Otro ==================== */
+    .des-col-btn .col-btn-content a:nth-of-type(1) {
+        margin-left: 40%;
+    }
+    .des-col-btn .col-btn-content a:nth-of-type(2) {
+        margin-left: 70%;
+    }
+    /* ====================== Perfil De Suscrito ==================== */
+    .des-col-btn .col-btn-content:not(.is-subscribed) a:nth-of-type(2) {
+        margin-left: 76%;
+        max-width: 80px;
+    }
+    /* ====================== perfil-vista-propia-vacio ==================== */
+    section.profile-self-view .main-self-profile {
+        padding-left: 0;
+    }
 }
