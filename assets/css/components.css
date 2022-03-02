@@ -290,7 +290,7 @@
 /* Alerts */
 
 
-/* Success Alert */
+/* info Alert */
 
 .alert {
     padding: 1rem 2.2rem 1rem 1.4rem;
@@ -314,6 +314,18 @@
 .alert p img {
     width: 25px;
     margin-right: 15px;
+}
+
+
+/* Success Alert */
+
+.alert.alert-success {
+    background: var(--ui-success);
+    border-color: var(--ui-success);
+}
+
+.alert.alert-success p {
+    color: #fff;
 }
 
 
@@ -844,7 +856,7 @@ Small Box */
 
 .create-post .modal-dialog {
     width: 100%;
-    max-width: 673px !important;
+    max-width: 1462px !important;
     /* height: fit-content; */
     margin: auto;
     top: 29px;
@@ -864,12 +876,14 @@ Small Box */
 }
 
 .create-post .modal-header {
-    padding: 28px 22px 20px 31px;
+    padding: 21px 40px;
+    justify-content: center;
 }
 
 .create-post .modal-header h3 {
     color: var(--ui-base-text);
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .modal-dialog .modal-header button.close {
@@ -882,53 +896,172 @@ Small Box */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -0.7rem 0rem 0rem auto;
     opacity: 1;
+    padding: 0;
+    margin: 0 0 0 auto;
+}
+
+.create-post .modal-header button.close {
+    background: var(--ui-light-grey3);
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    margin: 0;
 }
 
 .create-post .modal-footer {
-    padding: 0 22px 40px 40px;
+    padding: 0 30px 40px;
     border: none;
 }
 
 .create-post .modal-body {
-    padding: 19px 22px 20px 31px;
+    padding: 19px 30px 20px 30px;
 }
 
-.modal-body .profile-info .profile-img {
-    width: 59px;
-    height: 59px;
-    margin-right: 17px;
-}
-
-.modal-body .profile-info .profile-name h4 {
-    color: var(--ui-base-text);
-    font-weight: 700;
-}
-
-.modal-body .profile-info .profile-name p {
-    color: #8DA2AC;
-}
-
-.modal-body .post-price {
-    text-align: right;
-}
-
-.modal-body .post-price h2 {
+.create-post h4.post-uploader-text {
+    font-size: 18px;
     font-weight: 500;
+    color: var(--ui-base-text);
+    margin: 30px 0;
+}
+
+.single-post-uploader label {
+    border: 1px dashed #C6C6C6;
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.single-post-uploader label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.single-post-uploader label img {
+    max-width: 160px;
+}
+
+.single-post-uploader label p {
+    color: var(--ui-base-text);
+    font-size: 23px;
+    margin: 15px 0 10px;
+}
+
+.single-post-uploader label span {
+    color: var(--ui-blue);
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+
+/* Write Post */
+
+.create-post .write-post {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+.create-post .write-post .input {
+    width: 100%;
+    max-width: 1295px;
+}
+
+.create-post .write-post textarea {
+    border: none;
+    box-shadow: none !important;
+    resize: unset;
+    height: 60px;
+    color: var(--ui-dark-grey4);
     font-size: 30px;
 }
 
-.modal-body .post-price.empty h2 {
-    color: #DCDCDC;
+.create-post .write-post .smileyDrop {
+    font-size: 32px;
+    color: var(--ui-dark-grey1);
 }
 
-.modal-body .post-price.filled h2 {
+.create-post .write-post .smileyDrop::after {
+    content: none;
+}
+
+
+/* Post Price */
+
+.create-post .post-price {
+    border-left: 1px solid #B0B0B0;
+}
+
+@media (min-width: 768px) {
+    .create-post .post-price {
+        max-width: 48%;
+        flex: 0 0 48%;
+        padding-left: 35px;
+    }
+}
+
+.create-post .post-price h2 {
+    font-weight: 700;
+    font-size: 20px;
     color: var(--ui-base-text);
 }
 
-.modal-body .post-price p {
-    color: #BDBDBD;
+.create-post .post-price p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ui-base-p);
+}
+
+.create-post .post-price .input-group {
+    margin: 20px 0 10px;
+}
+
+.create-post .post-price span.input-group-text {
+    border-radius: 0;
+    border: 2px solid #B9B9B9;
+    border-right: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--ui-base-text);
+    padding: 0 0 0 22px;
+}
+
+.create-post .post-price input {
+    border-radius: 0;
+    border: 2px solid #B9B9B9;
+    border-left: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--ui-base-text);
+    padding: 13px 22px 13px 0;
+    max-width: 365px;
+}
+
+.error_text {
+    display: none;
+}
+
+.post-price.error .input-group span.input-group-text,
+.post-price.error .input-group input,
+.post-price .input-group input.error,
+.post-price.error p {
+    border-color: var(--ui-error) !important;
+    color: var(--ui-error);
+}
+
+.post-price.error .error_text {
+    display: block;
+}
+
+.create-post .post-price input::placeholder {
+    color: var(--ui-base-text);
 }
 
 .create-post .create-post-content .post-description {
@@ -944,24 +1077,44 @@ Small Box */
 
 /* Post Category */
 
-.create-post-content .post-category-container .post-category-col {
-    width: 49%;
+.create-post .post-controls {
+    margin-top: 25px;
 }
 
-.create-post-content .post-category-container input {
+.create-post .post-category-container h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 25px;
+}
+
+.post-category-container .post-category-col {
+    width: 48.6%;
+    margin-right: 15px;
+}
+
+.post-category-container .post-category-col:last-of-type {
+    margin-right: 0;
+}
+
+.create-post .post-category-container input {
     display: none;
 }
 
-.create-post-content .post-category-container label {
+.create-post .post-category-container label {
     /* background: #FFFFFF; */
     border: 1px solid #CCCCCC;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     color: var(--ui-base-text);
     font-weight: bold;
-    margin: 0 0 15px;
     padding: 12px 21px 17px;
+    line-height: 1.4;
     cursor: pointer;
+}
+
+.create-post .post-category-container span:first-of-type {
+    margin-right: 20px;
 }
 
 .post-category-container label svg {
@@ -980,25 +1133,70 @@ Small Box */
     fill: var(--white);
 }
 
+.create-post .alert {
+    margin-top: 16px;
+}
+
+.create-post .alert:first-of-type {
+    margin-top: 25px;
+}
+
+.create-post .alert-warning {
+    background: #FFC3C3;
+    border-color: #FFC3C3;
+    color: #2E2E2E;
+    font-weight: 600;
+}
+
+.create-post .alert-warning p {
+    font-weight: 600;
+}
+
 
 /* Uploaded Post output */
 
-.multiple .create-post-content .post-upload-output img,
-.multiple .create-post-content .post-upload-output video {
-    max-height: 235px;
+.create-post .post-upload-output {
+    margin-bottom: 27px;
+    border: 10px solid transparent;
+    transition: 0.3s all ease;
 }
 
-.create-post-content .post-upload-output img,
-.create-post-content .post-upload-output video {
-    max-height: 349px;
-    margin-bottom: 4px;
+.create-post .post-upload-output img,
+.create-post .post-upload-output video {
+    max-height: 238px;
+    object-fit: cover;
     border-radius: 10px;
+    transition: 0.3s all ease;
 }
 
-.create-post-content .post-upload-output button.discard-btn {
+.create-post .post-upload-output p.inview-text {
+    display: none;
+    text-align: center;
+    width: max-content;
+    line-height: 1.0;
+    position: absolute;
+    padding: 3px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--ui-blue);
+    transition: 0.3s all ease;
+    left: 0;
+    right: 0;
+    top: -25px;
+    margin: auto;
+}
+
+.post-upload-output.is-inview img,
+.post-upload-output.is-inview video {
+    border-radius: 0;
+}
+
+.post-upload-output .discard-btn,
+.post-upload-output .eye-btn {
     position: absolute;
     top: 21px;
-    right: 17px;
+    right: 25px;
     background: var(--white);
     color: #959595;
     border-radius: 50%;
@@ -1006,13 +1204,22 @@ Small Box */
     font-weight: 400;
     width: 38px;
     height: 38px;
+    padding: 0;
+    line-height: 1.0;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.create-post-content .post-upload-output button.play-btn {
+.post-upload-output .eye-btn {
+    right: unset;
+    left: 25px;
+    font-size: 18px;
+}
+
+.post-upload-output .play-btn {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1024,7 +1231,7 @@ Small Box */
     padding: 0;
 }
 
-.create-post-content .post-upload-output .video-prog {
+.post-upload-output .video-prog {
     position: absolute;
     left: 0;
     right: 0;
@@ -1035,7 +1242,25 @@ Small Box */
     background: #fff;
 }
 
-.create-post .create-post-content .post-uploader {
+.post-upload-output.is-inview {
+    border: 10px solid var(--ui-blue);
+}
+
+.post-upload-output.is-inview p.inview-text {
+    display: inline-block;
+}
+
+.post-upload-output.is-inview .eye-btn {
+    color: #fff;
+    background-color: var(--ui-blue);
+}
+
+.post-upload-output.is-uploading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.create-post .post-uploader {
     margin: 20px 0 0;
     padding: 8px 22px;
     box-shadow: 1px 1px 4px rgb(0 0 0 / 15%);
@@ -1043,12 +1268,17 @@ Small Box */
     border: 1px solid #CCCCCC;
 }
 
+.post-uploader.disabled label {
+    opacity: 30%;
+    pointer-events: none;
+}
+
 .create-post .create-post-content h5 {
     font-weight: bold;
     color: var(--ui-base-text);
 }
 
-.create-post .create-post-content label.post-content-upload {
+.create-post label.post-content-upload {
     position: relative;
     background: #F5F5F5;
     border-radius: 50px;
@@ -1057,18 +1287,18 @@ Small Box */
     cursor: pointer;
 }
 
-.create-post .create-post-content label.post-content-upload span {
+.create-post label.post-content-upload span {
     font-weight: 500;
     font-size: 14px;
     color: var(--ui-base-text);
 }
 
-.create-post .create-post-content label.post-content-upload img {
+.create-post label.post-content-upload img {
     max-width: 24px;
     margin-right: 7px;
 }
 
-.create-post .create-post-content label.post-content-upload input {
+.create-post label.post-content-upload input {
     position: absolute;
     top: 0;
     left: 0;
