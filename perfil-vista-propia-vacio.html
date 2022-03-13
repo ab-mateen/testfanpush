@@ -310,64 +310,49 @@
     </header>
     <!-- profile Self View -->
     <section class="profile-self-view is-empty">
-        <div class="container-fluid">
+        <div class="container">
             <div class="main-row row justify-content-between no-gutters">
                 <!-- Sidebar Links Column -->
-                <div class="col-lg-5 col-md-4">
+                <div class="col-xl-3 col-lg-4 col-md-5 pt-3">
                     <!-- Sidebar -->
                     <div class="profile-sidebar h-100">
-                        <div class="d-flex justify-content-between h-100">
-                            <!-- Sidebar Column 1 -->
-                            <div class="sidebar-col-static">
-                                <h2>Configuración</h2>
-                                <div class="dropdown-component w-100">
-                                    <div class="drop-options user">
-                                        <p>Opciones de Usuario</p>
-                                        <a class="dropdown-item" href="#"><img src="assets/images/profile-icon.svg" alt=""> Perfil</a>
-                                        <a class="dropdown-item" href="#"><img src="assets/images/settings-icon.svg" alt=""> Configuración</a>
-                                        <a class="dropdown-item" href="#"><img src="assets/images/cart-icon.svg" alt=""> Compras y suscripciones</a>
-                                        <a class="dropdown-item" href="#"><img src="assets/images/star.svg" alt=""> Favoritos</a>
-                                    </div>
-                                    <div class="drop-options author">
-                                        <p>Opciones de Autor</p>
-                                        <a class="dropdown-item" href="#"><img src="assets/images/wallet-icon.svg" alt=""> Ganancias y pagos</a>
-                                    </div>
-                                    <a class="dropdown-item support" href="#"><img src="assets/images/support-icon.svg" alt=""> Soporte</a>
-                                    <a class="dropdown-item pt-3" href="#"><img src="assets/images/logout-icon.svg" alt=""> Salir</a>
-                                </div>
+                        <!-- Sidebar Column -->
+                        <nav>
+                            <div class="options">
+                                <ul class="nav nav-tabs border-0 flex-column">
+                                    <h3>Opciones de cuenta</h3>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabPerfil">Perfil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabCuenta">Cuenta</a>
+                                    </li>
+                                    <div class="space"></div>
+                                    <h3>Opciones de cuenta</h3>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabSuscripcion">Precio de Suscripción</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabBancarios">Datos Bancarios</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- Sidebar Column 2 -->
-                            <div class="sidebar-col-tab">
-                                <h2>Editar Perfil</h2>
-                                <nav>
-                                    <div class="nav nav-tabs border-0 flex-column" id="nav-tab" role="tablist">
-                                        <a class="nav-link active" id="nav-tabPerfil" data-toggle="tab" href="#tabPerfil" role="tab" aria-controls="tabPerfil" aria-selected="true">Perfil</a>
-                                        <a class="nav-link" id="nav-tabCuenta" data-toggle="tab" href="#tabCuenta" role="tab" aria-controls="tabCuenta" aria-selected="false">Cuenta</a>
-                                        <a class="nav-link" id="nav-tabSuscripcion" data-toggle="tab" href="#tabSuscripcion" role="tab" aria-controls="tabSuscripcion" aria-selected="false">Precio de Suscripción</a>
-                                        <a class="nav-link" id="nav-tabBancarios" data-toggle="tab" href="#tabBancarios" role="tab" aria-controls="tabBancarios" aria-selected="false">Datos Bancarios</a>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
+                        </nav>
                     </div>
                 </div>
                 <!-- Profile Column -->
-                <div class="col-lg-7 col-md-8">
+                <div class="col-xl-9 col-lg-8 col-md-7 pt-3">
                     <div class="tab-content" id="profile-tabContent">
                         <!-- Perfil Tab Content -->
-                        <div class="tab-pane fade show active" id="tabPerfil" role="tabpanel" aria-labelledby="nav-tabPerfil">
+                        <div class="tab-pane fade show active" id="tabPerfil">
+                            <div class="alert alert-success small-border">
+                                <p class="d-flex align-items-center">
+                                    <span>Se guardaron los cambios</span>
+                                    <span class="d-block ml-auto"><i class="fas fa-check"></i></span>
+                                </p>
+                            </div>
                             <div class="main-self-profile">
                                 <form>
-                                    <!-- Cover Photo Show hide button -->
-                                    <div class="show-profile-cover">
-                                        <label class="d-flex justify-content-between align-items-center">
-                                        Mostrar foto de portada en mi perfil
-                                        <div class="btn-toggle-switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </div>
-                                      </label>
-                                    </div>
                                     <!-- Profile Cover Photo -->
                                     <div class="profile-cover position-relative">
                                         <img src="assets/images/profile-self-cover.jpg" alt="">
@@ -392,198 +377,444 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <!-- username Filed -->
-                                    <div class="profile-field-username">
-                                        <div class="form-group mb-0">
-                                            <label for="profileUserName">Nombre de usuario</label>
-                                            <div class="input-checkemark position-relative">
-                                                <input type="text" id="profileUserName" class="form-control small-border white-input" placeholder="@manuelvega1">
+                                    <div class="bg_wrapper">
+                                        <h2 class="title">Configuracion de Perfil</h2>
+                                        <!-- username Filed -->
+                                        <div class="profile-field-username">
+                                            <div class="form-group mb-0">
+                                                <label for="profileUserName">Nombre de usuario</label>
+                                                <div class="input-checkemark position-relative">
+                                                    <input type="text" id="profileUserName" class="form-control small-border white-input" placeholder="@manuelvega1">
+                                                </div>
+                                                <p class="form-text">http://www.fanpush.com/manuelvega1</p>
                                             </div>
-                                            <p class="form-text">http://www.fanpush.com/manuelvega1</p>
                                         </div>
-                                    </div>
-                                    <!-- Display Name Filed -->
-                                    <div class="profile-field-name">
-                                        <div class="form-group mb-0">
-                                            <label for="profileDisplayName">Nombre de usuario</label>
-                                            <input type="text" id="profileDisplayName" class="form-control small-border white-input" placeholder="Bebu de la Vega">
-                                        </div>
-                                    </div>
-                                    <!-- Profile Bio Filed -->
-                                    <div class="profile-field-bio">
-                                        <div class="form-group mb-0">
-                                            <label for="profileBio">Bio</label>
-                                            <textarea name="" id="profileBio" class="form-control small-border pt-3 white-input" placeholder="Contenido Variado" rows="6"></textarea>
-                                        </div>
-                                    </div>
-                                    <!-- Cover Photo Show hide button -->
-                                    <div class="show-profile-achv">
-                                        <h5>Mostrar Informacion y Logros</h5>
-                                        <label class="d-flex justify-content-between align-items-center">
-                                            FANS
-                                            <div class="btn-toggle-switch">
-                                                <input type="checkbox" checked>
-                                                <span class="slider"></span>
+                                        <!-- Display Name Filed -->
+                                        <div class="profile-field-name">
+                                            <div class="form-group mb-0">
+                                                <label for="profileDisplayName">Nombre para mostrar en perfil</label>
+                                                <input type="text" id="profileDisplayName" class="form-control small-border white-input" placeholder="Juan Manuel de la Vega">
                                             </div>
-                                        </label>
-                                        <label class="d-flex justify-content-between align-items-center">
-                                            Ingresos
-                                            <div class="btn-toggle-switch">
-                                                <input type="checkbox" checked>
-                                                <span class="slider"></span>
+                                        </div>
+                                        <!-- Real Name Filed -->
+                                        <div class="profile-field-name">
+                                            <div class="form-group mb-0">
+                                                <label for="realName">Nombre real</label>
+                                                <input type="text" id="realName" class="form-control small-border white-input" placeholder="Juan Manuel de la Vega">
                                             </div>
-                                        </label>
-                                    </div>
-                                    <!-- Profile Details SUbmit Button -->
-                                    <div class="profile-main-submit">
-                                        <button type="submit" class="btn blue-btn medium-btn">Guardar</button>
+                                        </div>
+                                        <!-- Country Filed -->
+                                        <div class="profile-field-country select-field">
+                                            <div class="form-group mb-0">
+                                                <label for="countrySelect">Pais</label>
+                                                <select id="countrySelect" name="countrySelect" class="custom-select small-border white-input">
+                                                    <option value="Afghanistan">Afghanistan</option>
+                                                    <option value="Åland Islands">Åland Islands</option>
+                                                    <option value="Albania">Albania</option>
+                                                    <option value="Algeria">Algeria</option>
+                                                    <option value="American Samoa">American Samoa</option>
+                                                    <option value="Andorra">Andorra</option>
+                                                    <option value="Angola">Angola</option>
+                                                    <option value="Anguilla">Anguilla</option>
+                                                    <option value="Antarctica">Antarctica</option>
+                                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                                    <option value="Argentina" selected>Argentina</option>
+                                                    <option value="Armenia">Armenia</option>
+                                                    <option value="Aruba">Aruba</option>
+                                                    <option value="Australia">Australia</option>
+                                                    <option value="Austria">Austria</option>
+                                                    <option value="Azerbaijan">Azerbaijan</option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrain">Bahrain</option>
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="Barbados">Barbados</option>
+                                                    <option value="Belarus">Belarus</option>
+                                                    <option value="Belgium">Belgium</option>
+                                                    <option value="Belize">Belize</option>
+                                                    <option value="Benin">Benin</option>
+                                                    <option value="Bermuda">Bermuda</option>
+                                                    <option value="Bhutan">Bhutan</option>
+                                                    <option value="Bolivia">Bolivia</option>
+                                                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                                    <option value="Botswana">Botswana</option>
+                                                    <option value="Bouvet Island">Bouvet Island</option>
+                                                    <option value="Brazil">Brazil</option>
+                                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                                    <option value="Bulgaria">Bulgaria</option>
+                                                    <option value="Burkina Faso">Burkina Faso</option>
+                                                    <option value="Burundi">Burundi</option>
+                                                    <option value="Cambodia">Cambodia</option>
+                                                    <option value="Cameroon">Cameroon</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="Cape Verde">Cape Verde</option>
+                                                    <option value="Cayman Islands">Cayman Islands</option>
+                                                    <option value="Central African Republic">Central African Republic</option>
+                                                    <option value="Chad">Chad</option>
+                                                    <option value="Chile">Chile</option>
+                                                    <option value="China">China</option>
+                                                    <option value="Christmas Island">Christmas Island</option>
+                                                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                                    <option value="Colombia">Colombia</option>
+                                                    <option value="Comoros">Comoros</option>
+                                                    <option value="Congo">Congo</option>
+                                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                                                    <option value="Cook Islands">Cook Islands</option>
+                                                    <option value="Costa Rica">Costa Rica</option>
+                                                    <option value="Cote D'ivoire">Cote D'ivoire</option>
+                                                    <option value="Croatia">Croatia</option>
+                                                    <option value="Cuba">Cuba</option>
+                                                    <option value="Cyprus">Cyprus</option>
+                                                    <option value="Czech Republic">Czech Republic</option>
+                                                    <option value="Denmark">Denmark</option>
+                                                    <option value="Djibouti">Djibouti</option>
+                                                    <option value="Dominica">Dominica</option>
+                                                    <option value="Dominican Republic">Dominican Republic</option>
+                                                    <option value="Ecuador">Ecuador</option>
+                                                    <option value="Egypt">Egypt</option>
+                                                    <option value="El Salvador">El Salvador</option>
+                                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                                    <option value="Eritrea">Eritrea</option>
+                                                    <option value="Estonia">Estonia</option>
+                                                    <option value="Ethiopia">Ethiopia</option>
+                                                    <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                                    <option value="Faroe Islands">Faroe Islands</option>
+                                                    <option value="Fiji">Fiji</option>
+                                                    <option value="Finland">Finland</option>
+                                                    <option value="France">France</option>
+                                                    <option value="French Guiana">French Guiana</option>
+                                                    <option value="French Polynesia">French Polynesia</option>
+                                                    <option value="French Southern Territories">French Southern Territories</option>
+                                                    <option value="Gabon">Gabon</option>
+                                                    <option value="Gambia">Gambia</option>
+                                                    <option value="Georgia">Georgia</option>
+                                                    <option value="Germany">Germany</option>
+                                                    <option value="Ghana">Ghana</option>
+                                                    <option value="Gibraltar">Gibraltar</option>
+                                                    <option value="Greece">Greece</option>
+                                                    <option value="Greenland">Greenland</option>
+                                                    <option value="Grenada">Grenada</option>
+                                                    <option value="Guadeloupe">Guadeloupe</option>
+                                                    <option value="Guam">Guam</option>
+                                                    <option value="Guatemala">Guatemala</option>
+                                                    <option value="Guernsey">Guernsey</option>
+                                                    <option value="Guinea">Guinea</option>
+                                                    <option value="Guinea-bissau">Guinea-bissau</option>
+                                                    <option value="Guyana">Guyana</option>
+                                                    <option value="Haiti">Haiti</option>
+                                                    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                                    <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                                    <option value="Honduras">Honduras</option>
+                                                    <option value="Hong Kong">Hong Kong</option>
+                                                    <option value="Hungary">Hungary</option>
+                                                    <option value="Iceland">Iceland</option>
+                                                    <option value="India">India</option>
+                                                    <option value="Indonesia">Indonesia</option>
+                                                    <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                                    <option value="Iraq">Iraq</option>
+                                                    <option value="Ireland">Ireland</option>
+                                                    <option value="Isle of Man">Isle of Man</option>
+                                                    <option value="Israel">Israel</option>
+                                                    <option value="Italy">Italy</option>
+                                                    <option value="Jamaica">Jamaica</option>
+                                                    <option value="Japan">Japan</option>
+                                                    <option value="Jersey">Jersey</option>
+                                                    <option value="Jordan">Jordan</option>
+                                                    <option value="Kazakhstan">Kazakhstan</option>
+                                                    <option value="Kenya">Kenya</option>
+                                                    <option value="Kiribati">Kiribati</option>
+                                                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                                    <option value="Korea, Republic of">Korea, Republic of</option>
+                                                    <option value="Kuwait">Kuwait</option>
+                                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                                    <option value="Latvia">Latvia</option>
+                                                    <option value="Lebanon">Lebanon</option>
+                                                    <option value="Lesotho">Lesotho</option>
+                                                    <option value="Liberia">Liberia</option>
+                                                    <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                                    <option value="Liechtenstein">Liechtenstein</option>
+                                                    <option value="Lithuania">Lithuania</option>
+                                                    <option value="Luxembourg">Luxembourg</option>
+                                                    <option value="Macao">Macao</option>
+                                                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                                                    <option value="Madagascar">Madagascar</option>
+                                                    <option value="Malawi">Malawi</option>
+                                                    <option value="Malaysia">Malaysia</option>
+                                                    <option value="Maldives">Maldives</option>
+                                                    <option value="Mali">Mali</option>
+                                                    <option value="Malta">Malta</option>
+                                                    <option value="Marshall Islands">Marshall Islands</option>
+                                                    <option value="Martinique">Martinique</option>
+                                                    <option value="Mauritania">Mauritania</option>
+                                                    <option value="Mauritius">Mauritius</option>
+                                                    <option value="Mayotte">Mayotte</option>
+                                                    <option value="Mexico">Mexico</option>
+                                                    <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                                    <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                                    <option value="Monaco">Monaco</option>
+                                                    <option value="Mongolia">Mongolia</option>
+                                                    <option value="Montenegro">Montenegro</option>
+                                                    <option value="Montserrat">Montserrat</option>
+                                                    <option value="Morocco">Morocco</option>
+                                                    <option value="Mozambique">Mozambique</option>
+                                                    <option value="Myanmar">Myanmar</option>
+                                                    <option value="Namibia">Namibia</option>
+                                                    <option value="Nauru">Nauru</option>
+                                                    <option value="Nepal">Nepal</option>
+                                                    <option value="Netherlands">Netherlands</option>
+                                                    <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                                    <option value="New Caledonia">New Caledonia</option>
+                                                    <option value="New Zealand">New Zealand</option>
+                                                    <option value="Nicaragua">Nicaragua</option>
+                                                    <option value="Niger">Niger</option>
+                                                    <option value="Nigeria">Nigeria</option>
+                                                    <option value="Niue">Niue</option>
+                                                    <option value="Norfolk Island">Norfolk Island</option>
+                                                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                                    <option value="Norway">Norway</option>
+                                                    <option value="Oman">Oman</option>
+                                                    <option value="Pakistan">Pakistan</option>
+                                                    <option value="Palau">Palau</option>
+                                                    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                                    <option value="Panama">Panama</option>
+                                                    <option value="Papua New Guinea">Papua New Guinea</option>
+                                                    <option value="Paraguay">Paraguay</option>
+                                                    <option value="Peru">Peru</option>
+                                                    <option value="Philippines">Philippines</option>
+                                                    <option value="Pitcairn">Pitcairn</option>
+                                                    <option value="Poland">Poland</option>
+                                                    <option value="Portugal">Portugal</option>
+                                                    <option value="Puerto Rico">Puerto Rico</option>
+                                                    <option value="Qatar">Qatar</option>
+                                                    <option value="Reunion">Reunion</option>
+                                                    <option value="Romania">Romania</option>
+                                                    <option value="Russian Federation">Russian Federation</option>
+                                                    <option value="Rwanda">Rwanda</option>
+                                                    <option value="Saint Helena">Saint Helena</option>
+                                                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                                    <option value="Saint Lucia">Saint Lucia</option>
+                                                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                                                    <option value="Samoa">Samoa</option>
+                                                    <option value="San Marino">San Marino</option>
+                                                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                                    <option value="Senegal">Senegal</option>
+                                                    <option value="Serbia">Serbia</option>
+                                                    <option value="Seychelles">Seychelles</option>
+                                                    <option value="Sierra Leone">Sierra Leone</option>
+                                                    <option value="Singapore">Singapore</option>
+                                                    <option value="Slovakia">Slovakia</option>
+                                                    <option value="Slovenia">Slovenia</option>
+                                                    <option value="Solomon Islands">Solomon Islands</option>
+                                                    <option value="Somalia">Somalia</option>
+                                                    <option value="South Africa">South Africa</option>
+                                                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                                                    <option value="Spain">Spain</option>
+                                                    <option value="Sri Lanka">Sri Lanka</option>
+                                                    <option value="Sudan">Sudan</option>
+                                                    <option value="Suriname">Suriname</option>
+                                                    <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                                    <option value="Swaziland">Swaziland</option>
+                                                    <option value="Sweden">Sweden</option>
+                                                    <option value="Switzerland">Switzerland</option>
+                                                    <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                                    <option value="Taiwan">Taiwan</option>
+                                                    <option value="Tajikistan">Tajikistan</option>
+                                                    <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                                    <option value="Thailand">Thailand</option>
+                                                    <option value="Timor-leste">Timor-leste</option>
+                                                    <option value="Togo">Togo</option>
+                                                    <option value="Tokelau">Tokelau</option>
+                                                    <option value="Tonga">Tonga</option>
+                                                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                                    <option value="Tunisia">Tunisia</option>
+                                                    <option value="Turkey">Turkey</option>
+                                                    <option value="Turkmenistan">Turkmenistan</option>
+                                                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                                    <option value="Tuvalu">Tuvalu</option>
+                                                    <option value="Uganda">Uganda</option>
+                                                    <option value="Ukraine">Ukraine</option>
+                                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="United States">United States</option>
+                                                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                                    <option value="Uruguay">Uruguay</option>
+                                                    <option value="Uzbekistan">Uzbekistan</option>
+                                                    <option value="Vanuatu">Vanuatu</option>
+                                                    <option value="Venezuela">Venezuela</option>
+                                                    <option value="Viet Nam">Viet Nam</option>
+                                                    <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                                    <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                                    <option value="Western Sahara">Western Sahara</option>
+                                                    <option value="Yemen">Yemen</option>
+                                                    <option value="Zambia">Zambia</option>
+                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- Date Of birth Filed -->
+                                        <div class="profile-field-dob">
+                                            <div class="form-group mb-0">
+                                                <label for="dateOfBirth">Fecha de nacimiento</label>
+                                                <input type="date" id="dateOfBirth" class="form-control small-border white-input" placeholder="Juan Manuel de la Vega">
+                                            </div>
+                                        </div>
+                                        <!-- Country Number Select Filed -->
+                                        <div class="profile-field-number">
+                                            <div class="form-group mb-0">
+                                                <label for="telNumber">Numero de teléfono</label>
+                                                <input type="tel" id="telNumber" class="form-control small-border white-input" placeholder="3412165633">
+                                            </div>
+                                        </div>
+                                        <!-- Social Link Filed -->
+                                        <div class="profile-field-insta">
+                                            <div class="form-group mb-0">
+                                                <label for="instaLink">Instagram</label>
+                                                <input type="url" id="instaLink" class="form-control small-border white-input" placeholder="manuudlv">
+                                            </div>
+                                        </div>
+                                        <!-- Social Link Filed -->
+                                        <div class="profile-field-fb">
+                                            <div class="form-group mb-0">
+                                                <label for="fbLink">Facebook</label>
+                                                <input type="url" id="fbLink" class="form-control small-border white-input" placeholder="manuudlv">
+                                            </div>
+                                        </div>
+                                        <!-- Social Link Filed -->
+                                        <div class="profile-field-tw">
+                                            <div class="form-group mb-0">
+                                                <label for="twLink">Twitter</label>
+                                                <input type="url" id="twLink" class="form-control small-border white-input" placeholder="manuudlv">
+                                            </div>
+                                        </div>
+                                        <!-- Gender Filed -->
+                                        <div class="profile-field-gender select-field">
+                                            <div class="form-group mb-0">
+                                                <label for="genderSelect">Sexo</label>
+                                                <select id="genderSelect" name="genderSelect" class="custom-select small-border white-input">
+                                                    <option value="Hombre">Hombre</option>
+                                                    <option value="mujer">Mujer</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- Profile Bio Filed -->
+                                        <div class="profile-field-bio">
+                                            <div class="form-group mb-0">
+                                                <label for="profileBio">Descripción</label>
+                                                <textarea name="" id="profileBio" class="form-control small-border pt-3 white-input" placeholder="Contenido Variado" rows="6"></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- Profile Details SUbmit Button -->
+                                        <div class="profile-main-submit">
+                                            <button type="submit" class="btn blue-btn medium-btn" style="max-width: 166px;">Guardar Cambios</button>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <!-- Cuenta tab Content -->
-                        <div class="tab-pane fade" id="tabCuenta" role="tabpanel" aria-labelledby="nav-tabCuenta">
+                        <div class="tab-pane fade" id="tabCuenta">
+                            <div class="alert alert-success small-border">
+                                <p class="d-flex align-items-center">
+                                    <span>Se guardaron los cambios</span>
+                                    <span class="d-block ml-auto"><i class="fas fa-check"></i></span>
+                                </p>
+                            </div>
                             <div class="main-self-profile">
-                                <!-- Multi Step for click on button jump to another content without changing Tab -->
-                                <div class="multi-step-form">
-                                    <form>
-                                        <div class="js-form-container">
-                                            <!-- username Filed -->
-                                            <div class="profile-field-username">
-                                                <div class="form-group mb-0">
-                                                    <label for="profileUserName1">Nombre de usuario</label>
-                                                    <div class="input-checkemark position-relative">
-                                                        <input type="text" id="profileUserName1" class="form-control small-border white-input" placeholder="@manuelvega1">
-                                                    </div>
-                                                    <p class="form-text">http://www.fanpush.com/manuelvega1</p>
-                                                </div>
-                                            </div>
-                                            <!-- Email Filed -->
-                                            <div class="profile-field-email">
-                                                <div class="form-group mb-0">
-                                                    <label for="profileEmail">Correo electrónico</label>
-                                                    <input type="email" id="profileEmail" class="form-control small-border white-input" placeholder="jmanueldlavega@gmail.com">
-                                                </div>
-                                            </div>
-                                            <!-- Telephone Filed -->
-                                            <div class="profile-field-phone position-relative">
-                                                <div class="form-group mb-0">
-                                                    <label for="profilePhone">Numero de teléfono</label>
-                                                    <input type="tel" id="profilePhone" class="form-control small-border white-input" placeholder="+54 3412165633">
-                                                    <div class="country-select d-inline-block">
-                                                        <select class="vodiapicker">
-                                                <option value="ar" class="test" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                <option value="au" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                <option value="uk" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                <option value="cn" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                <option value="de" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                <option value="dk" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                <option value="fr" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                <option value="gr" data-thumbnail="assets/images/argentina-flag.jpg"></option>
-                                                </select>
-                                                        <div class="lang-select">
-                                                            <button type="button" class="btn-select" value=""></button>
-                                                            <div class="b">
-                                                                <ul id="a"></ul>
-                                                            </div>
+                                <div class="bg_wrapper mb-2">
+                                    <h2 class="title">Configuracion de Cuenta</h2>
+                                    <!-- Email Filed -->
+                                    <div class="profile-field-email">
+                                        <div class="form-group mb-0">
+                                            <label for="profileEmail">Correo electrónico</label>
+                                            <input type="email" id="profileEmail" class="form-control small-border white-input" placeholder="jmanueldlavega@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- Change Password -->
+                                        <div class="col-md-7 mt-4">
+                                            <div class="change-pwd">
+                                                <h2 class="title">Cambiar Contraseña</h2>
+                                                <!-- Current Pwd Filed -->
+                                                <div class="profile-field-curpwd">
+                                                    <div class="form-group mb-0">
+                                                        <label for="currentPwd">Contraseña actual</label>
+                                                        <div class="input-pwd position-relative">
+                                                            <input type="password" id="currentPwd" class="form-control small-border white-input" placeholder="**********">
+                                                            <button class="btn btn-eye p-0"><i class="far fa-eye"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!-- Change Password -->
-                                            <div class="profile-field-password">
-                                                <label class="d-flex justify-content-between align-items-center mb-3">
-                                                    Cambiar contraseña
-                                                    <button class="btn js-form-next" type="button" data-target="changePasswordContent"><i class="fas fa-chevron-right"></i></button>
-                                                </label>
-                                                <label class="d-flex justify-content-between align-items-center">
-                                                    Eliminar cuenta
-                                                    <button class="btn js-form-next" type="button" data-target="profdeleteAccount"><i class="fas fa-chevron-right"></i></button>
-                                                </label>
-                                            </div>
-                                            <!-- Profile Details SUbmit Button -->
-                                            <div class="profile-main-submit">
-                                                <button type="submit" class="btn blue-btn medium-btn">Guardar</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="success-msg" id="changePasswordContent">
-                                        <div class="msg-header text-right mb-2">
-                                            <button type="button" class="js-close-btn close" data-dismiss="#changePasswordContent" data-target="#mercadoFields" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <form>
-                                            <!-- Old Password -->
-                                            <div class="profile-field-pwd">
-                                                <div class="form-group mb-0">
-                                                    <label for="currentPwd">Cambiar contraseña</label>
-                                                    <div class="input-checkemark position-relative">
-                                                        <input type="password" id="currentPwd" class="form-control small-border white-input" placeholder="Contraseña actual">
+                                                <!-- New Pwd Filed -->
+                                                <div class="profile-field-curpwd">
+                                                    <div class="form-group mb-0">
+                                                        <label for="newPwd">Contraseña nueva</label>
+                                                        <div class="input-pwd position-relative">
+                                                            <input type="password" id="newPwd" class="form-control small-border white-input" placeholder="**********">
+                                                            <button class="btn btn-eye p-0"><i class="far fa-eye"></i></button>
+                                                        </div>
                                                     </div>
-                                                    <p class="form-text">¿Olvidaste tu contraseña?</p>
+                                                </div>
+                                                <!-- Repeat New Pwd Filed -->
+                                                <div class="profile-field-curpwd">
+                                                    <div class="form-group mb-0">
+                                                        <label for="repNewPwd">Contraseña actual</label>
+                                                        <div class="input-pwd position-relative">
+                                                            <input type="password" id="repNewPwd" class="form-control small-border white-input" placeholder="**********">
+                                                            <button class="btn btn-eye p-0"><i class="far fa-eye"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Repeat New Pwd Filed -->
+                                                <div class="profile-field-newpwd">
+                                                    <div class="form-group mb-0">
+                                                        <label for="repNewPwd">Confirmar contraseña nueva</label>
+                                                        <div class="input-pwd position-relative">
+                                                            <input type="password" id="repNewPwd" class="form-control small-border white-input" placeholder="**********">
+                                                            <button class="btn btn-eye p-0"><i class="far fa-eye"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Update Password Button -->
+                                                <div class="profile-main-newpwd">
+                                                    <button type="submit" class="btn blue-btn medium-btn" style="max-width: 166px;">Guardar Cambios</button>
                                                 </div>
                                             </div>
-                                            <!-- New password -->
-                                            <div class="profile-field-pwd">
-                                                <div class="form-group mb-0">
-                                                    <input type="password" id="newPwd" class="form-control small-border white-input mb-3" placeholder="Nueva Contraseña">
-                                                    <input type="password" id="confirmnewPwd" class="form-control small-border white-input" placeholder="Confirmar Nueva Contraseña">
-                                                </div>
-                                            </div>
-                                            <!-- New Password SUbmit Button -->
-                                            <div class="profile-main-submit">
-                                                <button type="submit" class="btn blue-btn medium-btn">Guardar</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="success-msg" id="profdeleteAccount">
-                                        <div class="msg-header text-right mb-2">
-                                            <button type="button" class="js-close-btn close" data-dismiss="#profdeleteAccount" data-target="#mercadoFields" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
                                         </div>
-                                        <form>
-                                            <!-- Warning -->
-                                            <div class="alert alert-warning small-border">
-                                                <p class="d-flex align-items-center">
-                                                    <span class="mr-3"><img src="assets/images/alert-warning-icon.svg" alt="Info Icon"></span>
-                                                    <span>Esto va a eliminar tu cuenta de forma permanente.</span>
-                                                </p>
+                                        <!-- Password requiremtns -->
+                                        <div class="col-md-5 mt-4">
+                                            <div class="password-req">
+                                                <h2 class="title">Requerimiento de contraseña</h2>
+                                                <ol>
+                                                    <li>Al menos 8 caracteres</li>
+                                                    <li>Al menos un caracter mayuscula</li>
+                                                    <li>Al menos un número</li>
+                                                </ol>
                                             </div>
-                                            <!-- Delete Account -->
-                                            <div class="profile-field-delete-account">
-                                                <div class="form-group mb-0">
-                                                    <label for="verifyCode">Eliminar Cuenta</label>
-                                                    <input type="text" id="verifyCode" class="form-control small-border white-input mb-3" placeholder="Código de Verificación">
-                                                    <img src="assets/images/verify-code.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <!-- Delete Account SUbmit Button -->
-                                            <div class="profile-main-submit delete-btn">
-                                                <button type="button" class="btn danger-bg white-text big-btn" data-toggle="modal" data-target="#deleteAccount">
-                                                    Eliminar Cuenta
-                                                </button>
-
-                                            </div>
-
-                                        </form>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="delete-account-container bg_wrapper mt-4">
+                                    <h2 class="title">Borrar Cuenta</h2>
+                                    <p>Eliminar tu cuenta es permamente y no puede revertirse.</p>
+                                    <button type="button" class="btn error-btn medium-btn" data-toggle="modal" data-target="#deleteAccount">Eliminar Cuenta</button>
                                     <div class="delete-account">
-                                        <div class="modal fade" id="deleteAccount" tabindex="-1" aria-labelledby="deleteAccount" aria-hidden="true" style="display: none;">
+                                        <div class="modal fade" id="deleteAccount" tabindex="-1" aria-labelledby="deleteAccount" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content border-10">
-                                                    <div class="modal-header border-0 pb-0">
-                                                        <button type="button" class="close small-close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                                    </div>
                                                     <div class="modal-body text-center py-0">
-                                                        <h5>Estas seguro que qeres borrar tu cuenta para siempre? </h5>
+                                                        <div class="img">
+                                                            <img src="assets/images/trash.svg" alt="Bin icon">
+                                                        </div>
+                                                        <h3>Estas por eliminar tu cuenta</h3>
+                                                        <p>Esto va a borrar tu cuenta y no vas a poder recuperarla Estas seguro?</p>
                                                     </div>
                                                     <div class="modal-footer justify-content-center border-0 pt-0 pb-4">
-                                                        <a href="login.html" type="button" class="btn blue-btn yes">Si</a>
-                                                        <a href="#" type="button" class="btn light-blue-btn no">No</a>
+                                                        <a href="login.html" type="button" class="btn medium-btn" data-dismiss="modal" aria-label="Close" style="max-width: 103px;">Cancelar</a>
+                                                        <a type="button" class="btn error-btn medium-btn" style="max-width: 103px;">Eliminar</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -593,134 +824,67 @@
                             </div>
                         </div>
                         <!-- Subscription Tab Content -->
-                        <div class="tab-pane" id="tabSuscripcion" role="tabpanel" aria-labelledby="nav-tabSuscripcion">
+                        <div class="tab-pane" id="tabSuscripcion">
                             <div class="main-self-profile position-relative">
-                                <!-- Info -->
-                                <div class="alert alert-info alert-dismissible fade show small-border">
-                                    <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <p class="d-flex align-items-center">
-                                        <span><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span>
-                                        <span>Si dejás el precio en $0 el boton de suscripción mensual no va a aparecer en tu perfil y vas a tener un perfil gratuito (Pero vas a poder seguir
-                                        poniendo precio a tus publicaciones igualmente)</span>
-                                    </p>
-                                </div>
-                                <form>
-                                    <!-- Display Name Filed -->
-                                    <div class="profile-field-amount">
-                                        <div class="form-group mb-0">
-                                            <label for="subscriptionPrice">Precio de suscripción mensual</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">$</div>
+                                <div class="bg_wrapper mt-md-0">
+                                    <h2 class="title">Precio de tu suscripción mensual</h2>
+                                    <div class="monthly_subscription">
+                                        <h3>Permitir suscripciones mensuales a mi contenido</h3>
+                                        <div class="subscription-permit mt-3">
+                                            <label class="d-flex align-items-center">
+                                                <div class="btn-toggle-switch mr-3">
+                                                    <input type="checkbox" id="subsPermit">
+                                                    <span class="slider"></span>
                                                 </div>
-                                                <input type="text" id="subscriptionPrice" class="form-control small-border white-input" placeholder="500">
-                                            </div>
-                                            <p class="form-text">Mínimo $1000</p>
+                                                No permitir
+                                        </label>
                                         </div>
-                                    </div>
-                                    <!-- Profile Details SUbmit Button -->
-                                    <div class="multi-step-form">
-                                        <div class="profile-main-submit">
-                                            <button type="button" data-target="changesSaved" class="btn blue-btn medium-btn js-form-next">Guardar</button>
-                                        </div>
-                                        <div class="success-msg changes-saved success-bg" id="changesSaved">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <p>Se guardaron los cambios</p>
-                                                <span>&#10003;</span>
+                                        <!-- Subscription Price Field -->
+                                        <div class="profile-field-price">
+                                            <div class="form-group mb-0">
+                                                <label for="profileSubscription">Precio</label>
+                                                <input type="text" id="profileSubscription" class="form-control small-border white-input" placeholder="" min="1000">
+                                                <p class="form-text">Minimo $1000</p>
+                                                <p class="error_text">Debes elegir un precio de suscripción mayor o igual $1.000</p>
                                             </div>
                                         </div>
+                                        <!-- Subscription Request Button -->
+                                        <div class="profile-field-subscription">
+                                            <button type="submit" class="btn blue-btn medium-btn" style="max-width: 166px;">Guardar Cambios</button>
+                                        </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                         <!-- Bancarios Tab content -->
-                        <div class="tab-pane" id="tabBancarios" role="tabpanel" aria-labelledby="nav-tabBancarios">
+                        <div class="tab-pane" id="tabBancarios">
                             <div class="main-self-profile position-relative">
-                                <!-- Info -->
-                                <div class="alert alert-info alert-dismissible fade show small-border">
-                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                <div class="alert alert-info-2 border-10">
                                     <p class="d-flex align-items-center">
-                                        <span class="mr-3"><img src="assets/images/alert-info-icon.svg" alt="Info Icon"></span>
-                                        <span>Podés cargar solo una cuenta de Mercadopago y una cuenta de Banco, podés borrarla y cargar otra en cualquier momento.</span>
+                                        <span><img src="assets/images/danger_light_blue.svg" alt="Danger Icon"></span>
+                                        <span>Antes de continuar</span>
                                     </p>
+                                    <p class="subtitle">Para cobrar tus ganancias necesitas una cuenta bancaria o de MercadoPago. La misma debe estar a tu nombre. Si tenes problemas para configurar tu cuenta de cobro, revisa la guia de uso o contacta soporte desde el menu
+                                        de usuario.</p>
+                                    <a href="#">Leer guia aquí</a>
                                 </div>
-                                <!-- Bank Accounts Details -->
-                                <div class="bacnk-account-details">
-                                    <div class="d-flex justify-content-between flex-wrap">
-                                        <div class="col-md-6 pl-md-0">
-                                            <div id="detailsMercado" class="bank-account-Mercado">
-                                                <div class="wrapper">
-                                                    <div class="bank-acc-header">
-                                                        <button type="button" class="js-close-btn close" data-dismiss="#detailsMercado" data-target="#mercadoFields" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    </div>
-                                                    <label class="d-flex flex-wrap justify-content-between align-items-center mb-0">
-                                                    <div class="bank-info">
-                                                        <h5 class="font-weight-bold text-base mb-1">Cuenta</h5>
-                                                        <p>jmanueldlavega@gmail.com</p>
-                                                        <p>CBU : 000154085751987297</p>
-                                                        <p>Alias : bebudlv</p>
-                                                    </div>
-                                                    <div class="bank-logo">
-                                                        <img src="assets/images/mercado-pago.png" alt="Mercado Pago">
-                                                    </div>
-                                                    </label>
-                                                </div>
-                                                <p class="acc-add-date mt-2">Tu pago va a ser procesado el <span>15 de Agosto de 2021</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 pr-md-0">
-                                            <div id="detailsBanco" class="bank-account-local">
-                                                <div class="wrapper">
-                                                    <div class="bank-acc-header">
-                                                        <button type="button" class="js-close-btn close" data-dismiss="#detailsBanco" data-target="#bancoFields" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    </div>
-                                                    <label class="d-flex flex-wrap justify-content-between align-items-center mb-0">
-                                                    <div class="bank-info">
-                                                        <h5 class="font-weight-bold text-base mb-1">Cuenta</h5>
-                                                        <p>Juan Manuel de la Vega</p>
-                                                        <p>CBU : 000154085751987297</p>
-                                                        <p>Alias : bebudlv</p>
-                                                    </div>
-                                                    <div class="bank-logo">
-                                                        <img src="assets/images/santander.png" alt="Santander Logo">
-                                                    </div>
-                                                    </label>
-                                                </div>
-                                                <p class="acc-add-date mt-2">Tu pago va a ser procesado el <span>15 de Agosto de 2021</span></p>
-                                            </div>
+                                <div class="bg_wrapper">
+                                    <h2 class="title">Cuentas para Cobrar</h2>
+                                    <!-- Bank Account Price Field -->
+                                    <div class="profile-field-bankAcc">
+                                        <div class="form-group mb-0">
+                                            <label for="bankAcc">Cuenta Bancaria</label>
+                                            <input type="text" id="bankAcc" class="mb-3 form-control small-border white-input" placeholder="Juan Martin Gutierrez">
+                                            <input type="text" id="bankName" class="mb-3 form-control small-border white-input" placeholder="Nombre del banco">
+                                            <input type="text" id="bankAccNum" class="mb-3 form-control small-border white-input" placeholder="Numero de cuenta (18 dígitos)">
+                                            <input type="text" id="bankAccName" class="mb-3 form-control small-border white-input" placeholder="Alias">
+                                            <input type="text" id="bankAccCvu" class="form-control small-border white-input" placeholder="CBU/CVU (22 dígitos)">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Banks Filed -->
-                                <div class="profile-field-bankAccount">
-                                    <form action="#" id="mercadoFields">
-                                        <div class="form-group mb-5">
-                                            <label for="emailMercadopago">Mercadopago</label>
-                                            <input type="email" id="emailMercadopago" class="form-control small-border white-input mb-3" placeholder="Email Mercadopago">
-                                            <input type="text" id="cbuMercadopago" class="form-control small-border white-input mb-3" placeholder="CBU Mercadopago">
-                                            <input type="text" id="codeMercadopago" class="form-control small-border white-input" placeholder="Código de verifiación">
-                                            <div class="profile-main-submit mt-4">
-                                                <button type="button" class="js-bank-sub btn blue-btn medium-btn" data-target="#detailsMercado">Guardar</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form action="#" id="bancoFields">
-                                        <div class="form-group mb-0">
-                                            <label for="accOwnerBank">Cuenta Bancaria</label>
-                                            <input type="text" id="accOwnerBank" class="form-control small-border white-input mb-3" placeholder="Nombre del titular">
-                                            <input type="text" id="accBankNo" class="form-control small-border white-input mb-3" placeholder="N° de cuenta (18 digitos)">
-                                            <input type="text" id="nameBank" class="form-control small-border white-input mb-3" placeholder="Nombre del banco">
-                                            <input type="text" id="addressBank" class="form-control small-border white-input mb-3" placeholder="Domicilio">
-                                            <input type="text" id="cbuBank" class="form-control small-border white-input" placeholder="CBU N°">
-                                            <div class="profile-main-submit mt-4">
-                                                <button type="button" class="js-bank-sub btn blue-btn medium-btn" data-target="#detailsBanco">Guardar</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <!-- Bank Account Request Button -->
+                                    <div class="profile-field-bank">
+                                        <button type="submit" class="btn blue-btn medium-btn" style="max-width: 166px;">Guardar datos</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -823,6 +987,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/intlTelInput-jquery.min.js"></script>
     <script src="assets/js/global.js"></script>
 </body>
 

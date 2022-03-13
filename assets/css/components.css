@@ -191,6 +191,21 @@
 }
 
 
+/* Error Button */
+
+.error-btn {
+    background: #EB5757;
+    color: #fff;
+    max-width: 166px;
+}
+
+.error-btn:hover,
+.error-btn:focus {
+    background: var(--ui-error) !important;
+    color: #fff !important;
+}
+
+
 /* Feed Boxes */
 
 
@@ -249,20 +264,23 @@
 /* Input Fields */
 
 .grey-input {
-    background: #EAEAEA;
+    background: #EAEAEA !important;
     height: 50px;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: -0.01em;
     color: #828282;
-    border: none;
+    border: 2px solid #DDDDDD !important;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .white-input {
-    border: none;
     background: #FFFFFF;
     color: var(--ui-base-text);
     padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #DDDDDD !important;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .white-input::placeholder {
@@ -322,6 +340,7 @@
 .alert.alert-success {
     background: var(--ui-success);
     border-color: var(--ui-success);
+    padding: 9.25px 22px;
 }
 
 .alert.alert-success p {
@@ -335,6 +354,31 @@
     color: #363636;
     background-color: #FFE8C3;
     border-color: #FFE8C3;
+}
+
+
+/* Info ALert 2 */
+
+.alert-info-2 {
+    background: #fff;
+}
+
+.alert-info-2 p span {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ui-base-text);
+}
+
+.alert-info-2 .subtitle {
+    color: #32556F;
+    margin: 16px 0 24px;
+}
+
+.alert-info-2 a {
+    color: var(--ui-base-text);
+    font-weight: 600;
+    font-size: 12px;
 }
 
 
@@ -1045,7 +1089,9 @@ Small Box */
 }
 
 .error_text {
-    display: none;
+    font-weight: 400;
+    color: #FF0000;
+    margin: 16px 0;
 }
 
 .post-price.error .input-group span.input-group-text,
@@ -1334,22 +1380,44 @@ Small Box */
     max-width: 237px;
 }
 
-.remove-favr8 .modal-footer button,
-.delete-account .modal-footer button {
+.remove-favr8 .modal-footer button {
     padding: 3px 21px;
 }
 
 
 /* Delete Account Popup */
 
-.delete-account .modal-body h5 {
-    margin: 15px auto 10px;
-    color: var(--ui-base-p);
-    max-width: 320px;
+.delete-account .modal-dialog {
+    max-width: 583px;
+    margin-top: 10%;
 }
 
-.delete-account .modal-dialog {
-    max-width: 387px;
+.delete-account .modal-body .img {
+    border-radius: 50%;
+    background: #fff;
+    width: 115px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px auto 5px;
+}
+
+.delete-account .img img {
+    max-width: 57px;
+}
+
+.delete-account .modal-body h3 {
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    color: #2B2B2B;
+}
+
+.delete-account .modal-body p {
+    color: var(--ui-dark-grey4);
+    margin: 16px auto 25px;
+    max-width: 400px;
 }
 
 
@@ -1382,13 +1450,13 @@ Small Box */
     background-color: #fff;
 }
 
-.unlock-content .profile-img {
+.profile-info .profile-img {
     width: 43px;
     height: 43px;
     margin-right: 18px;
 }
 
-.unlock-content .post-options .dropdown-toggle {
+.post-options .dropdown-toggle {
     font-size: 28px;
     padding: 1px 8px;
     box-shadow: none;
@@ -1432,7 +1500,7 @@ Small Box */
     background: #fff;
 }
 
-.unlock-content .post-options .dropdown-toggle::after {
+.post-options .dropdown-toggle::after {
     content: unset;
 }
 
@@ -1694,7 +1762,7 @@ Small Box */
 
 /* Post Open Payment */
 
-.post-popup .pack-includes h4 {
+.pack-includes h4 {
     font-weight: 600;
     letter-spacing: -0.01em;
     color: var(--ui-base-text);
@@ -1853,6 +1921,37 @@ Small Box */
     font-size: 14px;
     border: none;
     padding: 20px 30px;
+}
+
+.simple_post {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    max-width: 788px;
+}
+
+.simple_post .space {
+    padding: 13px 20px 17px;
+}
+
+.simple_post .post_time {
+    font-size: 10px;
+}
+
+.simple_post .pack-includes {
+    border: 1px solid #EEEEEE;
+}
+
+.simple_post .post-action button {
+    color: #1954EA;
+}
+
+.simple_post .post-action button svg {
+    fill: #1954EA;
+}
+
+.simple_post .post-action span {
+    vertical-align: 1.4px;
+    margin-right: 7px;
 }
 
 

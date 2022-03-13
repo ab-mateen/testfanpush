@@ -528,6 +528,85 @@
                         </form>
                     </div>
                 </div>
+                <!-- Simple Post -->
+                <h2 class="text-center my-4">Simple Post</h2>
+                <div class="simple_post">
+                    <!-- post Information -->
+                    <div class="content-options space d-flex justify-content-between">
+                        <!-- profile Info -->
+                        <div class="profile-info">
+                            <div class="d-flex align-items-center">
+                                <div class="profile-img rounded-circle">
+                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <p>perfil.1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown -->
+                        <div class="post-options">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                    <a class="dropdown-item danger-text" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Compartir</a>
+                                    <a class="dropdown-item" href="#">Copiar
+                                        Enlace</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Media -->
+                    <div class="post_media">
+                        <img src="assets/images/grey-box.jpg" alt="">
+                    </div>
+                    <!-- Pack Includes -->
+                    <div class="pack-includes space">
+                        <div class="row no-gutters justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <h4><span class="d-none d-md-inline-block">Este
+                                        pack</span> incluye</h4>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="includes-count d-flex justify-content-end">
+                                            <div class="col-auto col-6 px-0 mr-3">
+                                                <img src="assets/images/video-icon.svg" alt="">
+                                                <span>6 Videos</span>
+                                            </div>
+                                            <div class="col-auto col-6 px-0">
+                                                <img src="assets/images/img-icon.svg" alt="">
+                                                <span>26 Fotos</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <p class="post_time">Hace un momento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Description -->
+                    <div class="post_description space pt-3 pb-0">
+                        <p>Hola mi nombre es Alexa, esta es mi primera publicación y tengo 250 caracteres para poder expresarme.</p>
+                    </div>
+                    <!-- Post Action -->
+                    <div class="post-action space">
+                        <button type="button" class="btn small-btn" style="max-width: max-content;">
+                        <span>
+                            <svg width="12" height="16" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                            </svg>
+                        </span>
+                        Desbloquea este contenido aquí
+                    </button>
+                    </div>
+                </div>
                 <h2 class="text-center my-4">Crear Publicación</h2>
                 <!-- Create Post First -->
                 <div class="create-post">
@@ -1181,17 +1260,16 @@
                     <div class="modal fade" id="deleteAccount" tabindex="-1" aria-labelledby="deleteAccount" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content border-10">
-                                <div class="modal-header border-0 pb-0">
-                                    <button type="button" class="close small-close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
                                 <div class="modal-body text-center py-0">
-                                    <h5>Estas seguro que qeres borrar tu cuenta para siempre? </h5>
+                                    <div class="img">
+                                        <img src="assets/images/trash.svg" alt="Bin icon">
+                                    </div>
+                                    <h3>Estas por eliminar tu cuenta</h3>
+                                    <p>Esto va a borrar tu cuenta y no vas a poder recuperarla Estas seguro?</p>
                                 </div>
                                 <div class="modal-footer justify-content-center border-0 pt-0 pb-4">
-                                    <a href="login.html" type="button" class="btn blue-btn yes">Si</a>
-                                    <a href="#" type="button" class="btn light-blue-btn no">No</a>
+                                    <a href="login.html" type="button" class="btn medium-btn" data-dismiss="modal" aria-label="Close" style="max-width: 103px;">Cancelar</a>
+                                    <a type="button" class="btn error-btn medium-btn" style="max-width: 103px;">Eliminar</a>
                                 </div>
                             </div>
                         </div>
@@ -1720,6 +1798,7 @@
                         </div>
                     </div>
                 </div>
+
                 <h2 class="text-center my-4">POST ABIERTO PAGO</h2>
                 <!-- Post Popup -->
                 <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#postOpenPay">
