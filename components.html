@@ -532,7 +532,7 @@
                 <h2 class="text-center my-4">Simple Post</h2>
                 <div class="simple_post">
                     <!-- post Information -->
-                    <div class="content-options space d-flex justify-content-between">
+                    <div class="content-options unlock-content space d-flex justify-content-between">
                         <!-- profile Info -->
                         <div class="profile-info">
                             <div class="d-flex align-items-center">
@@ -605,6 +605,245 @@
                         </span>
                         Desbloquea este contenido aquí
                     </button>
+                    </div>
+                </div>
+                <!-- Inline Gallery Post -->
+                <h2 class="text-center my-4">Inline Gallery Post</h2>
+                <div class="simple_post">
+                    <!-- post Information -->
+                    <div class="content-options unlock-content space d-flex justify-content-between">
+                        <!-- profile Info -->
+                        <div class="profile-info">
+                            <div class="d-flex align-items-center">
+                                <div class="profile-img rounded-circle">
+                                    <img src="assets/images/grey-box.jpg" class="rounded-circle h-100" alt="">
+                                </div>
+                                <div class="profile-name">
+                                    <p>perfil.1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown -->
+                        <div class="post-options">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="unlockPostBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu text-right" aria-labelledby="unlockPostBtn">
+                                    <a class="dropdown-item danger-text" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Compartir</a>
+                                    <a class="dropdown-item" href="#">Copiar
+                                        Enlace</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Media -->
+                    <div class="post_media">
+                        <div id="inlineGallery" class="carousel slide inline_gallery" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#inlineGallery" data-slide-to="0" class="active">
+                                    <div class="media_item">
+                                        <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail" class="main">
+                                    </div>
+                                </li>
+                                <li data-target="#inlineGallery" data-slide-to="1" class="locked">
+                                    <div class="media_item">
+                                        <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail" class="main">
+                                    </div>
+                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                </li>
+                                <li data-target="#inlineGallery" data-slide-to="2" class="locked">
+                                    <div class="media_item">
+                                        <img src="assets/images/inline_gallery_3.jpg" alt="Gallery Thumbnail" class="main">
+                                    </div>
+                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                </li>
+                                <li data-target="#inlineGallery" data-slide-to="3" class="locked">
+                                    <div class="media_item">
+                                        <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail" class="main">
+                                    </div>
+                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                </li>
+                                <li data-target="#inlineGallery" data-slide-to="4" class="locked">
+                                    <div class="media_item">
+                                        <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail" class="main">
+                                    </div>
+                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                </li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="media_item">
+                                        <div class="thumb">
+                                            <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail" class="main">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="media_item locked">
+                                        <div class="thumb">
+                                            <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail" class="main">
+                                        </div>
+                                        <button class="btn btn-unlock big-btn">
+                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                            </svg>
+                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="media_item locked">
+                                        <div class="thumb">
+                                            <img src="assets/images/inline_gallery_3.jpg" alt="Gallery Thumbnail">
+                                        </div>
+                                        <button class="btn btn-unlock big-btn">
+                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                            </svg>
+                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="media_item locked">
+                                        <div class="thumb">
+                                            <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail">
+                                        </div>
+                                        <button class="btn btn-unlock big-btn">
+                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                            </svg>
+                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="media_item locked">
+                                        <div class="thumb">
+                                            <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail">
+                                        </div>
+                                        <button class="btn btn-unlock big-btn">
+                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                            </svg>
+                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#inlineGallery" data-slide="prev">
+                              <span class="carousel-icon"><i class="far fa-chevron-left"></i></span>
+                              <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#inlineGallery" data-slide="next">
+                              <span class="carousel-icon"><i class="far fa-chevron-right"></i></span>
+                              <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pack Includes -->
+                    <div class="pack-includes space">
+                        <div class="row no-gutters justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <label class="premium">
+                                            <svg width="9" height="10" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                            </svg>
+                                            <span>
+                                                Premium
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h4><span class="d-none d-md-inline-block">Este
+                                        pack</span> incluye</h4>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="includes-count d-flex justify-content-end">
+                                            <div class="col-auto col-6 px-0 mr-3">
+                                                <img src="assets/images/video-icon.svg" alt="">
+                                                <span>6 Videos</span>
+                                            </div>
+                                            <div class="col-auto col-6 px-0">
+                                                <img src="assets/images/img-icon.svg" alt="">
+                                                <span>26 Fotos</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <p class="post_time">Hace un momento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Description -->
+                    <div class="post_description space pt-3 pb-0">
+                        <p>Hola mi nombre es Alexa, esta es mi primera publicación y tengo 250 caracteres para poder expresarme.</p>
+                    </div>
+                    <!-- Post Action -->
+                    <div class="post-action space">
+                        <button type="button" class="btn small-btn" style="max-width: max-content;">
+                        <span>
+                            <svg width="12" height="16" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                            </svg>
+                        </span>
+                        Desbloquea este contenido aquí
+                    </button>
+                    </div>
+                </div>
+                <h2 class="text-center my-4">Terminos y Condiciones</h2>
+                <button type="button" class="btn blue-btn big-btn" data-toggle="modal" data-target="#termsPopup">
+                    Crear Publicación
+                </button>
+                <!-- Modal -->
+                <div class="modal fade terms_popup" id="termsPopup" tabindex="-1" aria-labelledby="termsPopup" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header border-0 justify-content-center">
+                                    <h3 class="modal-title" id="termsPopupLabel">Terminos y Condiciones</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="fal fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="terms_content">
+                                        <h3>Bienvenido a FanPush</h3>
+                                        <p>In vel mauris nec nibh rutrum venenatis. Duis rhoncus ligula eu est luctus dictum. Aliquam ornare varius elit. Phasellus placerat, nibh ut blandit tincidunt, libero leo rhoncus ipsum, sit amet scelerisque augue
+                                            nunc vel urna. Etiam sodales feugiat metus, nec vulputate quam imperdiet nec. Maecenas ac pulvinar orci. Curabitur at lacinia sem, non viverra nibh. Maecenas rhoncus velit vel malesuada iaculis. Pellentesque
+                                            semper convallis ipsum nec viverra. Nulla sit amet mauris vel urna facilisis venenatis. Donec blandit, lectus mollis sollicitudin euismod, tellus augue lobortis tellus, ut interdum ante sem nec risus.</p>
+                                        <h3>Usar nuestros servicios</h3>
+                                        <p>In vel mauris nec nibh rutrum venenatis. Duis rhoncus ligula eu est luctus dictum. Aliquam ornare varius elit. Phasellus placerat, nibh ut blandit tincidunt, libero leo rhoncus ipsum, sit amet scelerisque augue
+                                            nunc vel urna. Etiam sodales feugiat metus, nec vulputate quam imperdiet nec. Maecenas ac pulvinar orci. Curabitur at lacinia sem, non viverra nibh. Maecenas rhoncus velit vel malesuada iaculis. Pellentesque
+                                            semper convallis ipsum nec viverra. Nulla sit amet</p>
+                                        <p>In vel mauris nec nibh rutrum venenatis. Duis rhoncus ligula eu est luctus dictum. Aliquam ornare varius elit. Phasellus placerat, nibh ut blandit tincidunt, libero leo rhoncus ipsum, sit amet scelerisque augue
+                                            nunc vel urna. Etiam sodales feugiat metus, nec vulputate quam imperdiet nec. Maecenas ac pulvinar orci. Curabitur at lacinia sem, non vilisis venenatis. Donec blandit, lectus mollis sollicitudin euismod, tellus
+                                            augue lobortis tellus, ut interdum ante sem nec risus.</p>
+                                        <h3>Bienvenido a FanPush</h3>
+                                        <p>In vel mauris nec nibh rutrum venenatis. Duis rhoncus ligula eu est luctus dictum. Aliquam ornare varius elit. Phasellus placerat, nibh ut blandit tincidunt, libero leo rhoncus ipsum, sit amet scelerisque augue
+                                            nunc vel urna. Etiam sodales feugiat metus, nec vulputate quam imperdiet nec. Maecenas ac pulvinar orci. Curabitur at lacinia sem, non viverra nibh. Maecenas rhoncus velit vel malesuada iaculis. Pellentesque
+                                            semper convallis ipsum nec viverra. Nulla sit amet mauris vel urna facilisis venenatis. Donec blandit, lectus mollis sollicitudin euismod, tellus augue lobortis tellus, ut interdum ante sem nec risus.</p>
+                                        <h3>Usar nuestros servicios</h3>
+                                        <p>In vel mauris nec nibh rutrum venenatis. Duis rhoncus ligula eu est luctus dictum. Aliquam ornare varius elit. Phasellus placerat, nibh ut blandit tincidunt, libero leo rhoncus ipsum, sit amet scelerisque augue
+                                            nunc vel urna. Etiam sodales feugiat metus, nec vulputate quam imperdiet nec. Maecenas ac pulvinar orci. Curabitur at lacinia sem, non viverra nibh. Maecenas rhoncus velit vel malesuada iaculis. Pellentesque
+                                            semper convallis ipsum nec viverra. Nulla sit amet</p>
+                                        <p>In vel mauris nec nibh rutrum venenatis. Duis rhoncus ligula eu est luctus dictum. Aliquam ornare varius elit. Phasellus placerat, nibh ut blandit tincidunt, libero leo rhoncus ipsum, sit amet scelerisque augue
+                                            nunc vel urna. Etiam sodales feugiat metus, nec vulputate quam imperdiet nec. Maecenas ac pulvinar orci. Curabitur at lacinia sem, non vilisis venenatis. Donec blandit, lectus mollis sollicitudin euismod, tellus
+                                            augue lobortis tellus, ut interdum ante sem nec risus.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer flex-column justify-content-center border-0">
+                                    <button type="button" class="btn blue-btn big-btn btn-disable" disabled style="max-width: 264px;">Lei los terminos y los acepto</button>
+                                    <button type="button" data-dismiss="modal" class="btn closee shadow-none">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <h2 class="text-center my-4">Crear Publicación</h2>
@@ -1816,10 +2055,106 @@
                             <div class="post-popup-container">
                                 <div class="row no-gutters">
                                     <div class="col-md-7">
-                                        <div class="ui-img-boxes large-img-box position-relative">
-                                            <img src="assets/images/gradient.png" alt="Gradient Img">
-                                            <button type="button" class="btn post-icon">
-                                                <img src="assets/images/padlock.svg" alt="Lock" class="icon lock">
+                                        <div id="inlineGallery2" class="carousel slide inline_gallery" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#inlineGallery2" data-slide-to="0" class="active">
+                                                    <div class="media_item">
+                                                        <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail" class="main">
+                                                    </div>
+                                                </li>
+                                                <li data-target="#inlineGallery2" data-slide-to="1" class="locked">
+                                                    <div class="media_item">
+                                                        <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail" class="main">
+                                                    </div>
+                                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                                </li>
+                                                <li data-target="#inlineGallery2" data-slide-to="2" class="locked">
+                                                    <div class="media_item">
+                                                        <img src="assets/images/inline_gallery_3.jpg" alt="Gallery Thumbnail" class="main">
+                                                    </div>
+                                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                                </li>
+                                                <li data-target="#inlineGallery2" data-slide-to="3" class="locked">
+                                                    <div class="media_item">
+                                                        <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail" class="main">
+                                                    </div>
+                                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                                </li>
+                                                <li data-target="#inlineGallery2" data-slide-to="4" class="locked">
+                                                    <div class="media_item">
+                                                        <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail" class="main">
+                                                    </div>
+                                                    <img src="assets/images/padlock.svg" alt="Lock" class="lock">
+                                                </li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="media_item">
+                                                        <div class="thumb">
+                                                            <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail" class="main">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="media_item locked">
+                                                        <div class="thumb">
+                                                            <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail" class="main">
+                                                        </div>
+                                                        <button class="btn btn-unlock big-btn">
+                                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                                            </svg>
+                                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="media_item locked">
+                                                        <div class="thumb">
+                                                            <img src="assets/images/inline_gallery_3.jpg" alt="Gallery Thumbnail">
+                                                        </div>
+                                                        <button class="btn btn-unlock big-btn">
+                                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                                            </svg>
+                                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="media_item locked">
+                                                        <div class="thumb">
+                                                            <img src="assets/images/inline_gallery_1.jpg" alt="Gallery Thumbnail">
+                                                        </div>
+                                                        <button class="btn btn-unlock big-btn">
+                                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                                            </svg>
+                                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="media_item locked">
+                                                        <div class="thumb">
+                                                            <img src="assets/images/inline_gallery_2.jpg" alt="Gallery Thumbnail">
+                                                        </div>
+                                                        <button class="btn btn-unlock big-btn">
+                                                            <svg width="13" height="15" viewBox="0 0 31 41" fill="" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M26.9062 15.375H25.625V10.25C25.625 4.59713 21.0279 0 15.375 0C9.72213 0 5.125 4.59713 5.125 10.25V15.375H3.84375C1.72542 15.375 0 17.0987 0 19.2188V37.1562C0 39.2763 1.72542 41 3.84375 41H26.9062C29.0246 41 30.75 39.2763 30.75 37.1562V19.2188C30.75 17.0987 29.0246 15.375 26.9062 15.375ZM8.54167 10.25C8.54167 6.48142 11.6064 3.41667 15.375 3.41667C19.1436 3.41667 22.2083 6.48142 22.2083 10.25V15.375H8.54167V10.25ZM17.0833 28.5668V32.4583C17.0833 33.4013 16.3197 34.1667 15.375 34.1667C14.4303 34.1667 13.6667 33.4013 13.6667 32.4583V28.5668C12.6502 27.974 11.9583 26.884 11.9583 25.625C11.9583 23.7407 13.4907 22.2083 15.375 22.2083C17.2593 22.2083 18.7917 23.7407 18.7917 25.625C18.7917 26.884 18.0998 27.974 17.0833 28.5668Z" fill=""></path>
+                                                            </svg>
+                                                            <span class="d-inline-block">Desbloquea contenido</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-target="#inlineGallery2" data-slide="prev">
+                                              <span class="carousel-icon"><i class="far fa-chevron-left"></i></span>
+                                              <span class="sr-only">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-target="#inlineGallery2" data-slide="next">
+                                              <span class="carousel-icon"><i class="far fa-chevron-right"></i></span>
+                                              <span class="sr-only">Next</span>
                                             </button>
                                         </div>
                                     </div>
@@ -1885,25 +2220,19 @@
                                                         </div>
                                                         <!-- Post Price -->
                                                         <div class="post-space">
-                                                            <div class="post-price">
-                                                                <h2>$300</h2>
+                                                            <div class="post-price text-center">
+                                                                <h2>Precio: $500</h2>
                                                             </div>
                                                         </div>
-                                                        <div class="post-content">
+                                                        <div class="post-content post-border-top pt-3">
                                                             <div class="post-space">
                                                                 <p>Este es un post privado, continua con el pago para desbloquearlo.
                                                                 </p>
                                                             </div>
-                                                            <div class="post-space post-border-bottom pb-4">
-                                                                <div class="post-likes">
-                                                                    <button type="button" class="btn">
-                                                                        <i class="fas fa-heart"></i>
-                                                                        <span>253</span>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="post-space post-border-bottom pb-4">
-                                                                <button type="button" class="blue-btn big-btn mt-3 mb-4" style="max-width: 100%;">
+                                                            <div class="post-space post-border-bottom py-4">
+                                                                <div class="row">
+                                                                    <div class="col-xl-6 mb-4 mb-xl-0">
+                                                                        <button type="button" class="blue-btn big-btn" style="max-width: 100%;">
                                                                     <span>
                                                                         <svg width="12" height="16" viewBox="0 0 31 41"
                                                                             fill="" xmlns="http://www.w3.org/2000/svg">
@@ -1912,9 +2241,11 @@
                                                                                 fill="" />
                                                                         </svg>
                                                                     </span>
-                                                                    Desbloquea este contenido
+                                                                    Desbloquea este album
                                                                 </button>
-                                                                <button type="button" class="unlock-all light-blue-btn big-btn" style="max-width: 100%;">
+                                                                    </div>
+                                                                    <div class="col-xl-6">
+                                                                        <button type="button" class="unlock-all light-blue-btn big-btn" style="max-width: 100%;">
                                                                     <span>
                                                                         <svg width="12" height="16" viewBox="0 0 31 41"
                                                                             fill="none"
@@ -1924,20 +2255,33 @@
                                                                                 fill="" />
                                                                         </svg>
                                                                     </span>
-                                                                    Suscribite mensualmente a TODO el contenido por
-                                                                    $2500
+                                                                    Suscribite por $2500
                                                                 </button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="content-wrapper d-none d-md-block">
-                                                    <div class="post-space post-border-top pb-4">
-                                                        <div class="post-likes d-flex justify-content-between">
-                                                            <button type="button" class="btn">
-                                                                <i class="fas fa-heart"></i>
-                                                            </button>
-                                                            <span style="font-size: 14px;">253 me gusta</span>
+                                                            <div class="post-content post-border-top pt-4">
+                                                                <div class="post-space">
+                                                                    <div class="about_cta mb-4">
+                                                                        <h2>Desbloqueo de contenido</h2>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="assets/images/unlock_icon.png" alt="unlock icon">
+                                                                            <span class="d-inline-block">
+                                                                                La compra de contenido te brindara acceso las fotos y videos que el usuario haya elegido para su album. No tendrás acceso a todo el contenido del autor.
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="about_cta mb-4">
+                                                                        <h2>Suscripción a perfil</h2>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="assets/images/Heart_Eyes_Emoji.png" alt="unlock icon">
+                                                                            <span class="d-inline-block">
+                                                                                La suscripción a perfil te dará 100% de acceso a todo el contenido de un autor por 30 días. La suscripciones vencen luego de 30 días, pudiendo ser renovadas una vez vencidas. 
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
